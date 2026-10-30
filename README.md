@@ -11,4 +11,4 @@
 
 용량이 큰 ZIP 두 개는 GitHub Releases에서 내려받을 수 있습니다. [원본 자료 릴리스](https://github.com/jha68/MAICON/releases/tag/source-files)에도 네 파일을 모두 첨부했습니다.
 
-PDF와 ZIP의 내용 및 파일명은 원본 그대로 보관했습니다.
+PDF와 ZIP의 내용은 원본 그대로 보관했습니다.
