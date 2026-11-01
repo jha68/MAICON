@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "gpu_count": 3,
+  "parallel_workers": [
+    {
+      "gpu_slot": 0,
+      "pid": 322,
+      "name": "NVIDIA A100-SXM4-80GB",
+      "uuid": "91de5c85-9c1a-3e34-1dd0-c6c5a0b9f456",
+      "memory_bytes": 85093777408,
+      "matmul_max_abs_error": 1.52587890625e-05,
+      "training_steps": 30,
+      "initial_loss": 267.5144348144531,
+      "final_loss": 6.163315296173096,
+      "torch": "2.8.0+cu128",
+      "cuda": "12.8",
+      "passed": true
+    },
+    {
+      "gpu_slot": 1,
+      "pid": 323,
+      "name": "NVIDIA A100-SXM4-80GB",
+      "uuid": "158dc92c-7331-a464-43f9-c74cd59f2672",
+      "memory_bytes": 85093777408,
+      "matmul_max_abs_error": 1.52587890625e-05,
+      "training_steps": 30,
+      "initial_loss": 267.5144348144531,
+      "final_loss": 6.163315296173096,
+      "torch": "2.8.0+cu128",
+      "cuda": "12.8",
+      "passed": true
+    },
+    {
+      "gpu_slot": 2,
+      "pid": 324,
+      "name": "NVIDIA A100-SXM4-80GB",
+      "uuid": "29d5f38c-a373-b907-0bfd-f19333254aab",
+      "memory_bytes": 85093777408,
+      "matmul_max_abs_error": 1.52587890625e-05,
+      "training_steps": 30,
+      "initial_loss": 267.5144348144531,
+      "final_loss": 6.163315296173096,
+      "torch": "2.8.0+cu128",
+      "cuda": "12.8",
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 5.691039562225342,
+  "script_sha256": "69bd0b2666d4476bfd1931606e2380230a05e71a60b0f8d159160a41f151bcb4"
+}

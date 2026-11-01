@@ -1,0 +1,9 @@
+{"time": 1791543711.2487936, "event": "started", "deadline": 1791543830.6724753, "compute_deadline": 1791543800.6724753, "cpu_workers": 1, "threads_per_worker": 2, "run_dir": "/config/workspace/race90/demo-review/runs/20261009-110151-ebbe0e"}
+{"time": 1791543711.2500634, "event": "gpu_skipped", "reason": "No ready GPU; completed CPU baseline is retained"}
+{"time": 1791543711.2553067, "event": "stage_started", "task": "q1", "stage": "baseline", "resource": "cpu", "deadline": 1791543741.0593185}
+{"time": 1791543713.6793075, "event": "stage_done", "task": "q1", "stage": "baseline", "resource": "cpu"}
+{"time": 1791543713.695284, "event": "stage_started", "task": "q2", "stage": "baseline", "resource": "cpu", "deadline": 1791543743.6950881}
+{"time": 1791543716.2629507, "event": "stage_done", "task": "q2", "stage": "baseline", "resource": "cpu"}
+{"time": 1791543716.2745767, "event": "stage_started", "task": "q3", "stage": "baseline", "resource": "cpu", "deadline": 1791543746.2744257}
+{"time": 1791543718.5957017, "event": "stage_done", "task": "q3", "stage": "baseline", "resource": "cpu"}
+{"time": 1791543725.1038244, "event": "finished", "complete": true, "run_dir": "/config/workspace/race90/demo-review/runs/20261009-110151-ebbe0e"}

@@ -1,0 +1,12 @@
+{
+  "archive": "models-selected.tgz",
+  "contains_models": [
+    "finetune_original_lr3e-05_s42_cv42_e120",
+    "finetune_all_lr3e-05_s42_cv42_e100"
+  ],
+  "expected_best_checkpoints": 10,
+  "archive_listing_verified": true,
+  "weight_restore_inference_verified": true,
+  "checkpoint_replay_max_difference": 0.0,
+  "note": "Weights for current two-model candidate backed up locally; compressed archive kept separate from lightweight submission notebooks."
+}

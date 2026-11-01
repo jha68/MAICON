@@ -1,0 +1,6 @@
+{
+  "finedust": {
+    "status": "failed",
+    "error": "/config/workspace/.venv/bin/python exited 1: See log: /config/workspace/race90/practice-runs/20261010-043957-69eae3/finedust/notebook-compact-retry.log"
+  }
+}

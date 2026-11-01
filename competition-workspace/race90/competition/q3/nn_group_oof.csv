@@ -1,0 +1,541 @@
+id,core,true,pred
+TRN0001,압력은 형성되나 기준값보다 낮아 무거운 부하에서 동작 범위가 제한됨,HYDRAULIC,HYDRAULIC
+TRN0002,근거리에서는 통신되나 거리가 늘어나면 신호가 급격히 약해짐,COMMUNICATION,COMMUNICATION
+TRN0003,타이어 편마모가 관찰되나 공기압과 주행 안정성은 기준 범위임,MOBILITY,MOBILITY
+TRN0004,연결 피팅에 습윤 흔적이 있으나 시간 경과 후에도 양이 증가하지 않음,HYDRAULIC,HYDRAULIC
+TRN0005,속도가 높아지면 차체 진동이 커져 저속으로만 운행 가능한 상태임,MOBILITY,ENGINE
+TRN0006,시동 직후 평소보다 거친 소음이 잠시 발생하나 이후 출력과 회전수는 정상임,ENGINE,COOLING
+TRN0007,연결 피팅에 습윤 흔적이 있으나 시간 경과 후에도 양이 증가하지 않음,HYDRAULIC,HYDRAULIC
+TRN0008,바퀴 고정부가 파손되어 차량을 움직일 수 없는 상태임,MOBILITY,MOBILITY
+TRN0009,냉각수가 급격히 빠져나가며 짧은 운전만으로 온도 한계를 초과함,COOLING,COOLING
+TRN0010,퓨즈 박스 덮개에 균열이 있으나 내부 회로와 전원 공급에는 이상이 없음,ELECTRICAL,COMMUNICATION
+TRN0011,라디에이터 계통에서 큰 누수가 발생해 냉각수 잔량이 유지되지 않음,COOLING,COOLING
+TRN0012,송신과 수신이 모두 되지 않아 다른 장비와 연결을 설정할 수 없음,COMMUNICATION,COMMUNICATION
+TRN0013,송신과 수신이 모두 되지 않아 다른 장비와 연결을 설정할 수 없음,COMMUNICATION,COMMUNICATION
+TRN0014,타이어 공기압이 서서히 감소하지만 단거리 이동은 가능함,MOBILITY,MOBILITY
+TRN0015,연결부에서 소량의 작동유가 배어나오며 반복 동작 시 속도가 감소함,HYDRAULIC,HYDRAULIC
+TRN0016,압력은 형성되나 기준값보다 낮아 무거운 부하에서 동작 범위가 제한됨,HYDRAULIC,HYDRAULIC
+TRN0017,진동이 있을 때 계기 조명이 깜박이며 커넥터를 건드리면 증상이 변함,ELECTRICAL,ENGINE
+TRN0018,라디에이터 계통에서 큰 누수가 발생해 냉각수 잔량이 유지되지 않음,COOLING,COOLING
+TRN0019,저속에서는 온도가 안정적이나 장시간 운전 시 상한에 가까워짐,COOLING,COOLING
+TRN0020,조향 유격이 증가해 급격한 방향 전환을 피해야 하나 기본 조향은 가능함,MOBILITY,MOBILITY
+TRN0021,특정 채널에서만 음성이 불명확하며 다른 채널은 사용 가능함,COMMUNICATION,COMMUNICATION
+TRN0022,부팅 로그에 일시적 경고가 기록됐으나 이후 통신 기능에는 이상이 없음,COMMUNICATION,COMMUNICATION
+TRN0023,조향 입력에 바퀴가 반응하지 않아 진행 방향을 제어할 수 없음,MOBILITY,MOBILITY
+TRN0024,온도 경고 후에도 열이 내려가지 않고 증기가 발생함,COOLING,COOLING
+TRN0025,배기 색이 일시적으로 짙어졌으나 재점검 시 회전과 출력은 기준 범위임,ENGINE,ENGINE
+TRN0026,실린더 외벽에 오래된 작동유 자국이 있으나 새 누유는 확인되지 않음,HYDRAULIC,HYDRAULIC
+TRN0027,안테나 계통 점검 후에도 신호 입출력이 없고 통신 세션이 시작되지 않음,COMMUNICATION,COMMUNICATION
+TRN0028,공회전 소음이 약간 증가했으나 주행 시험에서 기능 이상은 없음,ENGINE,COOLING
+TRN0029,전원 공급은 되지만 특정 보조 장치가 간헐적으로 재부팅됨,ELECTRICAL,ELECTRICAL
+TRN0030,차륜 주변에 표면 부식이 있으나 주행 시험 결과 이상 없음,MOBILITY,MOBILITY
+TRN0031,표시창에 작은 흠집이 있으나 채널 설정과 통신 시험은 모두 정상임,COMMUNICATION,ELECTRICAL
+TRN0032,펌프 소음이 약간 커졌지만 압력 시험과 반복 동작 결과는 기준 범위임,HYDRAULIC,COOLING
+TRN0033,안테나 보호캡에 균열이 있으나 송수신 시험과 신호 세기는 정상임,COMMUNICATION,COMMUNICATION
+TRN0034,송신과 수신이 모두 되지 않아 다른 장비와 연결을 설정할 수 없음,COMMUNICATION,COMMUNICATION
+TRN0035,데이터 전송 중 패킷 손실이 반복되지만 낮은 속도에서는 연결이 유지됨,COMMUNICATION,COMMUNICATION
+TRN0036,타이어 공기압이 서서히 감소하지만 단거리 이동은 가능함,MOBILITY,MOBILITY
+TRN0037,바퀴 고정부가 파손되어 차량을 움직일 수 없는 상태임,MOBILITY,MOBILITY
+TRN0038,일정 시간 사용하면 수신 감도가 떨어지고 재부팅 후 일시적으로 회복됨,COMMUNICATION,HYDRAULIC
+TRN0039,여러 채널에서 동일하게 송수신 기능이 작동하지 않음,COMMUNICATION,COMMUNICATION
+TRN0040,차륜 주변에 표면 부식이 있으나 주행 시험 결과 이상 없음,MOBILITY,MOBILITY
+TRN0041,실린더가 끝 위치까지 도달하는 시간이 길어졌으나 기본 동작은 가능함,HYDRAULIC,HYDRAULIC
+TRN0042,안테나 고정부에 약간의 유격이 있으나 측정된 통신 성능은 기준 범위임,COMMUNICATION,COMMUNICATION
+TRN0043,압력은 형성되나 기준값보다 낮아 무거운 부하에서 동작 범위가 제한됨,HYDRAULIC,HYDRAULIC
+TRN0044,배터리 전압이 크게 저하되어 시동 계통이 전혀 반응하지 않음,ELECTRICAL,ENGINE
+TRN0045,진동이 있을 때 계기 조명이 깜박이며 커넥터를 건드리면 증상이 변함,ELECTRICAL,ENGINE
+TRN0046,온도 경고 후에도 열이 내려가지 않고 증기가 발생함,COOLING,COOLING
+TRN0047,부하가 커질 때 엔진 응답이 둔해지고 순간적인 출력 저하가 반복됨,ENGINE,ENGINE
+TRN0048,라디에이터 계통에서 큰 누수가 발생해 냉각수 잔량이 유지되지 않음,COOLING,COOLING
+TRN0049,저속에서는 온도가 안정적이나 장시간 운전 시 상한에 가까워짐,COOLING,COOLING
+TRN0050,전원 공급은 되지만 특정 보조 장치가 간헐적으로 재부팅됨,ELECTRICAL,ELECTRICAL
+TRN0051,전원 케이블 부근에서 탄 냄새와 과열 흔적이 발견되고 전력 공급이 끊김,ELECTRICAL,ELECTRICAL
+TRN0052,냉간 시동이 지연되며 정상 회전수에 도달하기까지 시간이 오래 걸림,ENGINE,ENGINE
+TRN0053,호스 파손으로 작동유가 빠르게 새며 계통 압력이 거의 형성되지 않음,HYDRAULIC,HYDRAULIC
+TRN0054,조향 유격이 증가해 급격한 방향 전환을 피해야 하나 기본 조향은 가능함,MOBILITY,MOBILITY
+TRN0055,여러 채널에서 동일하게 송수신 기능이 작동하지 않음,COMMUNICATION,COMMUNICATION
+TRN0056,엔진에서 심한 노킹음이 발생하고 출력이 거의 나오지 않음,ENGINE,MOBILITY
+TRN0057,근거리에서는 통신되나 거리가 늘어나면 신호가 급격히 약해짐,COMMUNICATION,COMMUNICATION
+TRN0058,엔진에서 심한 노킹음이 발생하고 출력이 거의 나오지 않음,ENGINE,MOBILITY
+TRN0059,안테나 보호캡에 균열이 있으나 송수신 시험과 신호 세기는 정상임,COMMUNICATION,COMMUNICATION
+TRN0060,발전 출력이 사라져 주요 전기 장치가 동시에 정지함,ELECTRICAL,ELECTRICAL
+TRN0061,가속 시 출력이 평소보다 낮고 회전수가 간헐적으로 흔들리지만 이동은 가능함,ENGINE,ENGINE
+TRN0062,통화 중 잡음이 증가하고 간헐적으로 연결이 끊기지만 재접속은 가능함,COMMUNICATION,COMMUNICATION
+TRN0063,연결부에서 소량의 작동유가 배어나오며 반복 동작 시 속도가 감소함,HYDRAULIC,HYDRAULIC
+TRN0064,초기에는 정상 작동하지만 연속 사용 후 유압 응답이 둔해짐,HYDRAULIC,COMMUNICATION
+TRN0065,온도 경고 후에도 열이 내려가지 않고 증기가 발생함,COOLING,COOLING
+TRN0066,전원은 들어오지만 통신 링크가 전혀 형성되지 않고 호출 응답이 없음,COMMUNICATION,COMMUNICATION
+TRN0067,커넥터 단자에 경미한 산화 흔적이 있으나 전압과 기능 시험은 정상임,ELECTRICAL,COMMUNICATION
+TRN0068,타이어가 완전히 파손되어 차체가 기울고 이동이 불가능함,MOBILITY,MOBILITY
+TRN0069,엔진 마운트 주변에 미세 진동이 느껴지나 운전 성능 변화는 없음,ENGINE,ENGINE
+TRN0070,배선 피복에 가벼운 마모가 발견됐으나 도체 노출과 기능 이상은 없음,ELECTRICAL,ELECTRICAL
+TRN0071,운전 중 온도가 빠르게 상승하고 과열 경고가 계속되어 냉각이 되지 않음,COOLING,COOLING
+TRN0072,타이어 편마모가 관찰되나 공기압과 주행 안정성은 기준 범위임,MOBILITY,MOBILITY
+TRN0073,일부 계기판과 보조 조명이 간헐적으로 꺼지지만 주 전원은 유지됨,ELECTRICAL,ELECTRICAL
+TRN0074,표시창에 작은 흠집이 있으나 채널 설정과 통신 시험은 모두 정상임,COMMUNICATION,ELECTRICAL
+TRN0075,시동 직후 평소보다 거친 소음이 잠시 발생하나 이후 출력과 회전수는 정상임,ENGINE,COOLING
+TRN0076,일정 시간 사용하면 수신 감도가 떨어지고 재부팅 후 일시적으로 회복됨,COMMUNICATION,HYDRAULIC
+TRN0077,제동거리가 평소보다 길어졌지만 저속 시험에서는 정지가 가능함,MOBILITY,MOBILITY
+TRN0078,조향 유격이 증가해 급격한 방향 전환을 피해야 하나 기본 조향은 가능함,MOBILITY,MOBILITY
+TRN0079,진동이 있을 때 계기 조명이 깜박이며 커넥터를 건드리면 증상이 변함,ELECTRICAL,ENGINE
+TRN0080,초기에는 정상 작동하지만 연속 사용 후 유압 응답이 둔해짐,HYDRAULIC,COMMUNICATION
+TRN0081,엔진 외부에 소량의 오일 흔적이 있으나 누유 진행과 성능 저하는 확인되지 않음,ENGINE,ENGINE
+TRN0082,송신과 수신이 모두 되지 않아 다른 장비와 연결을 설정할 수 없음,COMMUNICATION,COMMUNICATION
+TRN0083,엔진 마운트 주변에 미세 진동이 느껴지나 운전 성능 변화는 없음,ENGINE,ENGINE
+TRN0084,계기판 백라이트 밝기가 고르지 않지만 모든 지시값은 정상 표시됨,ELECTRICAL,ELECTRICAL
+TRN0085,호스 파손으로 작동유가 빠르게 새며 계통 압력이 거의 형성되지 않음,HYDRAULIC,HYDRAULIC
+TRN0086,전원은 들어오지만 통신 링크가 전혀 형성되지 않고 호출 응답이 없음,COMMUNICATION,COMMUNICATION
+TRN0087,특정 채널에서만 음성이 불명확하며 다른 채널은 사용 가능함,COMMUNICATION,COMMUNICATION
+TRN0088,보조 전원 회로가 작동하지 않으나 핵심 제어 장치는 정상적으로 켜짐,ELECTRICAL,ELECTRICAL
+TRN0089,펌프 소음이 약간 커졌지만 압력 시험과 반복 동작 결과는 기준 범위임,HYDRAULIC,COOLING
+TRN0090,저속에서는 온도가 안정적이나 장시간 운전 시 상한에 가까워짐,COOLING,COOLING
+TRN0091,냉각 팬 소음이 약간 증가했으나 회전과 온도 제어는 정상임,COOLING,ENGINE
+TRN0092,제동거리가 평소보다 길어졌지만 저속 시험에서는 정지가 가능함,MOBILITY,MOBILITY
+TRN0093,고부하 운전에서 온도가 평소보다 높아지지만 부하를 낮추면 정상 범위로 돌아옴,COOLING,COOLING
+TRN0094,안테나 계통 점검 후에도 신호 입출력이 없고 통신 세션이 시작되지 않음,COMMUNICATION,COMMUNICATION
+TRN0095,표시등 하나가 간헐적으로 어두워지지만 관련 장치 기능은 정상임,ELECTRICAL,ELECTRICAL
+TRN0096,보조 탱크 수위가 약간 낮았으나 보충 후 온도 시험은 정상임,COOLING,HYDRAULIC
+TRN0097,유압 구동부의 움직임이 평소보다 느리고 부하가 걸리면 압력이 떨어짐,HYDRAULIC,HYDRAULIC
+TRN0098,부팅 로그에 일시적 경고가 기록됐으나 이후 통신 기능에는 이상이 없음,COMMUNICATION,COMMUNICATION
+TRN0099,전원 공급은 되지만 특정 보조 장치가 간헐적으로 재부팅됨,ELECTRICAL,ELECTRICAL
+TRN0100,차륜 주변에 표면 부식이 있으나 주행 시험 결과 이상 없음,MOBILITY,MOBILITY
+TRN0101,커넥터 단자에 경미한 산화 흔적이 있으나 전압과 기능 시험은 정상임,ELECTRICAL,COMMUNICATION
+TRN0102,부팅 후 네트워크 모듈 오류가 반복되어 음성 및 데이터 통신이 불가능함,COMMUNICATION,COMMUNICATION
+TRN0103,냉각 팬 소음이 약간 증가했으나 회전과 온도 제어는 정상임,COOLING,ENGINE
+TRN0104,계기판 백라이트 밝기가 고르지 않지만 모든 지시값은 정상 표시됨,ELECTRICAL,ELECTRICAL
+TRN0105,배터리 전압이 크게 저하되어 시동 계통이 전혀 반응하지 않음,ELECTRICAL,ENGINE
+TRN0106,데이터 전송 중 패킷 손실이 반복되지만 낮은 속도에서는 연결이 유지됨,COMMUNICATION,COMMUNICATION
+TRN0107,명령을 입력해도 유압 구동부가 전혀 움직이지 않고 압력 경고가 지속됨,HYDRAULIC,HYDRAULIC
+TRN0108,계기판 백라이트 밝기가 고르지 않지만 모든 지시값은 정상 표시됨,ELECTRICAL,ELECTRICAL
+TRN0109,일부 계기판과 보조 조명이 간헐적으로 꺼지지만 주 전원은 유지됨,ELECTRICAL,ELECTRICAL
+TRN0110,연결부에서 소량의 작동유가 배어나오며 반복 동작 시 속도가 감소함,HYDRAULIC,HYDRAULIC
+TRN0111,펌프 작동음만 들리고 압력계가 바닥값을 유지해 액추에이터가 반응하지 않음,HYDRAULIC,HYDRAULIC
+TRN0112,근거리에서는 통신되나 거리가 늘어나면 신호가 급격히 약해짐,COMMUNICATION,COMMUNICATION
+TRN0113,유압 라인이 파열된 뒤 구동 속도가 0에 가까워지고 작동유가 급감함,HYDRAULIC,HYDRAULIC
+TRN0114,운전 중 온도가 빠르게 상승하고 과열 경고가 계속되어 냉각이 되지 않음,COOLING,COOLING
+TRN0115,냉각 성능이 떨어져 높은 외기 온도에서는 운전 시간을 제한해야 함,COOLING,COOLING
+TRN0116,전원 케이블 부근에서 탄 냄새와 과열 흔적이 발견되고 전력 공급이 끊김,ELECTRICAL,ELECTRICAL
+TRN0117,제동 페달을 밟아도 감속 반응이 거의 없어 안전한 정지가 어려움,MOBILITY,MOBILITY
+TRN0118,타이어 공기압이 서서히 감소하지만 단거리 이동은 가능함,MOBILITY,MOBILITY
+TRN0119,회전수가 급락한 뒤 재시동을 여러 차례 시도했으나 작동하지 않음,ENGINE,ENGINE
+TRN0120,여러 채널에서 동일하게 송수신 기능이 작동하지 않음,COMMUNICATION,COMMUNICATION
+TRN0121,제동거리가 평소보다 길어졌지만 저속 시험에서는 정지가 가능함,MOBILITY,MOBILITY
+TRN0122,발전 출력이 사라져 주요 전기 장치가 동시에 정지함,ELECTRICAL,ELECTRICAL
+TRN0123,냉간 시동이 지연되며 정상 회전수에 도달하기까지 시간이 오래 걸림,ENGINE,ENGINE
+TRN0124,헤드셋 커넥터 외관이 마모됐지만 음성 송수신은 정상적으로 확인됨,COMMUNICATION,ELECTRICAL
+TRN0125,냉각 팬이 전혀 돌지 않고 부하 운전 시 온도가 계속 상승함,COOLING,COOLING
+TRN0126,유압 탱크 주변에 소량의 오염이 있으나 액면과 계통 성능은 정상임,HYDRAULIC,COOLING
+TRN0127,퓨즈 박스 덮개에 균열이 있으나 내부 회로와 전원 공급에는 이상이 없음,ELECTRICAL,COMMUNICATION
+TRN0128,휠 표면에 작은 찍힘이 있으나 진동이나 조향 이상은 확인되지 않음,MOBILITY,ENGINE
+TRN0129,데이터 전송 중 패킷 손실이 반복되지만 낮은 속도에서는 연결이 유지됨,COMMUNICATION,COMMUNICATION
+TRN0130,헤드셋 커넥터 외관이 마모됐지만 음성 송수신은 정상적으로 확인됨,COMMUNICATION,ELECTRICAL
+TRN0131,차륜 주변에 표면 부식이 있으나 주행 시험 결과 이상 없음,MOBILITY,MOBILITY
+TRN0132,배터리 전압이 크게 저하되어 시동 계통이 전혀 반응하지 않음,ELECTRICAL,ENGINE
+TRN0133,호스 연결부에 마른 냉각수 자국이 있으나 현재 누수와 온도 상승은 없음,COOLING,HYDRAULIC
+TRN0134,제동 페달을 밟아도 감속 반응이 거의 없어 안전한 정지가 어려움,MOBILITY,MOBILITY
+TRN0135,바퀴 고정부가 파손되어 차량을 움직일 수 없는 상태임,MOBILITY,MOBILITY
+TRN0136,표시등 하나가 간헐적으로 어두워지지만 관련 장치 기능은 정상임,ELECTRICAL,ELECTRICAL
+TRN0137,조향 시 미세한 소음이 발생하지만 유격과 반응 속도는 정상임,MOBILITY,MOBILITY
+TRN0138,냉각 팬이 전혀 돌지 않고 부하 운전 시 온도가 계속 상승함,COOLING,COOLING
+TRN0139,주전원 스위치를 올려도 계기와 제어 장치에 전원이 공급되지 않음,ELECTRICAL,ELECTRICAL
+TRN0140,안테나 보호캡에 균열이 있으나 송수신 시험과 신호 세기는 정상임,COMMUNICATION,COMMUNICATION
+TRN0141,부팅 후 네트워크 모듈 오류가 반복되어 음성 및 데이터 통신이 불가능함,COMMUNICATION,COMMUNICATION
+TRN0142,헤드셋 커넥터 외관이 마모됐지만 음성 송수신은 정상적으로 확인됨,COMMUNICATION,ELECTRICAL
+TRN0143,펌프 작동음만 들리고 압력계가 바닥값을 유지해 액추에이터가 반응하지 않음,HYDRAULIC,HYDRAULIC
+TRN0144,가속 시 출력이 평소보다 낮고 회전수가 간헐적으로 흔들리지만 이동은 가능함,ENGINE,ENGINE
+TRN0145,시동 모터는 회전하지만 점화가 이어지지 않아 동력이 발생하지 않음,ENGINE,ELECTRICAL
+TRN0146,냉각 성능이 떨어져 높은 외기 온도에서는 운전 시간을 제한해야 함,COOLING,COOLING
+TRN0147,부하가 커질 때 엔진 응답이 둔해지고 순간적인 출력 저하가 반복됨,ENGINE,ENGINE
+TRN0148,부하가 커질 때 엔진 응답이 둔해지고 순간적인 출력 저하가 반복됨,ENGINE,ENGINE
+TRN0149,냉각 팬 소음이 약간 증가했으나 회전과 온도 제어는 정상임,COOLING,ENGINE
+TRN0150,압력은 형성되나 기준값보다 낮아 무거운 부하에서 동작 범위가 제한됨,HYDRAULIC,HYDRAULIC
+TRN0151,제동거리가 평소보다 길어졌지만 저속 시험에서는 정지가 가능함,MOBILITY,MOBILITY
+TRN0152,표시창에 작은 흠집이 있으나 채널 설정과 통신 시험은 모두 정상임,COMMUNICATION,ELECTRICAL
+TRN0153,일정 시간 사용하면 수신 감도가 떨어지고 재부팅 후 일시적으로 회복됨,COMMUNICATION,HYDRAULIC
+TRN0154,냉각 팬이 간헐적으로 멈춰 장시간 연속 운전을 피해야 함,COOLING,COOLING
+TRN0155,안테나 고정부에 약간의 유격이 있으나 측정된 통신 성능은 기준 범위임,COMMUNICATION,COMMUNICATION
+TRN0156,표시등 하나가 간헐적으로 어두워지지만 관련 장치 기능은 정상임,ELECTRICAL,ELECTRICAL
+TRN0157,부팅 로그에 일시적 경고가 기록됐으나 이후 통신 기능에는 이상이 없음,COMMUNICATION,COMMUNICATION
+TRN0158,타이어 편마모가 관찰되나 공기압과 주행 안정성은 기준 범위임,MOBILITY,MOBILITY
+TRN0159,소량의 냉각수 감소가 반복되지만 보충 후 단시간 운전은 가능함,COOLING,COOLING
+TRN0160,타이어가 완전히 파손되어 차체가 기울고 이동이 불가능함,MOBILITY,MOBILITY
+TRN0161,안테나 보호캡에 균열이 있으나 송수신 시험과 신호 세기는 정상임,COMMUNICATION,COMMUNICATION
+TRN0162,실린더가 끝 위치까지 도달하는 시간이 길어졌으나 기본 동작은 가능함,HYDRAULIC,HYDRAULIC
+TRN0163,배기 색이 일시적으로 짙어졌으나 재점검 시 회전과 출력은 기준 범위임,ENGINE,ENGINE
+TRN0164,운전 중 온도가 빠르게 상승하고 과열 경고가 계속되어 냉각이 되지 않음,COOLING,COOLING
+TRN0165,일정 시간 사용하면 수신 감도가 떨어지고 재부팅 후 일시적으로 회복됨,COMMUNICATION,HYDRAULIC
+TRN0166,통화 중 잡음이 증가하고 간헐적으로 연결이 끊기지만 재접속은 가능함,COMMUNICATION,COMMUNICATION
+TRN0167,주전원 스위치를 올려도 계기와 제어 장치에 전원이 공급되지 않음,ELECTRICAL,ELECTRICAL
+TRN0168,조향 시 미세한 소음이 발생하지만 유격과 반응 속도는 정상임,MOBILITY,MOBILITY
+TRN0169,안테나 계통 점검 후에도 신호 입출력이 없고 통신 세션이 시작되지 않음,COMMUNICATION,COMMUNICATION
+TRN0170,배기 색이 일시적으로 짙어졌으나 재점검 시 회전과 출력은 기준 범위임,ENGINE,ENGINE
+TRN0171,공회전 소음이 약간 증가했으나 주행 시험에서 기능 이상은 없음,ENGINE,COOLING
+TRN0172,회전수가 급락한 뒤 재시동을 여러 차례 시도했으나 작동하지 않음,ENGINE,ENGINE
+TRN0173,조향 시 미세한 소음이 발생하지만 유격과 반응 속도는 정상임,MOBILITY,MOBILITY
+TRN0174,보조 전원 회로가 작동하지 않으나 핵심 제어 장치는 정상적으로 켜짐,ELECTRICAL,ELECTRICAL
+TRN0175,가속 시 출력이 평소보다 낮고 회전수가 간헐적으로 흔들리지만 이동은 가능함,ENGINE,ENGINE
+TRN0176,운전 중 온도가 빠르게 상승하고 과열 경고가 계속되어 냉각이 되지 않음,COOLING,COOLING
+TRN0177,안테나 계통 점검 후에도 신호 입출력이 없고 통신 세션이 시작되지 않음,COMMUNICATION,COMMUNICATION
+TRN0178,초기에는 정상 작동하지만 연속 사용 후 유압 응답이 둔해짐,HYDRAULIC,COMMUNICATION
+TRN0179,보조 전원 회로가 작동하지 않으나 핵심 제어 장치는 정상적으로 켜짐,ELECTRICAL,ELECTRICAL
+TRN0180,일부 계기판과 보조 조명이 간헐적으로 꺼지지만 주 전원은 유지됨,ELECTRICAL,ELECTRICAL
+TRN0181,부팅 후 네트워크 모듈 오류가 반복되어 음성 및 데이터 통신이 불가능함,COMMUNICATION,COMMUNICATION
+TRN0182,배터리 전압이 크게 저하되어 시동 계통이 전혀 반응하지 않음,ELECTRICAL,ENGINE
+TRN0183,온도 센서 표시가 순간 흔들렸으나 별도 측정 온도와 운전 상태는 정상임,COOLING,ENGINE
+TRN0184,명령을 입력해도 유압 구동부가 전혀 움직이지 않고 압력 경고가 지속됨,HYDRAULIC,HYDRAULIC
+TRN0185,데이터 전송 중 패킷 손실이 반복되지만 낮은 속도에서는 연결이 유지됨,COMMUNICATION,COMMUNICATION
+TRN0186,일부 계기판과 보조 조명이 간헐적으로 꺼지지만 주 전원은 유지됨,ELECTRICAL,ELECTRICAL
+TRN0187,호스 연결부 표면에 미세한 유분이 보이나 압력과 동작 속도는 정상임,HYDRAULIC,HYDRAULIC
+TRN0188,냉각 팬 소음이 약간 증가했으나 회전과 온도 제어는 정상임,COOLING,ENGINE
+TRN0189,계기판 백라이트 밝기가 고르지 않지만 모든 지시값은 정상 표시됨,ELECTRICAL,ELECTRICAL
+TRN0190,충전 전압이 기준보다 낮아 장시간 운용 시 전압 저하 경고가 발생함,ELECTRICAL,HYDRAULIC
+TRN0191,초기에는 정상 작동하지만 연속 사용 후 유압 응답이 둔해짐,HYDRAULIC,COMMUNICATION
+TRN0192,공회전 상태에서 진동이 증가하나 일정 회전수 이상에서는 운전이 가능함,ENGINE,MOBILITY
+TRN0193,타이어 편마모가 관찰되나 공기압과 주행 안정성은 기준 범위임,MOBILITY,MOBILITY
+TRN0194,타이어가 완전히 파손되어 차체가 기울고 이동이 불가능함,MOBILITY,MOBILITY
+TRN0195,펌프 소음이 약간 커졌지만 압력 시험과 반복 동작 결과는 기준 범위임,HYDRAULIC,COOLING
+TRN0196,실린더 연결부에서 대량 누유가 발생해 구동 장치가 정지함,HYDRAULIC,HYDRAULIC
+TRN0197,발전 출력이 사라져 주요 전기 장치가 동시에 정지함,ELECTRICAL,ELECTRICAL
+TRN0198,브레이크 패드 마모가 시작됐으나 현재 두께는 허용 범위 안임,MOBILITY,MOBILITY
+TRN0199,호스 연결부에 마른 냉각수 자국이 있으나 현재 누수와 온도 상승은 없음,COOLING,HYDRAULIC
+TRN0200,진동이 있을 때 계기 조명이 깜박이며 커넥터를 건드리면 증상이 변함,ELECTRICAL,ENGINE
+TRN0201,부하가 커질 때 엔진 응답이 둔해지고 순간적인 출력 저하가 반복됨,ENGINE,ENGINE
+TRN0202,여러 채널에서 동일하게 송수신 기능이 작동하지 않음,COMMUNICATION,COMMUNICATION
+TRN0203,공회전 상태에서 진동이 증가하나 일정 회전수 이상에서는 운전이 가능함,ENGINE,MOBILITY
+TRN0204,조향 입력에 바퀴가 반응하지 않아 진행 방향을 제어할 수 없음,MOBILITY,MOBILITY
+TRN0205,호스 연결부에 마른 냉각수 자국이 있으나 현재 누수와 온도 상승은 없음,COOLING,HYDRAULIC
+TRN0206,엔진에서 심한 노킹음이 발생하고 출력이 거의 나오지 않음,ENGINE,MOBILITY
+TRN0207,유압 라인이 파열된 뒤 구동 속도가 0에 가까워지고 작동유가 급감함,HYDRAULIC,HYDRAULIC
+TRN0208,운전 중 갑자기 출력이 사라지고 금속성 충격음이 동반됨,ENGINE,MOBILITY
+TRN0209,회전수가 급락한 뒤 재시동을 여러 차례 시도했으나 작동하지 않음,ENGINE,ENGINE
+TRN0210,실린더 연결부에서 대량 누유가 발생해 구동 장치가 정지함,HYDRAULIC,HYDRAULIC
+TRN0211,온도 센서 표시가 순간 흔들렸으나 별도 측정 온도와 운전 상태는 정상임,COOLING,ENGINE
+TRN0212,호스 파손으로 작동유가 빠르게 새며 계통 압력이 거의 형성되지 않음,HYDRAULIC,HYDRAULIC
+TRN0213,헤드셋 커넥터 외관이 마모됐지만 음성 송수신은 정상적으로 확인됨,COMMUNICATION,ELECTRICAL
+TRN0214,실린더가 끝 위치까지 도달하는 시간이 길어졌으나 기본 동작은 가능함,HYDRAULIC,HYDRAULIC
+TRN0215,배선 피복에 가벼운 마모가 발견됐으나 도체 노출과 기능 이상은 없음,ELECTRICAL,ELECTRICAL
+TRN0216,보조 탱크 수위가 약간 낮았으나 보충 후 온도 시험은 정상임,COOLING,HYDRAULIC
+TRN0217,보조 탱크 수위가 약간 낮았으나 보충 후 온도 시험은 정상임,COOLING,HYDRAULIC
+TRN0218,엔진 외부에 소량의 오일 흔적이 있으나 누유 진행과 성능 저하는 확인되지 않음,ENGINE,ENGINE
+TRN0219,냉각 팬 소음이 약간 증가했으나 회전과 온도 제어는 정상임,COOLING,ENGINE
+TRN0220,표시창에 작은 흠집이 있으나 채널 설정과 통신 시험은 모두 정상임,COMMUNICATION,ELECTRICAL
+TRN0221,냉각 팬이 간헐적으로 멈춰 장시간 연속 운전을 피해야 함,COOLING,COOLING
+TRN0222,연결 피팅에 습윤 흔적이 있으나 시간 경과 후에도 양이 증가하지 않음,HYDRAULIC,HYDRAULIC
+TRN0223,펌프 작동음만 들리고 압력계가 바닥값을 유지해 액추에이터가 반응하지 않음,HYDRAULIC,HYDRAULIC
+TRN0224,전원 케이블 부근에서 탄 냄새와 과열 흔적이 발견되고 전력 공급이 끊김,ELECTRICAL,ELECTRICAL
+TRN0225,주전원 스위치를 올려도 계기와 제어 장치에 전원이 공급되지 않음,ELECTRICAL,ELECTRICAL
+TRN0226,냉각수가 급격히 빠져나가며 짧은 운전만으로 온도 한계를 초과함,COOLING,COOLING
+TRN0227,호스 파손으로 작동유가 빠르게 새며 계통 압력이 거의 형성되지 않음,HYDRAULIC,HYDRAULIC
+TRN0228,퓨즈 박스 덮개에 균열이 있으나 내부 회로와 전원 공급에는 이상이 없음,ELECTRICAL,COMMUNICATION
+TRN0229,충전 전압이 기준보다 낮아 장시간 운용 시 전압 저하 경고가 발생함,ELECTRICAL,HYDRAULIC
+TRN0230,휠 표면에 작은 찍힘이 있으나 진동이나 조향 이상은 확인되지 않음,MOBILITY,ENGINE
+TRN0231,퓨즈 박스 덮개에 균열이 있으나 내부 회로와 전원 공급에는 이상이 없음,ELECTRICAL,COMMUNICATION
+TRN0232,시동 직후 평소보다 거친 소음이 잠시 발생하나 이후 출력과 회전수는 정상임,ENGINE,COOLING
+TRN0233,공회전 상태에서 진동이 증가하나 일정 회전수 이상에서는 운전이 가능함,ENGINE,MOBILITY
+TRN0234,전원 투입 즉시 차단기가 반복적으로 떨어져 장비가 기동되지 않음,ELECTRICAL,ELECTRICAL
+TRN0235,고부하 운전에서 온도가 평소보다 높아지지만 부하를 낮추면 정상 범위로 돌아옴,COOLING,COOLING
+TRN0236,안테나 고정부에 약간의 유격이 있으나 측정된 통신 성능은 기준 범위임,COMMUNICATION,COMMUNICATION
+TRN0237,부팅 로그에 일시적 경고가 기록됐으나 이후 통신 기능에는 이상이 없음,COMMUNICATION,COMMUNICATION
+TRN0238,실린더 연결부에서 대량 누유가 발생해 구동 장치가 정지함,HYDRAULIC,HYDRAULIC
+TRN0239,냉각 성능이 떨어져 높은 외기 온도에서는 운전 시간을 제한해야 함,COOLING,COOLING
+TRN0240,엔진 마운트 주변에 미세 진동이 느껴지나 운전 성능 변화는 없음,ENGINE,ENGINE
+TRN0241,조향 유격이 증가해 급격한 방향 전환을 피해야 하나 기본 조향은 가능함,MOBILITY,MOBILITY
+TRN0242,가속 시 출력이 평소보다 낮고 회전수가 간헐적으로 흔들리지만 이동은 가능함,ENGINE,ENGINE
+TRN0243,실린더 외벽에 오래된 작동유 자국이 있으나 새 누유는 확인되지 않음,HYDRAULIC,HYDRAULIC
+TRN0244,호스 연결부에 마른 냉각수 자국이 있으나 현재 누수와 온도 상승은 없음,COOLING,HYDRAULIC
+TRN0245,실린더 외벽에 오래된 작동유 자국이 있으나 새 누유는 확인되지 않음,HYDRAULIC,HYDRAULIC
+TRN0246,배터리 전압이 크게 저하되어 시동 계통이 전혀 반응하지 않음,ELECTRICAL,ENGINE
+TRN0247,실린더가 끝 위치까지 도달하는 시간이 길어졌으나 기본 동작은 가능함,HYDRAULIC,HYDRAULIC
+TRN0248,공회전 소음이 약간 증가했으나 주행 시험에서 기능 이상은 없음,ENGINE,COOLING
+TRN0249,특정 채널에서만 음성이 불명확하며 다른 채널은 사용 가능함,COMMUNICATION,COMMUNICATION
+TRN0250,소량의 냉각수 감소가 반복되지만 보충 후 단시간 운전은 가능함,COOLING,COOLING
+TRN0251,냉간 시동이 지연되며 정상 회전수에 도달하기까지 시간이 오래 걸림,ENGINE,ENGINE
+TRN0252,전원 케이블 부근에서 탄 냄새와 과열 흔적이 발견되고 전력 공급이 끊김,ELECTRICAL,ELECTRICAL
+TRN0253,냉각 팬이 간헐적으로 멈춰 장시간 연속 운전을 피해야 함,COOLING,COOLING
+TRN0254,조향 유격이 증가해 급격한 방향 전환을 피해야 하나 기본 조향은 가능함,MOBILITY,MOBILITY
+TRN0255,냉각 성능이 떨어져 높은 외기 온도에서는 운전 시간을 제한해야 함,COOLING,COOLING
+TRN0256,충전 전압이 기준보다 낮아 장시간 운용 시 전압 저하 경고가 발생함,ELECTRICAL,HYDRAULIC
+TRN0257,냉각수가 급격히 빠져나가며 짧은 운전만으로 온도 한계를 초과함,COOLING,COOLING
+TRN0258,주행 중 한쪽으로 쏠림이 발생해 지속적인 조향 보정이 필요함,MOBILITY,MOBILITY
+TRN0259,온도 센서 표시가 순간 흔들렸으나 별도 측정 온도와 운전 상태는 정상임,COOLING,ENGINE
+TRN0260,바퀴 고정부가 파손되어 차량을 움직일 수 없는 상태임,MOBILITY,MOBILITY
+TRN0261,발전 출력이 사라져 주요 전기 장치가 동시에 정지함,ELECTRICAL,ELECTRICAL
+TRN0262,호스 연결부에 마른 냉각수 자국이 있으나 현재 누수와 온도 상승은 없음,COOLING,HYDRAULIC
+TRN0263,전원 공급은 되지만 특정 보조 장치가 간헐적으로 재부팅됨,ELECTRICAL,ELECTRICAL
+TRN0264,안테나 고정부에 약간의 유격이 있으나 측정된 통신 성능은 기준 범위임,COMMUNICATION,COMMUNICATION
+TRN0265,전원 투입 즉시 차단기가 반복적으로 떨어져 장비가 기동되지 않음,ELECTRICAL,ELECTRICAL
+TRN0266,조향 입력에 바퀴가 반응하지 않아 진행 방향을 제어할 수 없음,MOBILITY,MOBILITY
+TRN0267,표시등 하나가 간헐적으로 어두워지지만 관련 장치 기능은 정상임,ELECTRICAL,ELECTRICAL
+TRN0268,라디에이터 외부 핀이 일부 휘었지만 냉각 성능 저하는 확인되지 않음,COOLING,COOLING
+TRN0269,주행 중 한쪽으로 쏠림이 발생해 지속적인 조향 보정이 필요함,MOBILITY,MOBILITY
+TRN0270,일부 계기판과 보조 조명이 간헐적으로 꺼지지만 주 전원은 유지됨,ELECTRICAL,ELECTRICAL
+TRN0271,타이어 공기압이 서서히 감소하지만 단거리 이동은 가능함,MOBILITY,MOBILITY
+TRN0272,고부하 운전에서 온도가 평소보다 높아지지만 부하를 낮추면 정상 범위로 돌아옴,COOLING,COOLING
+TRN0273,냉각 팬이 간헐적으로 멈춰 장시간 연속 운전을 피해야 함,COOLING,COOLING
+TRN0274,오르막 구간에서 출력 부족이 나타나지만 저속 운행은 유지됨,ENGINE,ENGINE
+TRN0275,배선 피복에 가벼운 마모가 발견됐으나 도체 노출과 기능 이상은 없음,ELECTRICAL,ELECTRICAL
+TRN0276,특정 채널에서만 음성이 불명확하며 다른 채널은 사용 가능함,COMMUNICATION,COMMUNICATION
+TRN0277,보조 전원 회로가 작동하지 않으나 핵심 제어 장치는 정상적으로 켜짐,ELECTRICAL,ELECTRICAL
+TRN0278,근거리에서는 통신되나 거리가 늘어나면 신호가 급격히 약해짐,COMMUNICATION,COMMUNICATION
+TRN0279,제동거리가 평소보다 길어졌지만 저속 시험에서는 정지가 가능함,MOBILITY,MOBILITY
+TRN0280,부팅 후 네트워크 모듈 오류가 반복되어 음성 및 데이터 통신이 불가능함,COMMUNICATION,COMMUNICATION
+TRN0281,유압 라인이 파열된 뒤 구동 속도가 0에 가까워지고 작동유가 급감함,HYDRAULIC,HYDRAULIC
+TRN0282,명령을 입력해도 유압 구동부가 전혀 움직이지 않고 압력 경고가 지속됨,HYDRAULIC,HYDRAULIC
+TRN0283,냉각 성능이 떨어져 높은 외기 온도에서는 운전 시간을 제한해야 함,COOLING,COOLING
+TRN0284,전원은 들어오지만 통신 링크가 전혀 형성되지 않고 호출 응답이 없음,COMMUNICATION,COMMUNICATION
+TRN0285,회전수가 급락한 뒤 재시동을 여러 차례 시도했으나 작동하지 않음,ENGINE,ENGINE
+TRN0286,유압 라인이 파열된 뒤 구동 속도가 0에 가까워지고 작동유가 급감함,HYDRAULIC,HYDRAULIC
+TRN0287,냉각 팬이 간헐적으로 멈춰 장시간 연속 운전을 피해야 함,COOLING,COOLING
+TRN0288,온도 경고 후에도 열이 내려가지 않고 증기가 발생함,COOLING,COOLING
+TRN0289,속도가 높아지면 차체 진동이 커져 저속으로만 운행 가능한 상태임,MOBILITY,ENGINE
+TRN0290,운전 중 갑자기 출력이 사라지고 금속성 충격음이 동반됨,ENGINE,MOBILITY
+TRN0291,일정 시간 사용하면 수신 감도가 떨어지고 재부팅 후 일시적으로 회복됨,COMMUNICATION,HYDRAULIC
+TRN0292,특정 채널에서만 음성이 불명확하며 다른 채널은 사용 가능함,COMMUNICATION,COMMUNICATION
+TRN0293,조향 시 미세한 소음이 발생하지만 유격과 반응 속도는 정상임,MOBILITY,MOBILITY
+TRN0294,커넥터 단자에 경미한 산화 흔적이 있으나 전압과 기능 시험은 정상임,ELECTRICAL,COMMUNICATION
+TRN0295,시동 직후 평소보다 거친 소음이 잠시 발생하나 이후 출력과 회전수는 정상임,ENGINE,COOLING
+TRN0296,냉각 팬이 전혀 돌지 않고 부하 운전 시 온도가 계속 상승함,COOLING,COOLING
+TRN0297,엔진에서 심한 노킹음이 발생하고 출력이 거의 나오지 않음,ENGINE,MOBILITY
+TRN0298,초기에는 정상 작동하지만 연속 사용 후 유압 응답이 둔해짐,HYDRAULIC,COMMUNICATION
+TRN0299,시동 모터는 회전하지만 점화가 이어지지 않아 동력이 발생하지 않음,ENGINE,ELECTRICAL
+TRN0300,송신과 수신이 모두 되지 않아 다른 장비와 연결을 설정할 수 없음,COMMUNICATION,COMMUNICATION
+TRN0301,냉각 팬이 전혀 돌지 않고 부하 운전 시 온도가 계속 상승함,COOLING,COOLING
+TRN0302,속도가 높아지면 차체 진동이 커져 저속으로만 운행 가능한 상태임,MOBILITY,ENGINE
+TRN0303,안테나 보호캡에 균열이 있으나 송수신 시험과 신호 세기는 정상임,COMMUNICATION,COMMUNICATION
+TRN0304,조향 시 미세한 소음이 발생하지만 유격과 반응 속도는 정상임,MOBILITY,MOBILITY
+TRN0305,브레이크 패드 마모가 시작됐으나 현재 두께는 허용 범위 안임,MOBILITY,MOBILITY
+TRN0306,오르막 구간에서 출력 부족이 나타나지만 저속 운행은 유지됨,ENGINE,ENGINE
+TRN0307,전원 투입 즉시 차단기가 반복적으로 떨어져 장비가 기동되지 않음,ELECTRICAL,ELECTRICAL
+TRN0308,압력은 형성되나 기준값보다 낮아 무거운 부하에서 동작 범위가 제한됨,HYDRAULIC,HYDRAULIC
+TRN0309,브레이크 패드 마모가 시작됐으나 현재 두께는 허용 범위 안임,MOBILITY,MOBILITY
+TRN0310,통화 중 잡음이 증가하고 간헐적으로 연결이 끊기지만 재접속은 가능함,COMMUNICATION,COMMUNICATION
+TRN0311,주행 중 한쪽으로 쏠림이 발생해 지속적인 조향 보정이 필요함,MOBILITY,MOBILITY
+TRN0312,유압 탱크 주변에 소량의 오염이 있으나 액면과 계통 성능은 정상임,HYDRAULIC,COOLING
+TRN0313,저속에서는 온도가 안정적이나 장시간 운전 시 상한에 가까워짐,COOLING,COOLING
+TRN0314,타이어 공기압이 서서히 감소하지만 단거리 이동은 가능함,MOBILITY,MOBILITY
+TRN0315,유압 구동부의 움직임이 평소보다 느리고 부하가 걸리면 압력이 떨어짐,HYDRAULIC,HYDRAULIC
+TRN0316,속도가 높아지면 차체 진동이 커져 저속으로만 운행 가능한 상태임,MOBILITY,ENGINE
+TRN0317,퓨즈 박스 덮개에 균열이 있으나 내부 회로와 전원 공급에는 이상이 없음,ELECTRICAL,COMMUNICATION
+TRN0318,초기에는 정상 작동하지만 연속 사용 후 유압 응답이 둔해짐,HYDRAULIC,COMMUNICATION
+TRN0319,충전 전압이 기준보다 낮아 장시간 운용 시 전압 저하 경고가 발생함,ELECTRICAL,HYDRAULIC
+TRN0320,라디에이터 계통에서 큰 누수가 발생해 냉각수 잔량이 유지되지 않음,COOLING,COOLING
+TRN0321,차륜 주변에 표면 부식이 있으나 주행 시험 결과 이상 없음,MOBILITY,MOBILITY
+TRN0322,전원 케이블 부근에서 탄 냄새와 과열 흔적이 발견되고 전력 공급이 끊김,ELECTRICAL,ELECTRICAL
+TRN0323,고부하 운전에서 온도가 평소보다 높아지지만 부하를 낮추면 정상 범위로 돌아옴,COOLING,COOLING
+TRN0324,냉간 시동이 지연되며 정상 회전수에 도달하기까지 시간이 오래 걸림,ENGINE,ENGINE
+TRN0325,표시창에 작은 흠집이 있으나 채널 설정과 통신 시험은 모두 정상임,COMMUNICATION,ELECTRICAL
+TRN0326,고부하 운전에서 온도가 평소보다 높아지지만 부하를 낮추면 정상 범위로 돌아옴,COOLING,COOLING
+TRN0327,고부하 운전에서 온도가 평소보다 높아지지만 부하를 낮추면 정상 범위로 돌아옴,COOLING,COOLING
+TRN0328,온도 센서 표시가 순간 흔들렸으나 별도 측정 온도와 운전 상태는 정상임,COOLING,ENGINE
+TRN0329,엔진에서 심한 노킹음이 발생하고 출력이 거의 나오지 않음,ENGINE,MOBILITY
+TRN0330,커넥터 단자에 경미한 산화 흔적이 있으나 전압과 기능 시험은 정상임,ELECTRICAL,COMMUNICATION
+TRN0331,송신과 수신이 모두 되지 않아 다른 장비와 연결을 설정할 수 없음,COMMUNICATION,COMMUNICATION
+TRN0332,주행 중 구동축에서 큰 충격음이 난 뒤 동력이 바퀴로 전달되지 않음,MOBILITY,ENGINE
+TRN0333,타이어가 완전히 파손되어 차체가 기울고 이동이 불가능함,MOBILITY,MOBILITY
+TRN0334,데이터 전송 중 패킷 손실이 반복되지만 낮은 속도에서는 연결이 유지됨,COMMUNICATION,COMMUNICATION
+TRN0335,운전 중 갑자기 출력이 사라지고 금속성 충격음이 동반됨,ENGINE,MOBILITY
+TRN0336,보조 전원 회로가 작동하지 않으나 핵심 제어 장치는 정상적으로 켜짐,ELECTRICAL,ELECTRICAL
+TRN0337,제동 페달을 밟아도 감속 반응이 거의 없어 안전한 정지가 어려움,MOBILITY,MOBILITY
+TRN0338,부팅 후 네트워크 모듈 오류가 반복되어 음성 및 데이터 통신이 불가능함,COMMUNICATION,COMMUNICATION
+TRN0339,시동 모터는 회전하지만 점화가 이어지지 않아 동력이 발생하지 않음,ENGINE,ELECTRICAL
+TRN0340,운전 중 갑자기 출력이 사라지고 금속성 충격음이 동반됨,ENGINE,MOBILITY
+TRN0341,시동 모터는 회전하지만 점화가 이어지지 않아 동력이 발생하지 않음,ENGINE,ELECTRICAL
+TRN0342,공회전 상태에서 진동이 증가하나 일정 회전수 이상에서는 운전이 가능함,ENGINE,MOBILITY
+TRN0343,일부 계기판과 보조 조명이 간헐적으로 꺼지지만 주 전원은 유지됨,ELECTRICAL,ELECTRICAL
+TRN0344,주전원 스위치를 올려도 계기와 제어 장치에 전원이 공급되지 않음,ELECTRICAL,ELECTRICAL
+TRN0345,연결부에서 소량의 작동유가 배어나오며 반복 동작 시 속도가 감소함,HYDRAULIC,HYDRAULIC
+TRN0346,바퀴 고정부가 파손되어 차량을 움직일 수 없는 상태임,MOBILITY,MOBILITY
+TRN0347,냉간 시동이 지연되며 정상 회전수에 도달하기까지 시간이 오래 걸림,ENGINE,ENGINE
+TRN0348,주행 중 구동축에서 큰 충격음이 난 뒤 동력이 바퀴로 전달되지 않음,MOBILITY,ENGINE
+TRN0349,부팅 로그에 일시적 경고가 기록됐으나 이후 통신 기능에는 이상이 없음,COMMUNICATION,COMMUNICATION
+TRN0350,안테나 계통 점검 후에도 신호 입출력이 없고 통신 세션이 시작되지 않음,COMMUNICATION,COMMUNICATION
+TRN0351,휠 표면에 작은 찍힘이 있으나 진동이나 조향 이상은 확인되지 않음,MOBILITY,ENGINE
+TRN0352,배선 피복에 가벼운 마모가 발견됐으나 도체 노출과 기능 이상은 없음,ELECTRICAL,ELECTRICAL
+TRN0353,진동이 있을 때 계기 조명이 깜박이며 커넥터를 건드리면 증상이 변함,ELECTRICAL,ENGINE
+TRN0354,냉간 시동이 지연되며 정상 회전수에 도달하기까지 시간이 오래 걸림,ENGINE,ENGINE
+TRN0355,라디에이터 외부 핀이 일부 휘었지만 냉각 성능 저하는 확인되지 않음,COOLING,COOLING
+TRN0356,계기판 백라이트 밝기가 고르지 않지만 모든 지시값은 정상 표시됨,ELECTRICAL,ELECTRICAL
+TRN0357,라디에이터 외부 핀이 일부 휘었지만 냉각 성능 저하는 확인되지 않음,COOLING,COOLING
+TRN0358,소량의 냉각수 감소가 반복되지만 보충 후 단시간 운전은 가능함,COOLING,COOLING
+TRN0359,조향 입력에 바퀴가 반응하지 않아 진행 방향을 제어할 수 없음,MOBILITY,MOBILITY
+TRN0360,운전 중 갑자기 출력이 사라지고 금속성 충격음이 동반됨,ENGINE,MOBILITY
+TRN0361,소량의 냉각수 감소가 반복되지만 보충 후 단시간 운전은 가능함,COOLING,COOLING
+TRN0362,타이어 편마모가 관찰되나 공기압과 주행 안정성은 기준 범위임,MOBILITY,MOBILITY
+TRN0363,통화 중 잡음이 증가하고 간헐적으로 연결이 끊기지만 재접속은 가능함,COMMUNICATION,COMMUNICATION
+TRN0364,온도 경고 후에도 열이 내려가지 않고 증기가 발생함,COOLING,COOLING
+TRN0365,전원 공급은 되지만 특정 보조 장치가 간헐적으로 재부팅됨,ELECTRICAL,ELECTRICAL
+TRN0366,충전 전압이 기준보다 낮아 장시간 운용 시 전압 저하 경고가 발생함,ELECTRICAL,HYDRAULIC
+TRN0367,윤활 압력 경고가 계속 점등되며 엔진 진동이 급격히 커짐,ENGINE,ENGINE
+TRN0368,유압 구동부의 움직임이 평소보다 느리고 부하가 걸리면 압력이 떨어짐,HYDRAULIC,HYDRAULIC
+TRN0369,배기 색이 일시적으로 짙어졌으나 재점검 시 회전과 출력은 기준 범위임,ENGINE,ENGINE
+TRN0370,회전수가 급락한 뒤 재시동을 여러 차례 시도했으나 작동하지 않음,ENGINE,ENGINE
+TRN0371,명령을 입력해도 유압 구동부가 전혀 움직이지 않고 압력 경고가 지속됨,HYDRAULIC,HYDRAULIC
+TRN0372,실린더 연결부에서 대량 누유가 발생해 구동 장치가 정지함,HYDRAULIC,HYDRAULIC
+TRN0373,주행 중 구동축에서 큰 충격음이 난 뒤 동력이 바퀴로 전달되지 않음,MOBILITY,ENGINE
+TRN0374,보조 전원 회로가 작동하지 않으나 핵심 제어 장치는 정상적으로 켜짐,ELECTRICAL,ELECTRICAL
+TRN0375,부하가 커질 때 엔진 응답이 둔해지고 순간적인 출력 저하가 반복됨,ENGINE,ENGINE
+TRN0376,부팅 로그에 일시적 경고가 기록됐으나 이후 통신 기능에는 이상이 없음,COMMUNICATION,COMMUNICATION
+TRN0377,오르막 구간에서 출력 부족이 나타나지만 저속 운행은 유지됨,ENGINE,ENGINE
+TRN0378,유압 탱크 주변에 소량의 오염이 있으나 액면과 계통 성능은 정상임,HYDRAULIC,COOLING
+TRN0379,배선 피복에 가벼운 마모가 발견됐으나 도체 노출과 기능 이상은 없음,ELECTRICAL,ELECTRICAL
+TRN0380,실린더가 끝 위치까지 도달하는 시간이 길어졌으나 기본 동작은 가능함,HYDRAULIC,HYDRAULIC
+TRN0381,여러 채널에서 동일하게 송수신 기능이 작동하지 않음,COMMUNICATION,COMMUNICATION
+TRN0382,브레이크 패드 마모가 시작됐으나 현재 두께는 허용 범위 안임,MOBILITY,MOBILITY
+TRN0383,전원 투입 즉시 차단기가 반복적으로 떨어져 장비가 기동되지 않음,ELECTRICAL,ELECTRICAL
+TRN0384,호스 파손으로 작동유가 빠르게 새며 계통 압력이 거의 형성되지 않음,HYDRAULIC,HYDRAULIC
+TRN0385,안테나 고정부에 약간의 유격이 있으나 측정된 통신 성능은 기준 범위임,COMMUNICATION,COMMUNICATION
+TRN0386,차륜 주변에 표면 부식이 있으나 주행 시험 결과 이상 없음,MOBILITY,MOBILITY
+TRN0387,공회전 소음이 약간 증가했으나 주행 시험에서 기능 이상은 없음,ENGINE,COOLING
+TRN0388,전원은 들어오지만 통신 링크가 전혀 형성되지 않고 호출 응답이 없음,COMMUNICATION,COMMUNICATION
+TRN0389,주행 중 한쪽으로 쏠림이 발생해 지속적인 조향 보정이 필요함,MOBILITY,MOBILITY
+TRN0390,전원은 들어오지만 통신 링크가 전혀 형성되지 않고 호출 응답이 없음,COMMUNICATION,COMMUNICATION
+TRN0391,조향 입력에 바퀴가 반응하지 않아 진행 방향을 제어할 수 없음,MOBILITY,MOBILITY
+TRN0392,펌프 작동음만 들리고 압력계가 바닥값을 유지해 액추에이터가 반응하지 않음,HYDRAULIC,HYDRAULIC
+TRN0393,시동 직후 평소보다 거친 소음이 잠시 발생하나 이후 출력과 회전수는 정상임,ENGINE,COOLING
+TRN0394,휠 표면에 작은 찍힘이 있으나 진동이나 조향 이상은 확인되지 않음,MOBILITY,ENGINE
+TRN0395,운전 중 온도가 빠르게 상승하고 과열 경고가 계속되어 냉각이 되지 않음,COOLING,COOLING
+TRN0396,운전 중 갑자기 출력이 사라지고 금속성 충격음이 동반됨,ENGINE,MOBILITY
+TRN0397,특정 채널에서만 음성이 불명확하며 다른 채널은 사용 가능함,COMMUNICATION,COMMUNICATION
+TRN0398,실린더 외벽에 오래된 작동유 자국이 있으나 새 누유는 확인되지 않음,HYDRAULIC,HYDRAULIC
+TRN0399,공회전 상태에서 진동이 증가하나 일정 회전수 이상에서는 운전이 가능함,ENGINE,MOBILITY
+TRN0400,조향 유격이 증가해 급격한 방향 전환을 피해야 하나 기본 조향은 가능함,MOBILITY,MOBILITY
+TRN0401,윤활 압력 경고가 계속 점등되며 엔진 진동이 급격히 커짐,ENGINE,ENGINE
+TRN0402,유압 구동부의 움직임이 평소보다 느리고 부하가 걸리면 압력이 떨어짐,HYDRAULIC,HYDRAULIC
+TRN0403,냉각수가 급격히 빠져나가며 짧은 운전만으로 온도 한계를 초과함,COOLING,COOLING
+TRN0404,주행 중 한쪽으로 쏠림이 발생해 지속적인 조향 보정이 필요함,MOBILITY,MOBILITY
+TRN0405,주전원 스위치를 올려도 계기와 제어 장치에 전원이 공급되지 않음,ELECTRICAL,ELECTRICAL
+TRN0406,표시등 하나가 간헐적으로 어두워지지만 관련 장치 기능은 정상임,ELECTRICAL,ELECTRICAL
+TRN0407,안테나 계통 점검 후에도 신호 입출력이 없고 통신 세션이 시작되지 않음,COMMUNICATION,COMMUNICATION
+TRN0408,표시창에 작은 흠집이 있으나 채널 설정과 통신 시험은 모두 정상임,COMMUNICATION,ELECTRICAL
+TRN0409,데이터 전송 중 패킷 손실이 반복되지만 낮은 속도에서는 연결이 유지됨,COMMUNICATION,COMMUNICATION
+TRN0410,냉각 팬이 간헐적으로 멈춰 장시간 연속 운전을 피해야 함,COOLING,COOLING
+TRN0411,엔진에서 심한 노킹음이 발생하고 출력이 거의 나오지 않음,ENGINE,MOBILITY
+TRN0412,엔진 마운트 주변에 미세 진동이 느껴지나 운전 성능 변화는 없음,ENGINE,ENGINE
+TRN0413,윤활 압력 경고가 계속 점등되며 엔진 진동이 급격히 커짐,ENGINE,ENGINE
+TRN0414,유압 구동부의 움직임이 평소보다 느리고 부하가 걸리면 압력이 떨어짐,HYDRAULIC,HYDRAULIC
+TRN0415,전원 공급은 되지만 특정 보조 장치가 간헐적으로 재부팅됨,ELECTRICAL,ELECTRICAL
+TRN0416,실린더가 끝 위치까지 도달하는 시간이 길어졌으나 기본 동작은 가능함,HYDRAULIC,HYDRAULIC
+TRN0417,여러 채널에서 동일하게 송수신 기능이 작동하지 않음,COMMUNICATION,COMMUNICATION
+TRN0418,제동 페달을 밟아도 감속 반응이 거의 없어 안전한 정지가 어려움,MOBILITY,MOBILITY
+TRN0419,배기 색이 일시적으로 짙어졌으나 재점검 시 회전과 출력은 기준 범위임,ENGINE,ENGINE
+TRN0420,명령을 입력해도 유압 구동부가 전혀 움직이지 않고 압력 경고가 지속됨,HYDRAULIC,HYDRAULIC
+TRN0421,오르막 구간에서 출력 부족이 나타나지만 저속 운행은 유지됨,ENGINE,ENGINE
+TRN0422,커넥터 단자에 경미한 산화 흔적이 있으나 전압과 기능 시험은 정상임,ELECTRICAL,COMMUNICATION
+TRN0423,통화 중 잡음이 증가하고 간헐적으로 연결이 끊기지만 재접속은 가능함,COMMUNICATION,COMMUNICATION
+TRN0424,표시등 하나가 간헐적으로 어두워지지만 관련 장치 기능은 정상임,ELECTRICAL,ELECTRICAL
+TRN0425,펌프 작동음만 들리고 압력계가 바닥값을 유지해 액추에이터가 반응하지 않음,HYDRAULIC,HYDRAULIC
+TRN0426,공회전 소음이 약간 증가했으나 주행 시험에서 기능 이상은 없음,ENGINE,COOLING
+TRN0427,부팅 후 네트워크 모듈 오류가 반복되어 음성 및 데이터 통신이 불가능함,COMMUNICATION,COMMUNICATION
+TRN0428,보조 탱크 수위가 약간 낮았으나 보충 후 온도 시험은 정상임,COOLING,HYDRAULIC
+TRN0429,실린더 외벽에 오래된 작동유 자국이 있으나 새 누유는 확인되지 않음,HYDRAULIC,HYDRAULIC
+TRN0430,주행 중 한쪽으로 쏠림이 발생해 지속적인 조향 보정이 필요함,MOBILITY,MOBILITY
+TRN0431,펌프 소음이 약간 커졌지만 압력 시험과 반복 동작 결과는 기준 범위임,HYDRAULIC,COOLING
+TRN0432,라디에이터 외부 핀이 일부 휘었지만 냉각 성능 저하는 확인되지 않음,COOLING,COOLING
+TRN0433,호스 연결부 표면에 미세한 유분이 보이나 압력과 동작 속도는 정상임,HYDRAULIC,HYDRAULIC
+TRN0434,윤활 압력 경고가 계속 점등되며 엔진 진동이 급격히 커짐,ENGINE,ENGINE
+TRN0435,발전 출력이 사라져 주요 전기 장치가 동시에 정지함,ELECTRICAL,ELECTRICAL
+TRN0436,냉각 팬이 전혀 돌지 않고 부하 운전 시 온도가 계속 상승함,COOLING,COOLING
+TRN0437,조향 시 미세한 소음이 발생하지만 유격과 반응 속도는 정상임,MOBILITY,MOBILITY
+TRN0438,냉각 팬이 전혀 돌지 않고 부하 운전 시 온도가 계속 상승함,COOLING,COOLING
+TRN0439,보조 탱크 수위가 약간 낮았으나 보충 후 온도 시험은 정상임,COOLING,HYDRAULIC
+TRN0440,명령을 입력해도 유압 구동부가 전혀 움직이지 않고 압력 경고가 지속됨,HYDRAULIC,HYDRAULIC
+TRN0441,제동 페달을 밟아도 감속 반응이 거의 없어 안전한 정지가 어려움,MOBILITY,MOBILITY
+TRN0442,브레이크 패드 마모가 시작됐으나 현재 두께는 허용 범위 안임,MOBILITY,MOBILITY
+TRN0443,바퀴 고정부가 파손되어 차량을 움직일 수 없는 상태임,MOBILITY,MOBILITY
+TRN0444,온도 센서 표시가 순간 흔들렸으나 별도 측정 온도와 운전 상태는 정상임,COOLING,ENGINE
+TRN0445,냉각수가 급격히 빠져나가며 짧은 운전만으로 온도 한계를 초과함,COOLING,COOLING
+TRN0446,브레이크 패드 마모가 시작됐으나 현재 두께는 허용 범위 안임,MOBILITY,MOBILITY
+TRN0447,소량의 냉각수 감소가 반복되지만 보충 후 단시간 운전은 가능함,COOLING,COOLING
+TRN0448,냉각수가 급격히 빠져나가며 짧은 운전만으로 온도 한계를 초과함,COOLING,COOLING
+TRN0449,근거리에서는 통신되나 거리가 늘어나면 신호가 급격히 약해짐,COMMUNICATION,COMMUNICATION
+TRN0450,유압 라인이 파열된 뒤 구동 속도가 0에 가까워지고 작동유가 급감함,HYDRAULIC,HYDRAULIC
+TRN0451,주전원 스위치를 올려도 계기와 제어 장치에 전원이 공급되지 않음,ELECTRICAL,ELECTRICAL
+TRN0452,호스 연결부 표면에 미세한 유분이 보이나 압력과 동작 속도는 정상임,HYDRAULIC,HYDRAULIC
+TRN0453,안테나 보호캡에 균열이 있으나 송수신 시험과 신호 세기는 정상임,COMMUNICATION,COMMUNICATION
+TRN0454,충전 전압이 기준보다 낮아 장시간 운용 시 전압 저하 경고가 발생함,ELECTRICAL,HYDRAULIC
+TRN0455,계기판 백라이트 밝기가 고르지 않지만 모든 지시값은 정상 표시됨,ELECTRICAL,ELECTRICAL
+TRN0456,주행 중 구동축에서 큰 충격음이 난 뒤 동력이 바퀴로 전달되지 않음,MOBILITY,ENGINE
+TRN0457,실린더 연결부에서 대량 누유가 발생해 구동 장치가 정지함,HYDRAULIC,HYDRAULIC
+TRN0458,진동이 있을 때 계기 조명이 깜박이며 커넥터를 건드리면 증상이 변함,ELECTRICAL,ENGINE
+TRN0459,연결 피팅에 습윤 흔적이 있으나 시간 경과 후에도 양이 증가하지 않음,HYDRAULIC,HYDRAULIC
+TRN0460,배터리 전압이 크게 저하되어 시동 계통이 전혀 반응하지 않음,ELECTRICAL,ENGINE
+TRN0461,가속 시 출력이 평소보다 낮고 회전수가 간헐적으로 흔들리지만 이동은 가능함,ENGINE,ENGINE
+TRN0462,엔진 마운트 주변에 미세 진동이 느껴지나 운전 성능 변화는 없음,ENGINE,ENGINE
+TRN0463,호스 연결부 표면에 미세한 유분이 보이나 압력과 동작 속도는 정상임,HYDRAULIC,HYDRAULIC
+TRN0464,공회전 소음이 약간 증가했으나 주행 시험에서 기능 이상은 없음,ENGINE,COOLING
+TRN0465,통화 중 잡음이 증가하고 간헐적으로 연결이 끊기지만 재접속은 가능함,COMMUNICATION,COMMUNICATION
+TRN0466,부하가 커질 때 엔진 응답이 둔해지고 순간적인 출력 저하가 반복됨,ENGINE,ENGINE
+TRN0467,연결 피팅에 습윤 흔적이 있으나 시간 경과 후에도 양이 증가하지 않음,HYDRAULIC,HYDRAULIC
+TRN0468,전원 케이블 부근에서 탄 냄새와 과열 흔적이 발견되고 전력 공급이 끊김,ELECTRICAL,ELECTRICAL
+TRN0469,휠 표면에 작은 찍힘이 있으나 진동이나 조향 이상은 확인되지 않음,MOBILITY,ENGINE
+TRN0470,제동 페달을 밟아도 감속 반응이 거의 없어 안전한 정지가 어려움,MOBILITY,MOBILITY
+TRN0471,엔진 외부에 소량의 오일 흔적이 있으나 누유 진행과 성능 저하는 확인되지 않음,ENGINE,ENGINE
+TRN0472,연결 피팅에 습윤 흔적이 있으나 시간 경과 후에도 양이 증가하지 않음,HYDRAULIC,HYDRAULIC
+TRN0473,주행 중 구동축에서 큰 충격음이 난 뒤 동력이 바퀴로 전달되지 않음,MOBILITY,ENGINE
+TRN0474,배기 색이 일시적으로 짙어졌으나 재점검 시 회전과 출력은 기준 범위임,ENGINE,ENGINE
+TRN0475,엔진 외부에 소량의 오일 흔적이 있으나 누유 진행과 성능 저하는 확인되지 않음,ENGINE,ENGINE
+TRN0476,보조 탱크 수위가 약간 낮았으나 보충 후 온도 시험은 정상임,COOLING,HYDRAULIC
+TRN0477,유압 구동부의 움직임이 평소보다 느리고 부하가 걸리면 압력이 떨어짐,HYDRAULIC,HYDRAULIC
+TRN0478,윤활 압력 경고가 계속 점등되며 엔진 진동이 급격히 커짐,ENGINE,ENGINE
+TRN0479,시동 모터는 회전하지만 점화가 이어지지 않아 동력이 발생하지 않음,ENGINE,ELECTRICAL
+TRN0480,근거리에서는 통신되나 거리가 늘어나면 신호가 급격히 약해짐,COMMUNICATION,COMMUNICATION
+TRN0481,가속 시 출력이 평소보다 낮고 회전수가 간헐적으로 흔들리지만 이동은 가능함,ENGINE,ENGINE
+TRN0482,저속에서는 온도가 안정적이나 장시간 운전 시 상한에 가까워짐,COOLING,COOLING
+TRN0483,호스 연결부 표면에 미세한 유분이 보이나 압력과 동작 속도는 정상임,HYDRAULIC,HYDRAULIC
+TRN0484,펌프 작동음만 들리고 압력계가 바닥값을 유지해 액추에이터가 반응하지 않음,HYDRAULIC,HYDRAULIC
+TRN0485,운전 중 온도가 빠르게 상승하고 과열 경고가 계속되어 냉각이 되지 않음,COOLING,COOLING
+TRN0486,타이어 편마모가 관찰되나 공기압과 주행 안정성은 기준 범위임,MOBILITY,MOBILITY
+TRN0487,라디에이터 외부 핀이 일부 휘었지만 냉각 성능 저하는 확인되지 않음,COOLING,COOLING
+TRN0488,회전수가 급락한 뒤 재시동을 여러 차례 시도했으나 작동하지 않음,ENGINE,ENGINE
+TRN0489,엔진 외부에 소량의 오일 흔적이 있으나 누유 진행과 성능 저하는 확인되지 않음,ENGINE,ENGINE
+TRN0490,헤드셋 커넥터 외관이 마모됐지만 음성 송수신은 정상적으로 확인됨,COMMUNICATION,ELECTRICAL
+TRN0491,라디에이터 계통에서 큰 누수가 발생해 냉각수 잔량이 유지되지 않음,COOLING,COOLING
+TRN0492,유압 탱크 주변에 소량의 오염이 있으나 액면과 계통 성능은 정상임,HYDRAULIC,COOLING
+TRN0493,전원 투입 즉시 차단기가 반복적으로 떨어져 장비가 기동되지 않음,ELECTRICAL,ELECTRICAL
+TRN0494,라디에이터 외부 핀이 일부 휘었지만 냉각 성능 저하는 확인되지 않음,COOLING,COOLING
+TRN0495,펌프 소음이 약간 커졌지만 압력 시험과 반복 동작 결과는 기준 범위임,HYDRAULIC,COOLING
+TRN0496,타이어 공기압이 서서히 감소하지만 단거리 이동은 가능함,MOBILITY,MOBILITY
+TRN0497,일정 시간 사용하면 수신 감도가 떨어지고 재부팅 후 일시적으로 회복됨,COMMUNICATION,HYDRAULIC
+TRN0498,제동거리가 평소보다 길어졌지만 저속 시험에서는 정지가 가능함,MOBILITY,MOBILITY
+TRN0499,전원 투입 즉시 차단기가 반복적으로 떨어져 장비가 기동되지 않음,ELECTRICAL,ELECTRICAL
+TRN0500,호스 연결부 표면에 미세한 유분이 보이나 압력과 동작 속도는 정상임,HYDRAULIC,HYDRAULIC
+TRN0501,온도 센서 표시가 순간 흔들렸으나 별도 측정 온도와 운전 상태는 정상임,COOLING,ENGINE
+TRN0502,유압 탱크 주변에 소량의 오염이 있으나 액면과 계통 성능은 정상임,HYDRAULIC,COOLING
+TRN0503,휠 표면에 작은 찍힘이 있으나 진동이나 조향 이상은 확인되지 않음,MOBILITY,ENGINE
+TRN0504,전원은 들어오지만 통신 링크가 전혀 형성되지 않고 호출 응답이 없음,COMMUNICATION,COMMUNICATION
+TRN0505,발전 출력이 사라져 주요 전기 장치가 동시에 정지함,ELECTRICAL,ELECTRICAL
+TRN0506,윤활 압력 경고가 계속 점등되며 엔진 진동이 급격히 커짐,ENGINE,ENGINE
+TRN0507,연결부에서 소량의 작동유가 배어나오며 반복 동작 시 속도가 감소함,HYDRAULIC,HYDRAULIC
+TRN0508,실린더 연결부에서 대량 누유가 발생해 구동 장치가 정지함,HYDRAULIC,HYDRAULIC
+TRN0509,엔진 외부에 소량의 오일 흔적이 있으나 누유 진행과 성능 저하는 확인되지 않음,ENGINE,ENGINE
+TRN0510,라디에이터 계통에서 큰 누수가 발생해 냉각수 잔량이 유지되지 않음,COOLING,COOLING
+TRN0511,시동 모터는 회전하지만 점화가 이어지지 않아 동력이 발생하지 않음,ENGINE,ELECTRICAL
+TRN0512,온도 경고 후에도 열이 내려가지 않고 증기가 발생함,COOLING,COOLING
+TRN0513,커넥터 단자에 경미한 산화 흔적이 있으나 전압과 기능 시험은 정상임,ELECTRICAL,COMMUNICATION
+TRN0514,타이어가 완전히 파손되어 차체가 기울고 이동이 불가능함,MOBILITY,MOBILITY
+TRN0515,속도가 높아지면 차체 진동이 커져 저속으로만 운행 가능한 상태임,MOBILITY,ENGINE
+TRN0516,연결부에서 소량의 작동유가 배어나오며 반복 동작 시 속도가 감소함,HYDRAULIC,HYDRAULIC
+TRN0517,안테나 고정부에 약간의 유격이 있으나 측정된 통신 성능은 기준 범위임,COMMUNICATION,COMMUNICATION
+TRN0518,퓨즈 박스 덮개에 균열이 있으나 내부 회로와 전원 공급에는 이상이 없음,ELECTRICAL,COMMUNICATION
+TRN0519,오르막 구간에서 출력 부족이 나타나지만 저속 운행은 유지됨,ENGINE,ENGINE
+TRN0520,오르막 구간에서 출력 부족이 나타나지만 저속 운행은 유지됨,ENGINE,ENGINE
+TRN0521,냉각 팬 소음이 약간 증가했으나 회전과 온도 제어는 정상임,COOLING,ENGINE
+TRN0522,실린더 외벽에 오래된 작동유 자국이 있으나 새 누유는 확인되지 않음,HYDRAULIC,HYDRAULIC
+TRN0523,주행 중 구동축에서 큰 충격음이 난 뒤 동력이 바퀴로 전달되지 않음,MOBILITY,ENGINE
+TRN0524,헤드셋 커넥터 외관이 마모됐지만 음성 송수신은 정상적으로 확인됨,COMMUNICATION,ELECTRICAL
+TRN0525,호스 연결부에 마른 냉각수 자국이 있으나 현재 누수와 온도 상승은 없음,COOLING,HYDRAULIC
+TRN0526,소량의 냉각수 감소가 반복되지만 보충 후 단시간 운전은 가능함,COOLING,COOLING
+TRN0527,조향 입력에 바퀴가 반응하지 않아 진행 방향을 제어할 수 없음,MOBILITY,MOBILITY
+TRN0528,배선 피복에 가벼운 마모가 발견됐으나 도체 노출과 기능 이상은 없음,ELECTRICAL,ELECTRICAL
+TRN0529,압력은 형성되나 기준값보다 낮아 무거운 부하에서 동작 범위가 제한됨,HYDRAULIC,HYDRAULIC
+TRN0530,타이어가 완전히 파손되어 차체가 기울고 이동이 불가능함,MOBILITY,MOBILITY
+TRN0531,시동 직후 평소보다 거친 소음이 잠시 발생하나 이후 출력과 회전수는 정상임,ENGINE,COOLING
+TRN0532,엔진 마운트 주변에 미세 진동이 느껴지나 운전 성능 변화는 없음,ENGINE,ENGINE
+TRN0533,공회전 상태에서 진동이 증가하나 일정 회전수 이상에서는 운전이 가능함,ENGINE,MOBILITY
+TRN0534,냉각 성능이 떨어져 높은 외기 온도에서는 운전 시간을 제한해야 함,COOLING,COOLING
+TRN0535,속도가 높아지면 차체 진동이 커져 저속으로만 운행 가능한 상태임,MOBILITY,ENGINE
+TRN0536,유압 라인이 파열된 뒤 구동 속도가 0에 가까워지고 작동유가 급감함,HYDRAULIC,HYDRAULIC
+TRN0537,저속에서는 온도가 안정적이나 장시간 운전 시 상한에 가까워짐,COOLING,COOLING
+TRN0538,호스 파손으로 작동유가 빠르게 새며 계통 압력이 거의 형성되지 않음,HYDRAULIC,HYDRAULIC
+TRN0539,유압 탱크 주변에 소량의 오염이 있으나 액면과 계통 성능은 정상임,HYDRAULIC,COOLING
+TRN0540,펌프 소음이 약간 커졌지만 압력 시험과 반복 동작 결과는 기준 범위임,HYDRAULIC,COOLING

@@ -1,0 +1,14 @@
+{
+  "q1": {
+    "status": "done",
+    "path": "/config/workspace/race90/demo-review/runs/20261009-110151-ebbe0e/deliverables/q1.solution.ipynb"
+  },
+  "q2": {
+    "status": "done",
+    "path": "/config/workspace/race90/demo-review/runs/20261009-110151-ebbe0e/deliverables/q2.solution.ipynb"
+  },
+  "q3": {
+    "status": "done",
+    "path": "/config/workspace/race90/demo-review/runs/20261009-110151-ebbe0e/deliverables/q3.solution.ipynb"
+  }
+}

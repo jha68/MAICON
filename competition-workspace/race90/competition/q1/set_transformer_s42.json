@@ -1,0 +1,33 @@
+{
+  "accuracy": 0.791,
+  "log_loss": 0.5305321802608837,
+  "folds": [
+    {
+      "fold": 0,
+      "epochs": 10,
+      "accuracy": 0.825
+    },
+    {
+      "fold": 1,
+      "epochs": 10,
+      "accuracy": 0.74
+    },
+    {
+      "fold": 2,
+      "epochs": 10,
+      "accuracy": 0.775
+    },
+    {
+      "fold": 3,
+      "epochs": 10,
+      "accuracy": 0.805
+    },
+    {
+      "fold": 4,
+      "epochs": 15,
+      "accuracy": 0.81
+    }
+  ],
+  "seconds": 24.691112279891968,
+  "validation": "Outer labels not used for training or stopping. Inner holdout chooses epochs, then fresh model refits outer training set."
+}

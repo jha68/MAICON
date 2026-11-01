@@ -1,0 +1,12 @@
+{
+  "purpose": "Reclaim remote scratch disk for remaining accuracy experiments. Selected model weights retained and backed up. Non-selected candidate predictions, validation and training source retained locally.",
+  "remote_generated_directories": [
+    "/workspace/competition-radar/mitra_finetuned_models",
+    "/workspace/competition-text/klue_models"
+  ],
+  "retained_local_prediction_files": [
+    "race90/competition/q1/mitra_original_ft1_n1_lr3e-05_cv42.npz",
+    "race90/competition/q1/mitra_all_ft1_n1_lr3e-05_cv42.npz",
+    "race90/competition/q3/klue_e8_s42.npz"
+  ]
+}

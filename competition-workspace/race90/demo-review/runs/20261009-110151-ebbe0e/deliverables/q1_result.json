@@ -1,0 +1,29 @@
+{
+  "task": "q1",
+  "stage": "baseline",
+  "score": 1.0,
+  "candidate_id": "baseline-cfa1e9bff9",
+  "dependencies": {},
+  "metric": "macro_f1",
+  "details": {
+    "algorithm": "ExtraTreesClassifier",
+    "feature_mode": "dataset",
+    "split_hash": "bb36874e6b58b74b3e2ace774156ddc4f8e9e92c407b41a6f7cad977e0e48f20",
+    "train_rows": 48,
+    "valid_rows": 12,
+    "refit_all_rows": true
+  },
+  "created_at": 1791543713.3145351,
+  "sha256": "531e3834867fc9e3de0a1ec0d3f911ff2ec7b8117744b1d40c3f88eb11aa6768",
+  "rows": 10,
+  "submission_dtypes": {
+    "sample_id": "int64",
+    "label": "int64"
+  },
+  "artifacts": [
+    "model.joblib"
+  ],
+  "candidate": "baseline-cfa1e9bff9",
+  "fallback_only": false,
+  "rejected_candidates": []
+}

@@ -1,0 +1,176 @@
+{
+  "cfg": {
+    "total_minutes": 2,
+    "finalize_minutes": 0.5,
+    "data_root": "/config/workspace/race90/demo-review/data",
+    "output_root": "/config/workspace/race90/demo-review/runs",
+    "cpu_workers": 1,
+    "cpu_threads": 3,
+    "gpu_cpu_threads": 4,
+    "seed": 42,
+    "runpod": {
+      "enabled": false,
+      "gpu_count": 3,
+      "gpu_priorities": [
+        "NVIDIA A100-SXM4-80GB",
+        "NVIDIA A100 80GB PCIe"
+      ],
+      "cloud_type": "SECURE",
+      "max_gpu_hourly_usd": 8.0,
+      "image": "runpod/pytorch:1.0.3-cu1281-torch291-ubuntu2404",
+      "ssh_key_path": "~/.ssh/id_ed25519",
+      "container_disk_gb": 60,
+      "setup_timeout_seconds": 420,
+      "lease_minutes": 100,
+      "extra_packages": []
+    },
+    "notebooks": {
+      "execute": true,
+      "embed_models": true,
+      "mode": "restore",
+      "max_embedded_mb": 200
+    },
+    "tasks": [
+      {
+        "name": "q1",
+        "kind": "timeseries",
+        "resource": "gpu",
+        "train_csv": "q1/train.csv",
+        "test_csv": "q1/test.csv",
+        "sample_submission": "q1/sample_submission.csv",
+        "notebook": "q1/problem.ipynb",
+        "id_column": "sample_id",
+        "target": "label",
+        "prediction_columns": [
+          "label"
+        ],
+        "sensor_columns": [
+          "acc_x",
+          "acc_y",
+          "acc_z"
+        ],
+        "time_column": "timestamp",
+        "metric": "macro_f1",
+        "split": {
+          "strategy": "group",
+          "group_column": "subject_id",
+          "fraction": 0.2
+        },
+        "baseline_seconds": 30,
+        "upgrade_seconds": 2400,
+        "epochs": 30,
+        "batch_size": 128,
+        "sequence_length": 256,
+        "depends_on": [],
+        "improve": false,
+        "objective": "classification",
+        "prediction_type": "label"
+      },
+      {
+        "name": "q2",
+        "kind": "image",
+        "train_csv": "q2/train.csv",
+        "test_csv": "q2/test.csv",
+        "sample_submission": "q2/sample_submission.csv",
+        "notebook": "q2/problem.ipynb",
+        "image_root": "q2/images",
+        "image_column": "filename",
+        "id_column": "id",
+        "target": "label",
+        "prediction_columns": [
+          "label"
+        ],
+        "metric": "accuracy",
+        "split": {
+          "strategy": "stratified",
+          "fraction": 0.2
+        },
+        "baseline_seconds": 30,
+        "upgrade_seconds": 3600,
+        "batch_size": 64,
+        "epochs": 12,
+        "pretrained": true,
+        "freeze_backbone": true,
+        "depends_on": [],
+        "improve": false,
+        "objective": "classification",
+        "prediction_type": "label",
+        "resource": "gpu"
+      },
+      {
+        "name": "q3",
+        "kind": "text",
+        "resource": "gpu",
+        "train_csv": "q3/train.csv",
+        "test_csv": "q3/test.csv",
+        "sample_submission": "q3/sample_submission.csv",
+        "notebook": "q3/problem.ipynb",
+        "text_columns": [
+          "text"
+        ],
+        "id_column": "id",
+        "target": "label",
+        "prediction_columns": [
+          "label"
+        ],
+        "metric": "macro_f1",
+        "split": {
+          "strategy": "stratified",
+          "fraction": 0.2
+        },
+        "baseline_seconds": 30,
+        "upgrade_seconds": 2400,
+        "model_name": "klue/roberta-small",
+        "max_length": 128,
+        "batch_size": 32,
+        "epochs": 3,
+        "depends_on": [],
+        "improve": false,
+        "objective": "classification",
+        "prediction_type": "label"
+      }
+    ],
+    "project_root": "/config/workspace/race90/demo-review",
+    "dependency_outputs": {}
+  },
+  "task": {
+    "name": "q1",
+    "kind": "timeseries",
+    "resource": "gpu",
+    "train_csv": "q1/train.csv",
+    "test_csv": "q1/test.csv",
+    "sample_submission": "q1/sample_submission.csv",
+    "notebook": "q1/problem.ipynb",
+    "id_column": "sample_id",
+    "target": "label",
+    "prediction_columns": [
+      "label"
+    ],
+    "sensor_columns": [
+      "acc_x",
+      "acc_y",
+      "acc_z"
+    ],
+    "time_column": "timestamp",
+    "metric": "macro_f1",
+    "split": {
+      "strategy": "group",
+      "group_column": "subject_id",
+      "fraction": 0.2
+    },
+    "baseline_seconds": 30,
+    "upgrade_seconds": 2400,
+    "epochs": 30,
+    "batch_size": 128,
+    "sequence_length": 256,
+    "depends_on": [],
+    "improve": false,
+    "objective": "classification",
+    "prediction_type": "label"
+  },
+  "output": "/config/workspace/race90/demo-review/runs/20261009-110151-ebbe0e/q1",
+  "stage": "baseline",
+  "deadline": 1791543741.0593185,
+  "threads": 2,
+  "device": "cpu"
+}

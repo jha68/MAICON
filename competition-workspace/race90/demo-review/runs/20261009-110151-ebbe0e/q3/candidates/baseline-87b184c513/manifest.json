@@ -1,0 +1,26 @@
+{
+  "task": "q3",
+  "stage": "baseline",
+  "score": 1.0,
+  "candidate_id": "baseline-87b184c513",
+  "dependencies": {},
+  "metric": "macro_f1",
+  "details": {
+    "algorithm": "LogisticRegression",
+    "feature_mode": "dataset",
+    "split_hash": "7ec33b06d9c57bbf25764779ec0cc106d92ddbb55047d4f4c5114068be3f726a",
+    "train_rows": 48,
+    "valid_rows": 12,
+    "refit_all_rows": false
+  },
+  "created_at": 1791543718.11247,
+  "sha256": "d99d2a0fcdb03a3f20451b3df32b1c55180fb16a03b40f799a80546bb56dfb17",
+  "rows": 10,
+  "submission_dtypes": {
+    "id": "int64",
+    "label": "int64"
+  },
+  "artifacts": [
+    "model.joblib"
+  ]
+}

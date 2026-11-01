@@ -1,0 +1,57 @@
+{
+  "task": "q3",
+  "kind": "text",
+  "warnings": [],
+  "train_csv": {
+    "rows": 60,
+    "columns": [
+      "id",
+      "text",
+      "label"
+    ],
+    "nulls": {
+      "id": 0,
+      "text": 0,
+      "label": 0
+    },
+    "dtypes": {
+      "id": "int64",
+      "text": "str",
+      "label": "int64"
+    }
+  },
+  "test_csv": {
+    "rows": 10,
+    "columns": [
+      "id",
+      "text"
+    ],
+    "nulls": {
+      "id": 0,
+      "text": 0
+    },
+    "dtypes": {
+      "id": "int64",
+      "text": "str"
+    }
+  },
+  "sample_submission": {
+    "rows": 10,
+    "columns": [
+      "id",
+      "label"
+    ],
+    "nulls": {
+      "id": 0,
+      "label": 0
+    },
+    "dtypes": {
+      "id": "int64",
+      "label": "int64"
+    }
+  },
+  "target_counts": {
+    "0": 30,
+    "1": 30
+  }
+}

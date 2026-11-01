@@ -1,0 +1,28 @@
+{
+  "task": "q2",
+  "stage": "baseline",
+  "score": 1.0,
+  "candidate_id": "baseline-b8113375d8",
+  "dependencies": {},
+  "metric": "macro_f1",
+  "details": {
+    "algorithm": "text_svc",
+    "validation": "5-fold stratified OOF; sample-level for radar",
+    "refit_all_rows": true,
+    "features": "char + word TF-IDF"
+  },
+  "created_at": 1791609054.551702,
+  "sha256": "224353c43d2dc1adf730b8ea5fc6827c942de089644ea96c16a4f4096bd78859",
+  "rows": 180,
+  "submission_dtypes": {
+    "id": "str",
+    "fault_type": "str"
+  },
+  "artifacts": [
+    "model.joblib",
+    "oof.csv"
+  ],
+  "candidate": "baseline-b8113375d8",
+  "fallback_only": false,
+  "rejected_candidates": []
+}

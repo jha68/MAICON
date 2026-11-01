@@ -1,0 +1,6 @@
+{"time": 1791607197.3450236, "event": "started", "deadline": 1791607916.9316473, "compute_deadline": 1791607736.9316473, "cpu_workers": 1, "threads_per_worker": 1, "run_dir": "/config/workspace/race90/practice-runs/20261010-043957-69eae3"}
+{"time": 1791607197.3524587, "event": "stage_started", "task": "finedust", "stage": "baseline", "resource": "cpu", "deadline": 1791607227.3520188}
+{"time": 1791607198.4787092, "event": "stage_done", "task": "finedust", "stage": "baseline", "resource": "cpu"}
+{"time": 1791607246.0868278, "event": "stage_started", "task": "finedust", "stage": "upgrade", "resource": "gpu", "deadline": 1791607366.0865104}
+{"time": 1791607265.004162, "event": "stage_done", "task": "finedust", "stage": "upgrade", "resource": "gpu"}
+{"time": 1791607269.1381562, "event": "finished", "complete": false, "run_dir": "/config/workspace/race90/practice-runs/20261010-043957-69eae3"}

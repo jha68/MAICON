@@ -1,0 +1,23 @@
+# config.example.yaml의 tasks 항목 중 하나로 복사하세요.
+name: q2
+kind: yolo
+test_csv: q2/test.csv
+sample_submission: q2/sample_submission.csv
+notebook: q2/problem.ipynb
+id_column: id
+image_column: filename
+image_root: q2/images
+data_yaml: q2/dataset.yaml
+weights: yolo11n.pt
+prediction_columns: [PredictionString]
+allow_empty_predictions: true
+detection_format: class_conf_xyxy
+metric: map50
+epochs: 30
+batch_size: 16
+image_size: 640
+upgrade_seconds: 3600
+depends_on: []
+# CSV 탐지 형식은 대회마다 다릅니다. 위 형식은 이미지당 한 행,
+# "class confidence xmin ymin xmax ymax" 블록을 픽셀 좌표로 이어 붙입니다.
+# 다른 형식이면 exporter: custom_adapters.detection:export_submission 사용.

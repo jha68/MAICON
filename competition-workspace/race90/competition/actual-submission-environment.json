@@ -1,0 +1,68 @@
+{
+  "source": "Detailed actual competition kernel diagnostics provided by the user; not independently executed by the assistant.",
+  "python_version": "3.9.7",
+  "python_executable": "/opt/conda/bin/python",
+  "torch_version": "1.10.0+cpu",
+  "cuda_version": null,
+  "cuda_available": false,
+  "gpu_count": 0,
+  "os": "Linux-6.1.158-180.294.amzn2023.x86_64-x86_64-with-glibc2.31",
+  "architecture": "x86_64",
+  "cpu_cores": 2,
+  "example_working_directory": "/home/jovyan/work/Problem #1",
+  "numpy_version": "1.23.5",
+  "pandas_version": "1.5.2",
+  "sklearn_version": "1.1.3",
+  "verified_by_assistant_remote_execution": false,
+  "reported_at": "2026-10-10T05:41:06.983531+00:00",
+  "cpu": {
+    "visible_logical_cpus": 2,
+    "affinity_count": 2,
+    "cgroup_v2_cpu_max": "max 100000",
+    "execution_cpu_budget": 2
+  },
+  "memory": {
+    "visible_total_gib": 7.56,
+    "visible_available_gib": 6.07,
+    "cgroup_v2_limit_bytes": 4294967296,
+    "effective_limit_gib": 4,
+    "planning_basis": "Use the 4 GiB cgroup limit, not the 7.56 GiB visible total."
+  },
+  "storage": {
+    "reported_filesystem_free_gib": 8589929469.46,
+    "status": "implausible_reported_value_not_used_for_capacity_planning",
+    "raw": "Filesystem free: 8589929469.46 GiB"
+  },
+  "packages": {
+    "numpy": "1.23.5",
+    "pandas": "1.5.2",
+    "scipy": "1.9.3",
+    "scikit-learn": "1.1.3",
+    "joblib": "1.2.0",
+    "torch": "1.10.0+cpu",
+    "torchvision": "0.11.1+cpu",
+    "tensorflow": "2.10.0",
+    "Pillow": "9.2.0",
+    "ipykernel": "6.9.1"
+  },
+  "not_installed_packages": [
+    "ultralytics",
+    "timm",
+    "xgboost",
+    "lightgbm",
+    "catboost",
+    "transformers",
+    "datasets",
+    "accelerate",
+    "opencv-python",
+    "opencv-python-headless"
+  ],
+  "gpu": {
+    "count": 0,
+    "nvidia_smi": "FileNotFoundError: nvidia-smi not found",
+    "actual_gpu_test": "SKIPPED",
+    "compiled_cuda": null,
+    "cuda_available": false
+  },
+  "canonical_profile": "../submission-environment.json"
+}

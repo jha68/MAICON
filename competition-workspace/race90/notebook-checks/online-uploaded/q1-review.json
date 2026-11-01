@@ -1,0 +1,30 @@
+{
+  "source": "User uploaded notebook saved after execution in the competition kernel; no direct connection to that kernel.",
+  "question": 1,
+  "notebook": "/config/workspace/레이더 시계열 데이터 기반 이동 표적 식별하기.ipynb",
+  "python_version_in_output": "3.9.7",
+  "kernel_path_in_output": "/opt/conda/bin/python",
+  "csv_output_path": "/home/jovyan/work/Problem #1/submission.csv",
+  "rows": 300,
+  "columns": [
+    "sample_id",
+    "label"
+  ],
+  "recorded_csv_sha256": "8c2ff40a1ce4999272989b0955c85057522732ecee13e0521a579e2a6e0543b2",
+  "matches_selected_csv_sha256": true,
+  "executed_code_matches_final_solution_ast": true,
+  "error_outputs": 0,
+  "executed_cell_counts": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "unused_sample_save_cell_executed": false,
+  "hidden_injection_removed_from_uploaded_copy": 1,
+  "code_and_outputs_preserved": true,
+  "before_notebook_sha256": "045ec9280b99557b351f8d58449c84d7330b0cf44274974abe8f044ca7bdd6d1",
+  "after_notebook_sha256": "b6663ff4ee6e0d85d2c68be04e0dc17e0d2d3b6118ba8b8a27beedef25be1694",
+  "online_submission_receipt_confirmed": false
+}

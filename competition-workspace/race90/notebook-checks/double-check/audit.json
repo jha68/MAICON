@@ -1,0 +1,464 @@
+{
+  "actual_online_kernel_executed": false,
+  "notebooks": [
+    {
+      "question": 1,
+      "notebook": "/config/workspace/최종제출/1번/레이더 시계열 데이터 기반 이동 표적 식별하기.ipynb",
+      "prediction_data": "prediction_data_q1.json.gz",
+      "prediction_payload_unchanged": true,
+      "processing_code_unchanged": true,
+      "all_cells_passed": true,
+      "rows": 300,
+      "csv_sha256": "8c2ff40a1ce4999272989b0955c85057522732ecee13e0521a579e2a6e0543b2",
+      "matches_selected_candidate": true,
+      "code_sha256": "65968468416ef91e2f2bceb20f249d343e018046ed1a3054ddc3deae65bf9dc5",
+      "data_sha256": "af9316dc446f26df2828ef03107155732e2e63a9b7aec903420a650bcb9fc75d",
+      "oof_max_abs_probability_roundoff": 5.747994624716313e-08,
+      "test_max_abs_probability_roundoff": 3.470853093823223e-08,
+      "oof_accuracy": 0.893,
+      "saved_5class_candidates_compared": 100,
+      "current_files_still_match_audited_inputs": true
+    },
+    {
+      "question": 2,
+      "notebook": "/config/workspace/최종제출/2번/비행 물체 인식하기.ipynb",
+      "prediction_data": "prediction_data_q2.json.gz",
+      "prediction_payload_unchanged": true,
+      "processing_code_unchanged": true,
+      "all_cells_passed": true,
+      "rows": 300,
+      "csv_sha256": "2607be38743ebe4852db3c2741f95c475eb505b81e57b66a41ae72abee8bcbf3",
+      "matches_selected_candidate": true,
+      "code_sha256": "f2e102ca3c611616a4590e7f1f34ab92fb0ae46a205a0dc37e89daea5c19a434",
+      "data_sha256": "6438bf3751f840374108d453798681be4032fddf3f2d3658119d81b6469e6bb0",
+      "review_overrides": 39,
+      "unresolved_count_uncertainties": [
+        "test094.jpg",
+        "test230.jpg"
+      ],
+      "test_accuracy_known": false,
+      "current_files_still_match_audited_inputs": true
+    },
+    {
+      "question": 3,
+      "notebook": "/config/workspace/최종제출/3번/군 장비 정비 보고서 분석을 통한 고장 유형 분류하기.ipynb",
+      "prediction_data": "prediction_data_q3.json.gz",
+      "prediction_payload_unchanged": true,
+      "processing_code_unchanged": true,
+      "all_cells_passed": true,
+      "rows": 180,
+      "csv_sha256": "6a9ae5b264a84a5fb851792ef9f29f25fb59db0135556799b5ae637fda4ed98a",
+      "matches_selected_candidate": true,
+      "code_sha256": "c2928e76ec4f8054ed02ddc5e9f9896e4150b2910aa9d0698a633f7b17e52826",
+      "data_sha256": "824766e6af180942382a277b2f4cb5ea1a5782f77c3fa7316dd44e6eb6ddc02a",
+      "development_grouped_macro_f1_recomputed": 1.0,
+      "development_grouped_accuracy_recomputed": 1.0,
+      "metric_caveat": "Rules refined from training/CV errors; not independent performance estimate.",
+      "current_files_still_match_audited_inputs": true
+    }
+  ],
+  "q1_saved_5class_candidate_ranking": [
+    {
+      "artifact": "finetune_ensemble128_512.npz",
+      "accuracy": 0.893
+    },
+    {
+      "artifact": "pseudo_context_t0.95_cv42.npz",
+      "accuracy": 0.891
+    },
+    {
+      "artifact": "pseudo_context_t0.99_cv42.npz",
+      "accuracy": 0.891
+    },
+    {
+      "artifact": "finetune_ensemble128.npz",
+      "accuracy": 0.89
+    },
+    {
+      "artifact": "finetune_ensemble.npz",
+      "accuracy": 0.888
+    },
+    {
+      "artifact": "pseudo_context_t0.95_cv2026.npz",
+      "accuracy": 0.886
+    },
+    {
+      "artifact": "finetune_original_lr3e-05_s42_cv42_e120_infer128.npz",
+      "accuracy": 0.885
+    },
+    {
+      "artifact": "pseudo_context_t0.99_cv2026.npz",
+      "accuracy": 0.885
+    },
+    {
+      "artifact": "finetune_original_lr3e-05_s42_cv42_e120_infer512.npz",
+      "accuracy": 0.884
+    },
+    {
+      "artifact": "finetune_original_lr3e-05_s42_cv42_e120.npz",
+      "accuracy": 0.884
+    },
+    {
+      "artifact": "local_context_count_overlap_cv42.npz",
+      "accuracy": 0.883
+    },
+    {
+      "artifact": "local_context_count_broad_cv42.npz",
+      "accuracy": 0.883
+    },
+    {
+      "artifact": "finetune_original_lr3e-05_s42_cv2026_e120.npz",
+      "accuracy": 0.881
+    },
+    {
+      "artifact": "finetune_all_lr3e-05_s42_cv42_e100_infer512.npz",
+      "accuracy": 0.881
+    },
+    {
+      "artifact": "finetune_original_lr3e-05_s42_cv2026_e120_infer512.npz",
+      "accuracy": 0.88
+    },
+    {
+      "artifact": "finetune_all_lr3e-05_s42_cv42_e100_infer128.npz",
+      "accuracy": 0.879
+    },
+    {
+      "artifact": "finetune_original_lr3e-05_s42_cv2026_e120_infer128.npz",
+      "accuracy": 0.879
+    },
+    {
+      "artifact": "finetune_all_lr3e-05_s123_cv42_e100.npz",
+      "accuracy": 0.878
+    },
+    {
+      "artifact": "finetune_all_lr3e-05_s42_cv42_e100.npz",
+      "accuracy": 0.878
+    },
+    {
+      "artifact": "finetune_all_lr1e-05_s42_cv2026.npz",
+      "accuracy": 0.877
+    },
+    {
+      "artifact": "finetune_original_lr1e-05_s42_cv42.npz",
+      "accuracy": 0.876
+    },
+    {
+      "artifact": "finetune_original_lr1e-05_s42_cv123.npz",
+      "accuracy": 0.875
+    },
+    {
+      "artifact": "finetune_all_lr1e-05_s42_cv42.npz",
+      "accuracy": 0.875
+    },
+    {
+      "artifact": "finetune_original_lr1e-05_s42_cv2026.npz",
+      "accuracy": 0.875
+    },
+    {
+      "artifact": "finetune_original_lr3e-05_s42_cv42_fine16_val32.npz",
+      "accuracy": 0.874
+    },
+    {
+      "artifact": "finetune_original_lr3e-05_s123_cv42_e120.npz",
+      "accuracy": 0.873
+    },
+    {
+      "artifact": "validate_original_s42_cv2026_n32.npz",
+      "accuracy": 0.872
+    },
+    {
+      "artifact": "base_sensor_small_s42_cv42.npz",
+      "accuracy": 0.872
+    },
+    {
+      "artifact": "validate_original_s42_cv123_n32.npz",
+      "accuracy": 0.871
+    },
+    {
+      "artifact": "validate_physics_s42_cv123_n32.npz",
+      "accuracy": 0.871
+    },
+    {
+      "artifact": "finetune_all_lr3e-05_s42_cv2026_e100.npz",
+      "accuracy": 0.871
+    },
+    {
+      "artifact": "tabpfn_finetune_original_lr1e-05_cv42.npz",
+      "accuracy": 0.87
+    },
+    {
+      "artifact": "finetune_all_lr3e-05_s42_cv2026_e100_infer512.npz",
+      "accuracy": 0.87
+    },
+    {
+      "artifact": "validate_robust_s42_cv2026_n32.npz",
+      "accuracy": 0.87
+    },
+    {
+      "artifact": "finetune_all_lr3e-05_s42_cv2026_e100_infer128.npz",
+      "accuracy": 0.869
+    },
+    {
+      "artifact": "robust_all.npz",
+      "accuracy": 0.869
+    },
+    {
+      "artifact": "tabicl_original.npz",
+      "accuracy": 0.869
+    },
+    {
+      "artifact": "finetune_original_lr3e-05_s42_cv42_freeze_col_e100.npz",
+      "accuracy": 0.868
+    },
+    {
+      "artifact": "base_outlier2_s57_cv42.npz",
+      "accuracy": 0.867
+    },
+    {
+      "artifact": "validate_all_s42_cv123_n32.npz",
+      "accuracy": 0.867
+    },
+    {
+      "artifact": "robust_base.npz",
+      "accuracy": 0.866
+    },
+    {
+      "artifact": "all_seed_s57_cv42.npz",
+      "accuracy": 0.866
+    },
+    {
+      "artifact": "validate_all_s42_cv2026_n32.npz",
+      "accuracy": 0.866
+    },
+    {
+      "artifact": "all_ego_s57_cv42.npz",
+      "accuracy": 0.866
+    },
+    {
+      "artifact": "base_ego_s57_cv42.npz",
+      "accuracy": 0.866
+    },
+    {
+      "artifact": "base_ego_speed_s57_cv42.npz",
+      "accuracy": 0.865
+    },
+    {
+      "artifact": "base_sensor_shape_s42_cv42.npz",
+      "accuracy": 0.865
+    },
+    {
+      "artifact": "validate_physics_s42_cv2026_n32.npz",
+      "accuracy": 0.865
+    },
+    {
+      "artifact": "base_outlier8_s57_cv42.npz",
+      "accuracy": 0.864
+    },
+    {
+      "artifact": "tabicl_all.npz",
+      "accuracy": 0.864
+    },
+    {
+      "artifact": "all_sensor_s42_cv42.npz",
+      "accuracy": 0.864
+    },
+    {
+      "artifact": "base_ego_motion_s57_cv42.npz",
+      "accuracy": 0.863
+    },
+    {
+      "artifact": "base_seed_s57_cv42.npz",
+      "accuracy": 0.863
+    },
+    {
+      "artifact": "validate_robust_s42_cv123_n32.npz",
+      "accuracy": 0.862
+    },
+    {
+      "artifact": "tabicl_base_cluster_rcsv_cv42.npz",
+      "accuracy": 0.862
+    },
+    {
+      "artifact": "sensor_physics_s42_cv42.npz",
+      "accuracy": 0.861
+    },
+    {
+      "artifact": "tabicl_base_cluster_sensor_cv42.npz",
+      "accuracy": 0.86
+    },
+    {
+      "artifact": "base_sensor_s42_cv42.npz",
+      "accuracy": 0.86
+    },
+    {
+      "artifact": "tabpfn_v2_original_s42.npz",
+      "accuracy": 0.86
+    },
+    {
+      "artifact": "base_robust_ego_s57_cv42.npz",
+      "accuracy": 0.858
+    },
+    {
+      "artifact": "compact.npz",
+      "accuracy": 0.858
+    },
+    {
+      "artifact": "physics_all_s42_cv42.npz",
+      "accuracy": 0.857
+    },
+    {
+      "artifact": "physics_base_s42_cv42.npz",
+      "accuracy": 0.857
+    },
+    {
+      "artifact": "tabpfn_v2_all_s42.npz",
+      "accuracy": 0.856
+    },
+    {
+      "artifact": "tabicl_all_cluster_cv42.npz",
+      "accuracy": 0.856
+    },
+    {
+      "artifact": "select_160_s57_cv42.npz",
+      "accuracy": 0.853
+    },
+    {
+      "artifact": "less_ego_s57_cv42.npz",
+      "accuracy": 0.852
+    },
+    {
+      "artifact": "lightgbm_base_cluster_sensor_cv42.npz",
+      "accuracy": 0.852
+    },
+    {
+      "artifact": "mitra_original_ft1_n1_lr3e-05_cv42.npz",
+      "accuracy": 0.85
+    },
+    {
+      "artifact": "tabpfn_v2_robust_s42.npz",
+      "accuracy": 0.85
+    },
+    {
+      "artifact": "compact_no_direction.npz",
+      "accuracy": 0.85
+    },
+    {
+      "artifact": "compact_robust.npz",
+      "accuracy": 0.849
+    },
+    {
+      "artifact": "tabdpt_original_quantile-normal_cv42_n32.npz",
+      "accuracy": 0.847
+    },
+    {
+      "artifact": "select_96_s57_cv42.npz",
+      "accuracy": 0.847
+    },
+    {
+      "artifact": "tabdpt_original_robust_cv42_n32.npz",
+      "accuracy": 0.847
+    },
+    {
+      "artifact": "tabicl_base_cluster_cv42.npz",
+      "accuracy": 0.847
+    },
+    {
+      "artifact": "tabdpt_original_standard_cv42_n16.npz",
+      "accuracy": 0.847
+    },
+    {
+      "artifact": "physics_compact_s42_cv42.npz",
+      "accuracy": 0.846
+    },
+    {
+      "artifact": "mitra_all_ft1_n1_lr3e-05_cv42.npz",
+      "accuracy": 0.846
+    },
+    {
+      "artifact": "mitra_all_ft0_n4_lr3e-05_cv42.npz",
+      "accuracy": 0.843
+    },
+    {
+      "artifact": "extra_base.npz",
+      "accuracy": 0.841
+    },
+    {
+      "artifact": "lightgbm_base_cluster_rcsv_cv42.npz",
+      "accuracy": 0.837
+    },
+    {
+      "artifact": "mitra_original_ft0_n4_lr3e-05_cv42.npz",
+      "accuracy": 0.837
+    },
+    {
+      "artifact": "lightgbm_base_cluster_cv42.npz",
+      "accuracy": 0.837
+    },
+    {
+      "artifact": "extra_trees.npz",
+      "accuracy": 0.836
+    },
+    {
+      "artifact": "select_64_s57_cv42.npz",
+      "accuracy": 0.833
+    },
+    {
+      "artifact": "select_48_s57_cv42.npz",
+      "accuracy": 0.829
+    },
+    {
+      "artifact": "tabm_original_ple_s42_cv42.npz",
+      "accuracy": 0.827
+    },
+    {
+      "artifact": "select_32_s57_cv42.npz",
+      "accuracy": 0.821
+    },
+    {
+      "artifact": "tabdpt_all_quantile-normal_cv42_n32.npz",
+      "accuracy": 0.821
+    },
+    {
+      "artifact": "select_20_s57_cv42.npz",
+      "accuracy": 0.815
+    },
+    {
+      "artifact": "tabm_all_ple_s42_cv42.npz",
+      "accuracy": 0.809
+    },
+    {
+      "artifact": "pointnet_s42.npz",
+      "accuracy": 0.807
+    },
+    {
+      "artifact": "select_12_s57_cv42.npz",
+      "accuracy": 0.804
+    },
+    {
+      "artifact": "tabm_physics_ple_s42_cv42.npz",
+      "accuracy": 0.804
+    },
+    {
+      "artifact": "pointnet_s123.npz",
+      "accuracy": 0.8
+    },
+    {
+      "artifact": "tabdpt_all_standard_cv42_n16.npz",
+      "accuracy": 0.799
+    },
+    {
+      "artifact": "tabdpt_physics_standard_cv42_n16.npz",
+      "accuracy": 0.795
+    },
+    {
+      "artifact": "set_transformer_s42.npz",
+      "accuracy": 0.791
+    },
+    {
+      "artifact": "pointnet_s2026.npz",
+      "accuracy": 0.788
+    }
+  ],
+  "new_candidate_search": false,
+  "evaluation_scope": "Existing prediction artifacts scored; three current notebooks executed locally; current Q3 grouped development check recomputed."
+}

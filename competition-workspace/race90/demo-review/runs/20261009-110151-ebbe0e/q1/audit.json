@@ -1,0 +1,81 @@
+{
+  "task": "q1",
+  "kind": "timeseries",
+  "warnings": [],
+  "train_csv": {
+    "rows": 720,
+    "columns": [
+      "sample_id",
+      "subject_id",
+      "timestamp",
+      "acc_x",
+      "acc_y",
+      "acc_z",
+      "label"
+    ],
+    "nulls": {
+      "sample_id": 0,
+      "subject_id": 0,
+      "timestamp": 0,
+      "acc_x": 0,
+      "acc_y": 0,
+      "acc_z": 0,
+      "label": 0
+    },
+    "dtypes": {
+      "sample_id": "int64",
+      "subject_id": "int64",
+      "timestamp": "int64",
+      "acc_x": "float64",
+      "acc_y": "float64",
+      "acc_z": "float64",
+      "label": "int64"
+    }
+  },
+  "test_csv": {
+    "rows": 120,
+    "columns": [
+      "sample_id",
+      "subject_id",
+      "timestamp",
+      "acc_x",
+      "acc_y",
+      "acc_z"
+    ],
+    "nulls": {
+      "sample_id": 0,
+      "subject_id": 0,
+      "timestamp": 0,
+      "acc_x": 0,
+      "acc_y": 0,
+      "acc_z": 0
+    },
+    "dtypes": {
+      "sample_id": "int64",
+      "subject_id": "int64",
+      "timestamp": "int64",
+      "acc_x": "float64",
+      "acc_y": "float64",
+      "acc_z": "float64"
+    }
+  },
+  "sample_submission": {
+    "rows": 10,
+    "columns": [
+      "sample_id",
+      "label"
+    ],
+    "nulls": {
+      "sample_id": 0,
+      "label": 0
+    },
+    "dtypes": {
+      "sample_id": "int64",
+      "label": "int64"
+    }
+  },
+  "target_counts": {
+    "0": 360,
+    "1": 360
+  }
+}

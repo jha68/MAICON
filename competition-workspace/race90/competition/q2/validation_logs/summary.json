@@ -1,0 +1,30 @@
+{
+  "source": "competition-models.tgz",
+  "scope": "Training validation of the drone-only object detector, not final three-class per-image count accuracy.",
+  "validation_images": 10,
+  "source_of_split": "scripts/vision_train.py: random seed 42, first 10 shuffled transfer-learning images held out",
+  "models": [
+    {
+      "model": "drone_s_stable",
+      "criterion": "Highest validation mAP50-95 observed during training",
+      "epoch": 143,
+      "precision": 0.99463,
+      "recall": 1.0,
+      "mAP50": 0.995,
+      "mAP50_95": 0.82588,
+      "results_csv": "/config/workspace/race90/competition/q2/validation_logs/drone_s_stable_results.csv",
+      "results_sha256": "d361a93bbbc4ad81e1d101bc4ae189c24128fdeaec855dc80ca0558a706c903d"
+    },
+    {
+      "model": "drone_m_stable",
+      "criterion": "Highest validation mAP50-95 observed during training",
+      "epoch": 3,
+      "precision": 0.9924,
+      "recall": 1.0,
+      "mAP50": 0.995,
+      "mAP50_95": 0.64647,
+      "results_csv": "/config/workspace/race90/competition/q2/validation_logs/drone_m_stable_results.csv",
+      "results_sha256": "10b19f56d5003c48b9ae426c7a50404cbb4272be57cf5e2a0221b17a7a56c5e0"
+    }
+  ]
+}

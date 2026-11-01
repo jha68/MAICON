@@ -1,0 +1,56 @@
+{
+  "python": "3.12.3",
+  "architecture": "aarch64",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "cuda_visible_devices": "",
+  "address_space_limit_bytes": null,
+  "online_kernel_directly_verified": false,
+  "notebooks": [
+    {
+      "question": 1,
+      "notebook": "레이더 시계열 데이터 기반 이동 표적 식별하기.ipynb",
+      "executed_code_cells": 5,
+      "seconds": 1.889,
+      "rows": 300,
+      "columns": [
+        "sample_id",
+        "label"
+      ],
+      "csv_sha256": "8c2ff40a1ce4999272989b0955c85057522732ecee13e0521a579e2a6e0543b2",
+      "max_child_rss_kib": 124856
+    },
+    {
+      "question": 2,
+      "notebook": "비행 물체 인식하기.ipynb",
+      "executed_code_cells": 7,
+      "seconds": 1.669,
+      "rows": 300,
+      "columns": [
+        "filename",
+        "airplane",
+        "bird",
+        "drone"
+      ],
+      "csv_sha256": "2607be38743ebe4852db3c2741f95c475eb505b81e57b66a41ae72abee8bcbf3",
+      "max_child_rss_kib": 124856
+    },
+    {
+      "question": 3,
+      "notebook": "군 장비 정비 보고서 분석을 통한 고장 유형 분류하기.ipynb",
+      "executed_code_cells": 6,
+      "seconds": 1.329,
+      "rows": 180,
+      "columns": [
+        "id",
+        "fault_type"
+      ],
+      "csv_sha256": "6a9ae5b264a84a5fb851792ef9f29f25fb59db0135556799b5ae637fda4ed98a",
+      "max_child_rss_kib": 124856
+    }
+  ]
+}

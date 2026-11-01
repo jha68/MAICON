@@ -1,0 +1,19 @@
+{
+  "accuracy": 0.821,
+  "log_loss": 0.46063773407436803,
+  "fold_accuracies": [
+    0.8,
+    0.795,
+    0.82,
+    0.835,
+    0.855
+  ],
+  "seconds": 21.787178993225098,
+  "args": {
+    "device": "cuda:0",
+    "cv_seed": 42,
+    "estimators": 32,
+    "normalizer": "quantile-normal",
+    "features": "original,all"
+  }
+}

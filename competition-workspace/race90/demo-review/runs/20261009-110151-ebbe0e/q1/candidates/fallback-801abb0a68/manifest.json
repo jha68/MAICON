@@ -1,0 +1,22 @@
+{
+  "task": "q1",
+  "stage": "fallback",
+  "score": null,
+  "candidate_id": "fallback-801abb0a68",
+  "dependencies": {},
+  "metric": "macro_f1",
+  "details": {
+    "algorithm": "DummyClassifier",
+    "feature_mode": "constant"
+  },
+  "created_at": 1791543712.8839734,
+  "sha256": "b236a6e7630170dd4c9a20fe42b367a83366375071b8d44273ee5413996fb4e0",
+  "rows": 10,
+  "submission_dtypes": {
+    "sample_id": "int64",
+    "label": "int64"
+  },
+  "artifacts": [
+    "model.joblib"
+  ]
+}

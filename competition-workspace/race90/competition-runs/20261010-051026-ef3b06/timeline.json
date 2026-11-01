@@ -1,0 +1,10 @@
+{
+  "exam_deadline": 1791614322.6964066,
+  "compute_deadline": 1791613122.6964066,
+  "retrieval_deadline": 1791613242.6964066,
+  "notebook_deadline": 1791613962.6964066,
+  "deliverable_deadline": 1791614022.6964066,
+  "upload_seconds": 300.0,
+  "retrieval_seconds": 120.0,
+  "pack_seconds": 60.0
+}

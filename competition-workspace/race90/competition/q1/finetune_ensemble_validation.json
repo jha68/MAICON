@@ -1,0 +1,18 @@
+{
+  "accuracy": 0.888,
+  "method": "Equal average of four fine-tuned TabICL models with two feature sets and two learning rates; five outer folds. Inner validation only for early stopping.",
+  "models": [
+    "finetune_original_lr1e-05_s42_cv42",
+    "finetune_all_lr1e-05_s42_cv42",
+    "finetune_original_lr3e-05_s42_cv42_e120",
+    "finetune_all_lr3e-05_s42_cv42_e100"
+  ],
+  "weights": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "test_predictions": 300,
+  "validation_caveat": "Development cross-validation used for model selection; not test accuracy. Repeated splits used for stability checks."
+}

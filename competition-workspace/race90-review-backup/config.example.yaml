@@ -1,0 +1,110 @@
+# 경로는 data_root 기준입니다. 실제 지문과 sample_submission을 보고 수정하세요.
+total_minutes: 90
+finalize_minutes: 8
+data_root: data
+output_root: runs
+cpu_workers: 3
+cpu_threads: 12
+gpu_cpu_threads: 4
+seed: 42
+
+runpod:
+  enabled: true
+  gpu_count: 3
+  gpu_priorities:
+    - NVIDIA A100-SXM4-80GB
+    - NVIDIA A100 80GB PCIe
+  cloud_type: SECURE
+  max_gpu_hourly_usd: 8.0  # 3장 합계의 GPU 시간당 상한. 스토리지 요금은 별도.
+  image: runpod/pytorch:1.0.3-cu1281-torch291-ubuntu2404
+  ssh_key_path: ~/.ssh/id_ed25519
+  container_disk_gb: 60
+  setup_timeout_seconds: 420
+  lease_minutes: 100
+  extra_packages: []  # custom GPU 어댑터에 필요한 추가 패키지
+  # existing_pod_id: 이미_준비된_Pod_ID
+  # template_id: 검증한_PyTorch_템플릿_ID
+  # network_volume_id: 미리_만든_공유_볼륨_ID
+  # data_center_id: 볼륨과_같은_데이터센터
+
+notebooks:
+  execute: true
+  embed_models: true
+  mode: restore  # restore: 저장된 실제 예측 복원, infer: 저장 모델로 CPU 재추론
+  max_embedded_mb: 200
+
+tasks:
+  - name: q1
+    kind: timeseries
+    resource: gpu
+    train_csv: q1/train.csv
+    test_csv: q1/test.csv
+    sample_submission: q1/sample_submission.csv
+    notebook: q1/problem.ipynb
+    id_column: sample_id
+    target: label
+    prediction_columns: [label]
+    sensor_columns: [acc_x, acc_y, acc_z]
+    time_column: timestamp
+    metric: macro_f1
+    split:
+      strategy: group
+      group_column: subject_id
+      fraction: 0.2
+    baseline_seconds: 600
+    upgrade_seconds: 2400
+    epochs: 30
+    batch_size: 128
+    sequence_length: 256
+    depends_on: []
+
+  - name: q2
+    kind: image
+    train_csv: q2/train.csv
+    test_csv: q2/test.csv
+    sample_submission: q2/sample_submission.csv
+    notebook: q2/problem.ipynb
+    image_root: q2/images
+    image_column: filename
+    id_column: id
+    target: label
+    prediction_columns: [label]
+    metric: accuracy
+    split: {strategy: stratified, fraction: 0.2}
+    baseline_seconds: 600
+    upgrade_seconds: 3600
+    batch_size: 64
+    epochs: 12
+    pretrained: true
+    freeze_backbone: true
+    depends_on: []
+
+  - name: q3
+    kind: text
+    resource: gpu
+    train_csv: q3/train.csv
+    test_csv: q3/test.csv
+    sample_submission: q3/sample_submission.csv
+    notebook: q3/problem.ipynb
+    text_columns: [text]
+    id_column: id
+    target: label
+    prediction_columns: [label]
+    metric: macro_f1
+    split: {strategy: stratified, fraction: 0.2}
+    baseline_seconds: 300
+    upgrade_seconds: 2400
+    model_name: klue/roberta-small
+    max_length: 128
+    batch_size: 32
+    epochs: 3
+    depends_on: []
+
+# 세 문항이 같은 데이터를 쓰면 각 문항의 train_csv/test_csv/image_root를
+# shared/... 같은 경로로 지정하세요. Runpod 전송은 data_root 전체를 한 번 합니다.
+# 선행 문항의 산출물이 필요하면 depends_on: [q1]을 지정하고 아래처럼 연결합니다.
+# dependency_features:
+#   - task: q1
+#     train_file: train_features.csv  # 학습 타깃으로 만든 특징은 OOF 방식 사용
+#     test_file: test_features.csv
+#     on: id

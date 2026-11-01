@@ -1,0 +1,12 @@
+{
+  "verified_at_utc": "2026-11-01T06:36:11.316Z",
+  "source_files": 1318,
+  "source_bytes": 3486631810,
+  "split_parts": 61,
+  "portable_symlinks": 9,
+  "all_source_file_sizes_and_sha256_verified": true,
+  "all_split_part_sizes_and_sha256_verified": true,
+  "concatenated_split_archive_sha256_verified": true,
+  "local_text_secret_patterns_checked": 518,
+  "secret_pattern_matches": 0
+}

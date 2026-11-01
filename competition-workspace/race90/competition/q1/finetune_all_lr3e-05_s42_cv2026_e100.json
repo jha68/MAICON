@@ -1,0 +1,28 @@
+{
+  "args": {
+    "device": "cuda:2",
+    "features": "all",
+    "lr": 3e-05,
+    "epochs": 100,
+    "seed": 42,
+    "cv_seed": 2026,
+    "freeze_col": false,
+    "freeze_row": false,
+    "estimators": 32,
+    "fine_estimators": 4,
+    "validation_estimators": 8,
+    "patience": 12,
+    "tag": "e100"
+  },
+  "accuracy": 0.871,
+  "log_loss": 0.3518236733225501,
+  "fold_accuracies": [
+    0.87,
+    0.875,
+    0.85,
+    0.88,
+    0.88
+  ],
+  "seconds": 539.9299745559692,
+  "validation": "5 outer folds; fine-tuning early stopping uses only internal split of outer training data."
+}

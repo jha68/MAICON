@@ -1,0 +1,19 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+0 16650 seconds 0.2
+1024 16650 seconds 0.5
+2048 16650 seconds 0.8
+3072 16650 seconds 1.1
+4096 16650 seconds 1.4
+5120 16650 seconds 1.7
+6144 16650 seconds 2.0
+7168 16650 seconds 2.3
+8192 16650 seconds 2.6
+9216 16650 seconds 2.9
+10240 16650 seconds 3.2
+11264 16650 seconds 3.5
+12288 16650 seconds 3.8
+13312 16650 seconds 4.1
+14336 16650 seconds 4.4
+15360 16650 seconds 4.7
+16384 16650 seconds 5.0
+DONE 0.5444444444444444 0.5412237422041343

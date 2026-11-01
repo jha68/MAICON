@@ -1,0 +1,7 @@
+{
+  "macro_f1": 1.0,
+  "accuracy": 1.0,
+  "split": "5-fold stratified grouped by normalized main symptom; seed42",
+  "note": "Domain rules inspected and refined with training errors. This is a development check, not independent test accuracy.",
+  "differences_to_prior_test_predictions": 0
+}

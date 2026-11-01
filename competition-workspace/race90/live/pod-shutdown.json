@@ -1,0 +1,22 @@
+{
+  "pod_id": "vvpxznt3e1lvyn",
+  "user_request": "Terminate GPU usage so no further cost is incurred",
+  "delete_api_result": {
+    "deleted": true,
+    "id": "vvpxznt3e1lvyn"
+  },
+  "verification": {
+    "pod_list_count": 0,
+    "target_present": false
+  },
+  "target_network_volume_id": null,
+  "target_volume_in_gb": 0,
+  "watchdog_cancelled": true,
+  "local_processes_stopped": [
+    {
+      "pid": 2679878,
+      "type": "lease_watchdog"
+    }
+  ],
+  "local_submission_files_preserved": true
+}

@@ -1,0 +1,272 @@
+{
+  "status": "reviewed_candidate_with_documented_uncertainty",
+  "method": "Direct visual inspection of provided images; these are reviewed predictions, not reference labels.",
+  "confirmed_overrides": {
+    "test001.jpg": {
+      "count": 2,
+      "reason": "Foreground jet and a separate jet behind it on the right."
+    },
+    "test006.jpg": {
+      "count": 2,
+      "reason": "Two distinct airliners."
+    },
+    "test020.jpg": {
+      "count": 2,
+      "reason": "Main private jet and another aircraft nose and landing gear at the right edge."
+    },
+    "test028.jpg": {
+      "count": 2,
+      "reason": "Citilink in front and Lion Air behind; green tips belong to foreground wings."
+    },
+    "test034.jpg": {
+      "count": 6,
+      "reason": "Three large foreground aircraft, a separate tail behind the terminal, and two distant airborne aircraft."
+    },
+    "test045.jpg": {
+      "count": 1,
+      "reason": "Second detection is a remote controller."
+    },
+    "test047.jpg": {
+      "count": 1,
+      "reason": "Single bird; duplicate detections around its body and head."
+    },
+    "test053.jpg": {
+      "count": 2,
+      "reason": "Two birds; water and reflections are not additional birds."
+    },
+    "test055.jpg": {
+      "count": 1,
+      "reason": "Single kingfisher; another detection is foliage."
+    },
+    "test069.jpg": {
+      "count": 1,
+      "reason": "Second detection is the controller."
+    },
+    "test077.jpg": {
+      "count": 3,
+      "reason": "Foreground AOM, distant aircraft facing viewer, and a separate aircraft wingtip at right."
+    },
+    "test095.jpg": {
+      "count": 2,
+      "reason": "Peacock displaying its tail in front and a separate peacock at upper left."
+    },
+    "test116.jpg": {
+      "count": 4,
+      "reason": "Four drones: upper left, upper right, center, and bottom."
+    },
+    "test204.jpg": {
+      "count": 3,
+      "reason": "Foreground Iraqi aircraft, middle Turkish Airlines aircraft, and separate partial fuselage at right."
+    },
+    "test206.jpg": {
+      "count": 1,
+      "reason": "Single kingfisher; false positive in blurred background."
+    },
+    "test232.jpg": {
+      "count": 2,
+      "reason": "Foreground Star Alliance aircraft and background 747."
+    },
+    "test243.jpg": {
+      "count": 1,
+      "reason": "Single bird; foliage incorrectly detected."
+    },
+    "test251.jpg": {
+      "count": 1,
+      "reason": "Single drone; detached propeller guards/accessories are not drones."
+    },
+    "test260.jpg": {
+      "count": 6,
+      "reason": "Tunisair, foreground right Lufthansa nose, two Air Berlin aircraft, central Lufthansa behind them, far-right Lufthansa."
+    },
+    "test262.jpg": {
+      "count": 1,
+      "reason": "One bird and its reflection."
+    },
+    "test263.jpg": {
+      "count": 3,
+      "reason": "Main private jet, partial turboprop at left, and a different blue/yellow aircraft nose at right."
+    },
+    "test281.jpg": {
+      "count": 1,
+      "reason": "Single bird; branch false positive."
+    },
+    "test073.jpg": {
+      "count": 6,
+      "reason": "Two airborne aircraft and four distinct Citilink tails/aircraft on the ground."
+    },
+    "test131.jpg": {
+      "count": 3,
+      "reason": "Foreground training aircraft, background camouflage aircraft tail, and separate NAM airline tail."
+    },
+    "test135.jpg": {
+      "count": 5,
+      "reason": "Air Canada, partially visible foreground aircraft, United aircraft behind, Singapore tail, and small red/white tail further left."
+    },
+    "test149.jpg": {
+      "count": 2,
+      "reason": "Main unpropped quadcopter and part of another assembled propeller aircraft at bottom left."
+    },
+    "test235.jpg": {
+      "count": 2,
+      "reason": "Foreground tern and a different bird body and legs at top right."
+    },
+    "test202.jpg": {
+      "count": 2,
+      "reason": "One flying and one perched bird; right edge is a branch."
+    },
+    "test211.jpg": {
+      "count": 4,
+      "reason": "Greek government jet, blue private jet behind, airborne airliner, and separate yellow tail beyond the foreground cockpit."
+    },
+    "test230.jpg": {
+      "count": 5,
+      "reason": "RT-DETR independent review: foreground Oman jet, large A400 behind, Danish jet at right, cropped tan tail at far left, and a separate small head-on aircraft with wings and landing gear visible beneath the forward fuselage."
+    },
+    "test240.jpg": {
+      "count": 6,
+      "reason": "Foreground airliner and five separate business jets parked behind it."
+    },
+    "test294.jpg": {
+      "count": 6,
+      "reason": "Foreground Philippines jet, Malaysia and Singapore aircraft behind, separate foreground wing, distant turboprop left and distant aircraft right."
+    },
+    "test273.jpg": {
+      "count": 3,
+      "reason": "Main airborne 747, rear jet2 aircraft, and a separate partial aircraft tail at lower left."
+    },
+    "test158.jpg": {
+      "count": 4,
+      "reason": "Foreground United jet plus three background aircraft: one at left, one near center, and one tail near right terminal."
+    },
+    "test201.jpg": {
+      "count": 2,
+      "reason": "Foreground 747 and one identifiable distant aircraft at left."
+    },
+    "test102.jpg": {
+      "count": 7,
+      "reason": "Foreground A380, three partially visible background aircraft below left/center, and Niki, LOT and Air France aircraft at right."
+    },
+    "test054.jpg": {
+      "count": 2,
+      "reason": "Foreground aircraft and a different dark vertical tail behind its fuselage."
+    },
+    "test084.jpg": {
+      "count": 2,
+      "reason": "Foreground Pan Am 747 and a separate aircraft wing entering at lower left."
+    },
+    "test094.jpg": {
+      "count": 9,
+      "reason": "Foreground ASA, seven dark/blue Lufthansa tails and one small teal tail among parked aircraft; teal partial structure remains a lower-confidence count."
+    }
+  },
+  "confirmed_multi_without_change": {
+    "test010.jpg": 2,
+    "test032.jpg": 2,
+    "test039.jpg": 2,
+    "test050.jpg": 2,
+    "test087.jpg": 2,
+    "test114.jpg": 9,
+    "test181.jpg": 2,
+    "test184.jpg": 2,
+    "test189.jpg": 2,
+    "test195.jpg": 2,
+    "test208.jpg": 2,
+    "test210.jpg": 2,
+    "test271.jpg": 3,
+    "test290.jpg": 4
+  },
+  "pending_full_resolution_review": [],
+  "detailed_contact_pages_reviewed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "confirmed_single_full_resolution": [
+    "test121.jpg",
+    "test156.jpg",
+    "test173.jpg",
+    "test293.jpg",
+    "test253.jpg",
+    "test283.jpg"
+  ],
+  "uncertain_reviewed_counts": {
+    "test094.jpg": {
+      "count": 9,
+      "alternatives": [
+        8
+      ],
+      "reason": "Seven clear Lufthansa tails plus one low teal tail/possible wingtip, and foreground ASA; low teal structure remains uncertain.",
+      "selected_count": 9
+    },
+    "test230.jpg": {
+      "count": 5,
+      "alternatives": [
+        4
+      ],
+      "reason": "Small occluded aircraft under the foreground forward fuselage is counted separately from the far-left tan tail; its connection is difficult to establish from the single supplied view.",
+      "selected_count": 5
+    }
+  },
+  "independent_vlm_review": {
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "images": 300,
+    "note": "VLM output is a noisy audit. Direct inspection rejects missed background objects, reflections, and wingtip double-counts."
+  },
+  "rtdetr_review": {
+    "model": "rtdetr-x.pt",
+    "images_scanned": 200,
+    "scales": [
+      640,
+      1280
+    ],
+    "new_change": {
+      "test230.jpg": {
+        "before": 4,
+        "after": 5
+      }
+    },
+    "retained_after_targeted_review": [
+      "test055.jpg",
+      "test073.jpg",
+      "test164.jpg",
+      "test232.jpg",
+      "test260.jpg",
+      "test294.jpg"
+    ],
+    "note": "640-pixel model used for targeted review; high-resolution predictions had more duplicate detections. These are reviewed predictions, not test reference labels."
+  },
+  "grounding_dino_review": {
+    "model": "IDEA-Research/grounding-dino-base",
+    "airplane_images": 100,
+    "views": [
+      "whole image",
+      "upper 70% crop"
+    ],
+    "decision": "No count changes. Tail prompts frequently detect the foreground airplane and its own tail as separate boxes, while missing small background tails."
+  },
+  "targeted_vlm_review": {
+    "images": [
+      94,
+      149,
+      230
+    ],
+    "decision": "No additional changes; targeted VLM confused multiple foreground and background structures and did not reliably resolve occlusions. Direct image review retained.",
+    "record": "targeted_vlm_audit.json"
+  }
+}

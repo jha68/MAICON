@@ -1,0 +1,42 @@
+{
+  "binary_finetuned_specialist": {
+    "classes": [
+      "PERSONNEL",
+      "PERSONNEL_GROUP"
+    ],
+    "binary_accuracy": 0.8475,
+    "base_conditional_binary_accuracy": 0.865,
+    "best_tested_blended_overall_accuracy": 0.889,
+    "decision": "Not selected"
+  },
+  "fine_tuned_new_seed": {
+    "seed": 123,
+    "original_accuracy": 0.873,
+    "all_accuracy": 0.878,
+    "decision": "Retained as comparison; does not improve at equal ensemble weights"
+  },
+  "frozen_column_module": {
+    "accuracy": 0.868,
+    "decision": "Not selected"
+  },
+  "mitra_finetuned": {
+    "original_accuracy": 0.85,
+    "all_accuracy": 0.846,
+    "decision": "Not selected"
+  },
+  "pseudo_label_context": {
+    "threshold_0.95": {
+      "cv42": 0.891,
+      "cv2026": 0.886
+    },
+    "threshold_0.99": {
+      "cv42": 0.891,
+      "cv2026": 0.885
+    },
+    "baseline": {
+      "cv42": 0.89,
+      "cv2026": 0.886
+    },
+    "decision": "Not selected: no consistent improvement in the second split, and additional transductive complexity."
+  }
+}

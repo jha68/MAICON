@@ -1,0 +1,10 @@
+{
+  "removed_notebooks": [
+    "/workspace/race90-27edfe8858d7/data/q2/군 장비 정비 보고서 분석을 통한 고장 유형 분류하기.ipynb",
+    "/workspace/race90-27edfe8858d7/data/q3/군 장비 정비 보고서 분석을 통한 고장 유형 분류하기.ipynb",
+    "/workspace/race90-27edfe8858d7/data/q1/레이더 시계열 데이터 기반 이동 표적 식별하기.ipynb",
+    "/workspace/race90-27edfe8858d7/data/q1/.ipynb_checkpoints/레이더 시계열 데이터 기반 이동 표적 식별하기-checkpoint.ipynb"
+  ],
+  "cleaned_archive_members": [],
+  "remaining": []
+}

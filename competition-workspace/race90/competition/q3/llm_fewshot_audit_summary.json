@@ -1,0 +1,143 @@
+{
+  "method": "Qwen3-VL-8B classification prompted with training examples, no handcrafted classification rules; train evaluation excludes entire held-out core group from examples. One representative per unique training core.",
+  "unique_training_cores": 90,
+  "test_rows": 180,
+  "grouped_validation_accuracy": 0.8888888888888888,
+  "grouped_validation_macro_f1": 0.8888381270194396,
+  "validation_errors": [
+    {
+      "id": "TRN0004",
+      "core": "연결 피팅에 습윤 흔적이 있으나 시간 경과 후에도 양이 증가하지 않음",
+      "fault_type": "HYDRAULIC",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0006",
+      "core": "시동 직후 평소보다 거친 소음이 잠시 발생하나 이후 출력과 회전수는 정상임",
+      "fault_type": "ENGINE",
+      "prediction": "COMMUNICATION"
+    },
+    {
+      "id": "TRN0010",
+      "core": "퓨즈 박스 덮개에 균열이 있으나 내부 회로와 전원 공급에는 이상이 없음",
+      "fault_type": "ELECTRICAL",
+      "prediction": "COMMUNICATION"
+    },
+    {
+      "id": "TRN0026",
+      "core": "실린더 외벽에 오래된 작동유 자국이 있으나 새 누유는 확인되지 않음",
+      "fault_type": "HYDRAULIC",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0069",
+      "core": "엔진 마운트 주변에 미세 진동이 느껴지나 운전 성능 변화는 없음",
+      "fault_type": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0081",
+      "core": "엔진 외부에 소량의 오일 흔적이 있으나 누유 진행과 성능 저하는 확인되지 않음",
+      "fault_type": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0096",
+      "core": "보조 탱크 수위가 약간 낮았으나 보충 후 온도 시험은 정상임",
+      "fault_type": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0183",
+      "core": "온도 센서 표시가 순간 흔들렸으나 별도 측정 온도와 운전 상태는 정상임",
+      "fault_type": "COOLING",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0274",
+      "core": "오르막 구간에서 출력 부족이 나타나지만 저속 운행은 유지됨",
+      "fault_type": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0332",
+      "core": "주행 중 구동축에서 큰 충격음이 난 뒤 동력이 바퀴로 전달되지 않음",
+      "fault_type": "MOBILITY",
+      "prediction": "ENGINE"
+    }
+  ],
+  "test_disagreements": [
+    {
+      "id": "TST0007",
+      "report": "정비 메모 — 전원 지원 장비: 연결부 주변이 약간 젖어 있으나 일정 시간 후에도 양이 늘지 않고 동작은 정상이다 주변 환경 조건은 정상 범위였다. 동시에 점검한 항목에서는 별도 실시한 전원 점검은 정상 범위였다",
+      "fault_type": "HYDRAULIC",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TST0023",
+      "report": "수송 차량에 대한 재현 시험에서 부하 증가 구간에서 순간적으로 힘이 빠지며 속도 유지가 어렵다 주변 환경 조건은 정상 범위였다. 유압 계통을 우선 점검한 결과 압력과 유량 모두 기준을 만족했다. 한편 최근 교환 부품과 직접 관련된 징후는 없었다",
+      "fault_type": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TST0027",
+      "report": "배터리 부족이나 배선 손상을 뒷받침하는 징후는 발견되지 않았다. 야전 운용 장비 재현 시험에서 흡입구 일부가 막혀 있고 연속 운전 시 온도가 평소보다 높게 유지된다. 다른 점검 항목 중 기본 출력은 정상이다.",
+      "fault_type": "COOLING",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TST0047",
+      "report": "정비 메모 — 전원 지원 장비: 동력부 하단에 오래된 유분 자국이 있으나 새로 번지는 흔적은 없다 주변 환경 조건은 정상 범위였다. 동시에 점검한 항목에서는 외관상 큰 충격 흔적은 없다",
+      "fault_type": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TST0058",
+      "report": "공병 지원 장비에 대한 재현 시험에서 동력부 하단에 오래된 유분 자국이 있으나 새로 번지는 흔적은 없다 동일 현상이 재시험에서도 반복되었다. 한편 외관상 큰 충격 흔적은 없다",
+      "fault_type": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TST0070",
+      "report": "배터리 부족이나 배선 손상을 뒷받침하는 징후는 발견되지 않았다. [현상] 첫 기동에 여러 번의 시도가 필요하지만 일단 가동되면 저부하 운전은 가능하다 주변 환경 조건은 정상 범위였다. [대상] 전술 차량. [기타] 다른 계통의 경고는 확인되지 않았다",
+      "fault_type": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TST0075",
+      "report": "회전 불안정 가능성은 낮으며 엔진 계통 측정값도 허용 범위였다. [점검 메모] 기동 지원 장비에서 흡입구와 배출구의 온도 차가 이전보다 작고 장시간 운전에서 출력 제한이 걸린다. 정지 후 다시 시작하면 일시적으로 정상처럼 보인다. 동시에 확인한 항목 중 최근 교체 부품에서는 특이사항이 없었다. 전원 계통 문제를 의심했으나 전압과 배선은 정상으로 확인됐다.",
+      "fault_type": "COOLING",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TST0091",
+      "report": "정비 메모 — 다목적 지원 차량: 동력부 하단에 오래된 유분 자국이 있으나 새로 번지는 흔적은 없다 동일 현상이 재시험에서도 반복되었다. 동시에 점검한 항목에서는 다른 계통의 경고는 확인되지 않았다",
+      "fault_type": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TST0102",
+      "report": "운용자 인계 기록(이동형 지원 장비): 정지 후에는 빠르게 정상으로 돌아오지만 연속 운전 시 같은 보호 경보가 재현된다. 참고로 배터리 전압은 기준 범위였다.",
+      "fault_type": "COOLING",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TST0113",
+      "report": "[점검 메모] 이동형 지원 장비에서 공기 흡입부 일부가 막혀 있으며 장시간 운전 후에만 성능 제한이 발생한다. 동시에 확인한 항목 중 외관상 큰 충격 흔적은 없다.",
+      "fault_type": "COOLING",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TST0117",
+      "report": "[현상] 공회전이 고르지 않지만 제한된 회전 범위에서는 계속 운전할 수 있다 동일 현상이 재시험에서도 반복되었다. [대상] 전원 지원 장비. [기타] 다른 계통의 경고는 확인되지 않았다",
+      "fault_type": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TST0155",
+      "report": "운용자 인계 기록(공병 지원 장비): 유체 연결부 주변에 젖은 흔적이 있고 운전 후 보조 저장조 수위가 눈에 띄게 낮아진다. 참고로 시동과 기본 출력 시험은 정상이다.",
+      "fault_type": "COOLING",
+      "prediction": "HYDRAULIC"
+    }
+  ]
+}

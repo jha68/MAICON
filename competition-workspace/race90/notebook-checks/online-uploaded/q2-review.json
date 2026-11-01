@@ -1,0 +1,72 @@
+{
+  "source": "User uploaded notebook containing saved competition-kernel execution outputs; no direct access to online kernel.",
+  "question": 2,
+  "notebook": "/config/workspace/비행 물체 인식하기.ipynb",
+  "runtime_reported": {
+    "python": "3.9.7",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "torch": "2.8.0+cpu",
+    "working_directory": "/home/jovyan/work/Problem #2"
+  },
+  "environment_changed_by_original_setup_cells": true,
+  "nonfatal_logged_messages": [
+    "numexpr requested 2 threads while NUMEXPR_MAX_THREADS=1",
+    "pandas optional numexpr and bottleneck versions below recommendations",
+    "pip dependency conflicts with scipy and numba after numpy upgrade"
+  ],
+  "fatal_cell_error_outputs": 0,
+  "csv_path_in_output": "/home/jovyan/work/Problem #2/submission.csv",
+  "rows": 300,
+  "columns": [
+    "filename",
+    "airplane",
+    "bird",
+    "drone"
+  ],
+  "object_counts": {
+    "airplane": 186,
+    "bird": 109,
+    "drone": 108
+  },
+  "recorded_csv_sha256": "2607be38743ebe4852db3c2741f95c475eb505b81e57b66a41ae72abee8bcbf3",
+  "matches_selected_csv_sha256": true,
+  "main_solution_code_matches_final_ast": true,
+  "main_solution_execution_counts": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "main_solution_code_and_outputs_preserved": true,
+  "hidden_injection_removed": 1,
+  "unneeded_setup_cells_removed": [
+    {
+      "original_cell": 1,
+      "source": "!pip uninstall pandas numpy -y\n!pip install ultralytics numpy==1.26.4 pandas==2.2.2",
+      "execution_count": 3
+    },
+    {
+      "original_cell": 2,
+      "source": "# PyTorch 완전히 제거 후 재설치\n!pip uninstall torch torchvision torchaudio -y\n!pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu",
+      "execution_count": 4
+    },
+    {
+      "original_cell": 5,
+      "source": "from ultralytics import YOLO\nprint(\"YOLOv8 loaded successfully.\")",
+      "execution_count": 5
+    },
+    {
+      "original_cell": 6,
+      "source": "# YOLOv8s를 사용합니다.\nmodel = YOLO(\"yolov8s.pt\")",
+      "execution_count": 6
+    }
+  ],
+  "unsafe_unused_save_example_disabled": true,
+  "before_notebook_sha256": "df41f51da4221037af69d0acc2032cd739d2dbc9021e8a9f365f1097069520e8",
+  "after_notebook_sha256": "b1ef8228c1810ba1043c55c171b300f0886ba2105054f7288ff48cf5f813a443",
+  "online_submission_receipt_confirmed": false
+}

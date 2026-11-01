@@ -1,0 +1,11 @@
+{
+  "all_three_uploaded_notebooks_have_successful_csv_save_outputs": true,
+  "all_three_recorded_csv_hashes_match_selected_results": true,
+  "all_three_hidden_instructions_removed_from_uploaded_copies": true,
+  "online_submission_receipt_confirmed": false,
+  "review_files": [
+    "q1-review.json",
+    "q2-review.json",
+    "q3-review.json"
+  ]
+}

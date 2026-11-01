@@ -1,0 +1,41 @@
+{
+  "accuracy": 0.804,
+  "log_loss": 0.5090916137024106,
+  "folds": [
+    {
+      "fold": 0,
+      "epochs": 13,
+      "accuracy": 0.805
+    },
+    {
+      "fold": 1,
+      "epochs": 10,
+      "accuracy": 0.76
+    },
+    {
+      "fold": 2,
+      "epochs": 8,
+      "accuracy": 0.76
+    },
+    {
+      "fold": 3,
+      "epochs": 33,
+      "accuracy": 0.84
+    },
+    {
+      "fold": 4,
+      "epochs": 9,
+      "accuracy": 0.855
+    }
+  ],
+  "seconds": 12.224483728408813,
+  "args": {
+    "device": "cuda:0",
+    "features": "original,all,physics",
+    "seed": 42,
+    "cv_seed": 42,
+    "embedding": "ple",
+    "epochs": 250
+  },
+  "validation": "Inner split selects epoch count; fresh model refits all outer training data."
+}

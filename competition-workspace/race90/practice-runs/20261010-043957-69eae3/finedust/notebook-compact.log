@@ -1,0 +1,29 @@
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/config/workspace/race90/race90/__main__.py", line 6, in <module>
+    raise SystemExit(main(start_time=started))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/config/workspace/race90/race90/cli.py", line 75, in main
+    verify_export(cfg, task, args.candidate, args.output)
+  File "/config/workspace/race90/race90/deliverables.py", line 65, in verify_export
+    verify_notebook(output, task, cfg, candidate)
+  File "/config/workspace/race90/race90/deliverables.py", line 19, in verify_notebook
+    nbformat.validate(nb)
+  File "/config/workspace/.venv/lib/python3.12/site-packages/nbformat/validator.py", line 434, in validate
+    _validate(nbdict, ref, version, version_minor, relax_add_props)
+  File "/config/workspace/.venv/lib/python3.12/site-packages/nbformat/validator.py", line 486, in _validate
+    raise error
+nbformat.validator.NotebookValidationError: Additional properties are not allowed ('id' was unexpected)
+
+Failed validating 'additionalProperties' in markdown_cell:
+
+On instance['cells'][7]:
+{'cell_type': 'markdown',
+ 'id': '690837aa',
+ 'metadata': {},
+ 'source': '## finedust 풀이 코드와 결과\n'
+           '\n'
+           '아래에는 실제 학습에 사용한 Python 소스, 선택된 모델/예측 파일, ...'}
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.

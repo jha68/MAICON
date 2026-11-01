@@ -1,0 +1,108 @@
+{
+  "run_dir": "/config/workspace/race90/demo-review/runs/20261009-110151-ebbe0e",
+  "deadline": 1791543830.6724753,
+  "finished_at": 1791543725.1034446,
+  "elapsed_seconds": 13.86049485206604,
+  "tasks": {
+    "q1": {
+      "task": "q1",
+      "stage": "baseline",
+      "score": 1.0,
+      "candidate_id": "baseline-cfa1e9bff9",
+      "dependencies": {},
+      "metric": "macro_f1",
+      "details": {
+        "algorithm": "ExtraTreesClassifier",
+        "feature_mode": "dataset",
+        "split_hash": "bb36874e6b58b74b3e2ace774156ddc4f8e9e92c407b41a6f7cad977e0e48f20",
+        "train_rows": 48,
+        "valid_rows": 12,
+        "refit_all_rows": true
+      },
+      "created_at": 1791543713.3145351,
+      "sha256": "531e3834867fc9e3de0a1ec0d3f911ff2ec7b8117744b1d40c3f88eb11aa6768",
+      "rows": 10,
+      "submission_dtypes": {
+        "sample_id": "int64",
+        "label": "int64"
+      },
+      "artifacts": [
+        "model.joblib"
+      ],
+      "candidate": "baseline-cfa1e9bff9"
+    },
+    "q2": {
+      "task": "q2",
+      "stage": "baseline",
+      "score": 1.0,
+      "candidate_id": "baseline-5a3eb10628",
+      "dependencies": {},
+      "metric": "accuracy",
+      "details": {
+        "algorithm": "ExtraTreesClassifier",
+        "feature_mode": "dataset",
+        "split_hash": "9026c3d3f1adbb21e22df1cab498d9f40cf937cfe6f8a7a542e4bef3798d7b37",
+        "train_rows": 32,
+        "valid_rows": 8,
+        "refit_all_rows": true
+      },
+      "created_at": 1791543715.9140315,
+      "sha256": "bdcb9440e68a0040f006cace1ceed242790a9816feeed3a0a1ad2fd984571fbd",
+      "rows": 8,
+      "submission_dtypes": {
+        "id": "int64",
+        "label": "int64"
+      },
+      "artifacts": [
+        "model.joblib"
+      ],
+      "candidate": "baseline-5a3eb10628"
+    },
+    "q3": {
+      "task": "q3",
+      "stage": "baseline",
+      "score": 1.0,
+      "candidate_id": "baseline-10a27b16e1",
+      "dependencies": {},
+      "metric": "macro_f1",
+      "details": {
+        "algorithm": "LogisticRegression",
+        "feature_mode": "dataset",
+        "split_hash": "7ec33b06d9c57bbf25764779ec0cc106d92ddbb55047d4f4c5114068be3f726a",
+        "train_rows": 48,
+        "valid_rows": 12,
+        "refit_all_rows": true
+      },
+      "created_at": 1791543718.178564,
+      "sha256": "d99d2a0fcdb03a3f20451b3df32b1c55180fb16a03b40f799a80546bb56dfb17",
+      "rows": 10,
+      "submission_dtypes": {
+        "id": "int64",
+        "label": "int64"
+      },
+      "artifacts": [
+        "model.joblib"
+      ],
+      "candidate": "baseline-10a27b16e1"
+    }
+  },
+  "notebooks": {
+    "q1": {
+      "status": "done",
+      "path": "/config/workspace/race90/demo-review/runs/20261009-110151-ebbe0e/deliverables/q1.solution.ipynb"
+    },
+    "q2": {
+      "status": "done",
+      "path": "/config/workspace/race90/demo-review/runs/20261009-110151-ebbe0e/deliverables/q2.solution.ipynb"
+    },
+    "q3": {
+      "status": "done",
+      "path": "/config/workspace/race90/demo-review/runs/20261009-110151-ebbe0e/deliverables/q3.solution.ipynb"
+    }
+  },
+  "errors": [],
+  "complete": true,
+  "fallback_tasks": [],
+  "within_deadline": true,
+  "submission_ready": true
+}

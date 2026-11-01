@@ -1,0 +1,58 @@
+{
+  "task": "q2",
+  "kind": "image",
+  "warnings": [],
+  "train_csv": {
+    "rows": 40,
+    "columns": [
+      "id",
+      "filename",
+      "label"
+    ],
+    "nulls": {
+      "id": 0,
+      "filename": 0,
+      "label": 0
+    },
+    "dtypes": {
+      "id": "int64",
+      "filename": "str",
+      "label": "int64"
+    }
+  },
+  "test_csv": {
+    "rows": 8,
+    "columns": [
+      "id",
+      "filename"
+    ],
+    "nulls": {
+      "id": 0,
+      "filename": 0
+    },
+    "dtypes": {
+      "id": "int64",
+      "filename": "str"
+    }
+  },
+  "sample_submission": {
+    "rows": 8,
+    "columns": [
+      "id",
+      "label"
+    ],
+    "nulls": {
+      "id": 0,
+      "label": 0
+    },
+    "dtypes": {
+      "id": "int64",
+      "label": "int64"
+    }
+  },
+  "target_counts": {
+    "0": 20,
+    "1": 20
+  },
+  "verified_images": 48
+}

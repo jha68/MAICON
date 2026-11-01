@@ -1,0 +1,14 @@
+{
+  "started_at": 1791608922.6964066,
+  "deadline": 1791616679.0,
+  "user_revised_at": 1791611579.0,
+  "accuracy_deadline": 1791615179.0,
+  "preparation_minutes": 25,
+  "reason": "User corrected remaining time to 85 minutes: 60 minutes accuracy improvement, followed by 25 minutes submission preparation including execution checks and upload. Keep the just-started phase clock.",
+  "preparation_deadline": 1791616679.0,
+  "accuracy_minutes": 60,
+  "upload_buffer_minutes": 0,
+  "user_reported_remaining_minutes": 85,
+  "pod_deletion_utc": "2026-10-10T07:30:00+00:00",
+  "pod_reservation_changed": false
+}

@@ -1,0 +1,44 @@
+{
+  "task": "finedust",
+  "stage": "upgrade",
+  "score": 1.0,
+  "candidate_id": "upgrade-fb1a63cb3e",
+  "dependencies": {},
+  "metric": "rule_checks",
+  "details": {
+    "algorithm": "specified_threshold_count",
+    "feature_mode": "custom",
+    "score_meaning": "independent rule and CSV checks passed",
+    "passed": true,
+    "device": "cuda:0",
+    "gpu_name": "NVIDIA A100-SXM4-80GB",
+    "input_rows": 320876,
+    "valid_rows": 7304,
+    "dropped_missing_rows": 313572,
+    "counts": {
+      "매우 나쁨": 766,
+      "나쁨": 2282,
+      "보통": 3533,
+      "좋음": 723
+    },
+    "boundary_tests": 9,
+    "independent_reference_matched": true,
+    "compute_seconds_including_device_initialization": 2.1172656901180744,
+    "elapsed_seconds": 2.4645295031368732,
+    "input_sha256": "d1615e99b26793e06a3ca9550643dd32428e095bcada86f1212b87287370d05b",
+    "csv_sha256": "5e28c71c5c8f544ba9599a5ae734a8b4ef77fbdf1bcfbae7cbc486c2b096fa62"
+  },
+  "created_at": 1791607255.663651,
+  "sha256": "5e28c71c5c8f544ba9599a5ae734a8b4ef77fbdf1bcfbae7cbc486c2b096fa62",
+  "rows": 4,
+  "submission_dtypes": {
+    "예보 등급": "str",
+    "count": "int64"
+  },
+  "artifacts": [
+    "validation.json"
+  ],
+  "candidate": "upgrade-fb1a63cb3e",
+  "fallback_only": false,
+  "rejected_candidates": []
+}

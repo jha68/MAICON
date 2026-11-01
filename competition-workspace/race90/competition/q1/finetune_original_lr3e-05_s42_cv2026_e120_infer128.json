@@ -1,0 +1,15 @@
+{
+  "accuracy": 0.879,
+  "log_loss": 0.32530517989613555,
+  "seconds": 56.63501214981079,
+  "args": {
+    "device": "cuda:1",
+    "model": "finetune_original_lr3e-05_s42_cv2026_e120",
+    "estimators": 128
+  },
+  "checkpoint_replay": {
+    "max_abs_difference": 0.0,
+    "label_agreement": 1.0
+  },
+  "test_full_note": "Same trained fold weights, all 1000 training samples as test-time labeled context. Outer validation never uses held-out labels."
+}

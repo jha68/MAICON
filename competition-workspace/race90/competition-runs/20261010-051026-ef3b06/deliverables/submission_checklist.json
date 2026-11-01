@@ -1,0 +1,34 @@
+{
+  "online_upload_completed": false,
+  "exam_deadline": 1791614322.6964066,
+  "deliverable_deadline": 1791614022.6964066,
+  "next_action": "제공 Notebook에 풀이 셀과 실행 출력을 반영하고 CSV를 제출한 뒤 접수 여부를 확인하세요.",
+  "tasks": {
+    "q1": {
+      "provided_notebook": "q1/레이더 시계열 데이터 기반 이동 표적 식별하기.ipynb",
+      "csv": "q1_submission.csv",
+      "notebook": {
+        "status": "done",
+        "path": "/config/workspace/race90/competition-runs/20261010-051026-ef3b06/deliverables/q1.solution.ipynb",
+        "variant": "full",
+        "mode": "restore",
+        "models_embedded": true,
+        "executed": true,
+        "csv_sha256": "69ac9dbc658006cb7e0e29f5a19689be7faccc381444e6de2b0799643173f8b3"
+      }
+    },
+    "q2": {
+      "provided_notebook": "q2/군 장비 정비 보고서 분석을 통한 고장 유형 분류하기.ipynb",
+      "csv": "q2_submission.csv",
+      "notebook": {
+        "status": "done",
+        "path": "/config/workspace/race90/competition-runs/20261010-051026-ef3b06/deliverables/q2.solution.ipynb",
+        "variant": "full",
+        "mode": "restore",
+        "models_embedded": true,
+        "executed": true,
+        "csv_sha256": "224353c43d2dc1adf730b8ea5fc6827c942de089644ea96c16a4f4096bd78859"
+      }
+    }
+  }
+}

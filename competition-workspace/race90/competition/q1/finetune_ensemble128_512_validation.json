@@ -1,0 +1,24 @@
+{
+  "accuracy": 0.893,
+  "log_loss": 0.32427452383845573,
+  "models": [
+    "finetune_original_lr3e-05_s42_cv42_e120",
+    "finetune_all_lr3e-05_s42_cv42_e100"
+  ],
+  "inference_estimators": [
+    128,
+    512
+  ],
+  "ensemble": "Equal weight over two feature sets and two inference ensemble sizes. Same ten saved fold checkpoints.",
+  "test_context": "All 1000 labeled training samples",
+  "test_changes_relative_to_128": 1,
+  "repeat_validation": {
+    "cv_seed": 2026,
+    "accuracy": 0.885,
+    "log_loss": 0.3263812353544182,
+    "recipe": "same equal-weight original/all features \u00d7 128/512 estimators",
+    "candidate_changed": false,
+    "meaning": "A repeated development split on the same training data; not an untouched validation set or test accuracy."
+  },
+  "caveat": "Development OOF metric, not hidden-test accuracy."
+}

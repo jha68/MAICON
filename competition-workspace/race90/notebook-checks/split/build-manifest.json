@@ -1,0 +1,35 @@
+{
+  "created_at_utc": "2026-10-10 07:01:24 UTC",
+  "notebooks": [
+    {
+      "question": 1,
+      "notebook": "레이더 시계열 데이터 기반 이동 표적 식별하기.ipynb",
+      "previous_notebook_bytes": 436714,
+      "new_unexecuted_notebook_bytes": 10963,
+      "script_bytes": 7765,
+      "data_bytes": 254857,
+      "data_sha256": "af9316dc446f26df2828ef03107155732e2e63a9b7aec903420a650bcb9fc75d",
+      "payload_sha256": "3b1625f33c52385bf51a4eba8bf3eeae3980a6a55d29a428e12a14815554bc52"
+    },
+    {
+      "question": 2,
+      "notebook": "비행 물체 인식하기.ipynb",
+      "previous_notebook_bytes": 345634,
+      "new_unexecuted_notebook_bytes": 13061,
+      "script_bytes": 9338,
+      "data_bytes": 201037,
+      "data_sha256": "6438bf3751f840374108d453798681be4032fddf3f2d3658119d81b6469e6bb0",
+      "payload_sha256": "a3072ae71f6a5327cf264edeb5e7880723fedea4fea30aa4fe0ba3f9033cb928"
+    },
+    {
+      "question": 3,
+      "notebook": "군 장비 정비 보고서 분석을 통한 고장 유형 분류하기.ipynb",
+      "previous_notebook_bytes": 31813,
+      "new_unexecuted_notebook_bytes": 15096,
+      "script_bytes": 11230,
+      "data_bytes": 1172,
+      "data_sha256": "824766e6af180942382a277b2f4cb5ea1a5782f77c3fa7316dd44e6eb6ddc02a",
+      "payload_sha256": "b5f1872c38a20538580c5e8e2337a6fd783fd958d876c3ae2c0694b7c853e640"
+    }
+  ]
+}

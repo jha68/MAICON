@@ -1,0 +1,31 @@
+[
+  {
+    "filename": "test230.jpg",
+    "crop": null,
+    "prompt": "Inspect the partially occluded aircraft underneath the front half of the foreground Oman jet. Describe its visible shape and facing direction. Is the tan tail at the far left plausibly part of this same aircraft, or is it visibly a separate aircraft? Explain only visual evidence. Do not count parts of one aircraft twice.",
+    "answer": "The partially occluded aircraft underneath the front half of the foreground Oman jet shows a visible fuselage section with a rounded nose and cockpit windows, and a tail assembly with a tan-colored vertical stabilizer. This tail is positioned to the far left of the Oman jet’s nose, and its shape and color contrast with the Oman jet’s white fuselage and blue livery. The visible portion of this aircraft’s tail is distinct in color and appears to be part of a different aircraft, as it is not visually connected to the Oman jet’s structure. The Oman jet’s own tail is white with the Omani flag and the number 558, and it is clearly separate from the tan tail. The tan tail is not part of the Oman jet; it is a separate aircraft."
+  },
+  {
+    "filename": "test230.jpg",
+    "crop": [
+      0,
+      0.35,
+      0.65,
+      0.65
+    ],
+    "prompt": "This is a crop of an airshow photo. Describe every separate aircraft visible, including only partial structures. Group tails, fuselages, wings and wheels that plausibly belong to the same aircraft. Do not assume hidden objects.",
+    "answer": "- A single aircraft is visible, with its fuselage, wings, tail, and landing gear all belonging to the same plane.\n- The fuselage is white with light blue stripes and text. The text includes “ROYAL AIR FORCE OF OMAN” in English and “سلاح الجو السلطاني العماني” in Arabic. The aircraft’s registration, “A400”, is visible on the tail fin.\n- The tail fin is T-shaped, with the registration “A400” on its rear section.\n- The wings are low-mounted, with visible winglets at the tips. The wing structure extends from the fuselage and is partially visible.\n- The landing gear is deployed, with multiple wheels visible under the fuselage and wings. The nose gear is visible at the front, and the main landing gear is visible under the fuselage.\n- The aircraft has a set of stairs leading up to the open door on the side of the fuselage.\n- A partial view of another aircraft’s tail is visible on the far left edge of the image, but it is not connected to the main aircraft and is not part of the same plane."
+  },
+  {
+    "filename": "test094.jpg",
+    "crop": null,
+    "prompt": "Count distinct airplanes including partially visible tails. Identify each background tail from left to right. Distinguish low winglets from vertical tails, using geometry. Explain any ambiguity. Do not count parts of one airplane twice.",
+    "answer": "There are 5 distinct airplanes visible in the image.\n\n1. The primary airplane in the foreground, an Airbus A310-308 with registration SY-VIP, is fully visible and clearly identifiable. It has a zebra-striped tail and “ASA” livery.\n\n2. Behind the primary airplane, to the right, is a Lufthansa aircraft. Its tail is visible, featuring the Lufthansa logo (a yellow circle with a stylized crane). This is a distinct, complete airplane.\n\n3. To the left of the Lufthansa aircraft, another Lufthansa plane is partially visible. Its tail is also visible, with the same Lufthansa logo. This is a second distinct airplane.\n\n4. Further to the left, behind the primary airplane’s wing, a third Lufthansa aircraft is visible. Its tail is partially obscured but still identifiable by the Lufthansa logo. This is a third distinct airplane.\n\n5. To the far right, behind the primary airplane’s tail, a fourth Lufthansa aircraft is visible. Its tail is partially visible, showing the Lufthansa logo. This is a fourth distinct airplane.\n\nThe primary airplane’s own tail is not counted separately as it is part of the same aircraft.\n\nRegarding the request to distinguish low winglets from vertical tails using geometry: The primary airplane has low winglets, which are small, upward-curving extensions at the tips of the wings. These are distinct from the vertical tails (the tall, fin-like structures at the rear of the aircraft). The vertical tails are clearly visible on all airplanes, including the primary one. The winglets are not vertical tails; they are horizontal structures attached to the wingtips. There is no ambiguity in distinguishing them based on geometry — winglets are attached to the wings and point upward, while vertical tails are vertical structures extending upward from the fuselage.\n\nTherefore, there are 5 distinct airplanes visible in the image."
+  },
+  {
+    "filename": "test149.jpg",
+    "crop": null,
+    "prompt": "Count the distinct drone airframes. Inspect the bottom-left edge carefully. Is that a separate assembled drone, detached parts, or part of the foreground drone? Explain visible structure. A controller or loose parts are not additional drones.",
+    "answer": "There is one distinct drone airframe visible in the image — the one being held in the hand in the foreground.\n\nAt the bottom-left edge of the image, there is a separate object on a small white stand. This object has a single propeller and some wiring, but it lacks the full structure of a drone airframe (i.e., no central frame, no motor mounts, no flight controller, no battery or ESC connections). It appears to be a detached propeller and possibly some associated wiring or motor components, not a complete or even partially assembled drone.\n\nTherefore, there is only one distinct drone airframe in the image.\n\nThe visible structure of the foreground drone includes:\n- A black central frame with mounting points.\n- Four arms extending outward, each holding a motor (black with red accents).\n- Red and black wires connecting the motors to the central electronics.\n- A gold-colored XT60-style battery connector hanging down.\n- A small black circuit board (likely a flight controller or ESC) mounted on one of the arms.\n- The drone is held by a hand, indicating it is not in flight.\n\nThe object in the bottom-left is not a separate drone airframe; it is a detached component or parts."
+  }
+]

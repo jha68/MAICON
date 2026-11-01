@@ -1,0 +1,16 @@
+{
+  "online_upload_completed": false,
+  "exam_deadline": 1791607916.9316473,
+  "deliverable_deadline": 1791607886.9316473,
+  "next_action": "제공 Notebook에 풀이 셀과 실행 출력을 반영하고 CSV를 제출한 뒤 접수 여부를 확인하세요.",
+  "tasks": {
+    "finedust": {
+      "provided_notebook": "finedust_solution.ipynb",
+      "csv": "finedust_submission.csv",
+      "notebook": {
+        "status": "failed",
+        "error": "/config/workspace/.venv/bin/python exited 1: See log: /config/workspace/race90/practice-runs/20261010-043957-69eae3/finedust/notebook-compact-retry.log"
+      }
+    }
+  }
+}

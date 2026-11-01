@@ -1,0 +1,69 @@
+{
+  "method": "primary symptom rules + TF-IDF character 2-4 gram nearest prototype",
+  "split": "StratifiedGroupKFold(5, shuffle=True, random_state=42); groups=normalized primary symptom",
+  "accuracy": 0.9777777777777777,
+  "macro_f1": 0.9777654183660859,
+  "errors": [
+    {
+      "id": "TRN0060",
+      "truth": "ELECTRICAL",
+      "pred": "ENGINE"
+    },
+    {
+      "id": "TRN0122",
+      "truth": "ELECTRICAL",
+      "pred": "ENGINE"
+    },
+    {
+      "id": "TRN0197",
+      "truth": "ELECTRICAL",
+      "pred": "ENGINE"
+    },
+    {
+      "id": "TRN0261",
+      "truth": "ELECTRICAL",
+      "pred": "ENGINE"
+    },
+    {
+      "id": "TRN0274",
+      "truth": "ENGINE",
+      "pred": "MOBILITY"
+    },
+    {
+      "id": "TRN0306",
+      "truth": "ENGINE",
+      "pred": "MOBILITY"
+    },
+    {
+      "id": "TRN0377",
+      "truth": "ENGINE",
+      "pred": "MOBILITY"
+    },
+    {
+      "id": "TRN0421",
+      "truth": "ENGINE",
+      "pred": "MOBILITY"
+    },
+    {
+      "id": "TRN0435",
+      "truth": "ELECTRICAL",
+      "pred": "ENGINE"
+    },
+    {
+      "id": "TRN0505",
+      "truth": "ELECTRICAL",
+      "pred": "ENGINE"
+    },
+    {
+      "id": "TRN0519",
+      "truth": "ENGINE",
+      "pred": "MOBILITY"
+    },
+    {
+      "id": "TRN0520",
+      "truth": "ENGINE",
+      "pred": "MOBILITY"
+    }
+  ],
+  "note": "Rules designed using training text; not an untouched holdout or test score."
+}

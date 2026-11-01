@@ -1,0 +1,34 @@
+{
+  "model": "klue/roberta-base",
+  "accuracy": 0.9592592592592593,
+  "macro_f1": 0.9585555113242689,
+  "folds": [
+    {
+      "fold": 0,
+      "accuracy": 0.9907407407407407
+    },
+    {
+      "fold": 1,
+      "accuracy": 0.9259259259259259
+    },
+    {
+      "fold": 2,
+      "accuracy": 1.0
+    },
+    {
+      "fold": 3,
+      "accuracy": 0.9907407407407407
+    },
+    {
+      "fold": 4,
+      "accuracy": 0.8888888888888888
+    }
+  ],
+  "seconds": 30.36723256111145,
+  "args": {
+    "device": "cuda:2",
+    "epochs": 8,
+    "seed": 42
+  },
+  "validation": "5-fold grouped by unique primary symptom. Fixed 8-epoch training declared before evaluating; full/core text augmentation; no handwritten fault-classification rules."
+}

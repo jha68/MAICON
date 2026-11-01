@@ -1,0 +1,23 @@
+[
+  {
+    "question": 1,
+    "script_exit_code": 0,
+    "seconds": 0.658,
+    "csv_sha256": "8c2ff40a1ce4999272989b0955c85057522732ecee13e0521a579e2a6e0543b2",
+    "matches_previous_selected_result": true
+  },
+  {
+    "question": 2,
+    "script_exit_code": 0,
+    "seconds": 0.679,
+    "csv_sha256": "2607be38743ebe4852db3c2741f95c475eb505b81e57b66a41ae72abee8bcbf3",
+    "matches_previous_selected_result": true
+  },
+  {
+    "question": 3,
+    "script_exit_code": 0,
+    "seconds": 0.565,
+    "csv_sha256": "6a9ae5b264a84a5fb851792ef9f29f25fb59db0135556799b5ae637fda4ed98a",
+    "matches_previous_selected_result": true
+  }
+]

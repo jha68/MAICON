@@ -1,0 +1,18 @@
+catboost_d4 fold 0 0.835
+catboost_d4 fold 1 0.82
+catboost_d4 fold 2 0.8
+catboost_d4 fold 3 0.835
+catboost_d4 fold 4 0.865
+{"event": "candidate", "task": "q1", "stage": "upgrade", "score": 0.831, "candidate": "upgrade-b53e5d3699"}
+catboost_d6 fold 0 0.835
+catboost_d6 fold 1 0.82
+catboost_d6 fold 2 0.79
+catboost_d6 fold 3 0.855
+catboost_d6 fold 4 0.865
+{"event": "candidate", "task": "q1", "stage": "upgrade", "score": 0.833, "candidate": "upgrade-18a3e77dee"}
+catboost_d3 fold 0 0.83
+catboost_d3 fold 1 0.815
+catboost_d3 fold 2 0.8
+catboost_d3 fold 3 0.83
+catboost_d3 fold 4 0.865
+{"event": "candidate", "task": "q1", "stage": "upgrade", "score": 0.828, "candidate": "upgrade-6770d4623b"}

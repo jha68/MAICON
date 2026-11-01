@@ -1,0 +1,98 @@
+{
+  "observed_at": 1791614581.423309,
+  "gpus_csv": "0, GPU-91de5c85-9c1a-3e34-1dd0-c6c5a0b9f456, NVIDIA A100-SXM4-80GB, 0, 1690, 81920, 68.90\n1, GPU-158dc92c-7331-a464-43f9-c74cd59f2672, NVIDIA A100-SXM4-80GB, 100, 6003, 81920, 158.92\n2, GPU-29d5f38c-a373-b907-0bfd-f19333254aab, NVIDIA A100-SXM4-80GB, 100, 37213, 81920, 196.37",
+  "compute_processes_csv": "GPU-91de5c85-9c1a-3e34-1dd0-c6c5a0b9f456, 21150, /workspace/race90-27edfe8858d7/.venv/bin/python, 416\nGPU-91de5c85-9c1a-3e34-1dd0-c6c5a0b9f456, 21216, /workspace/race90-27edfe8858d7/.venv/bin/python, 416\nGPU-91de5c85-9c1a-3e34-1dd0-c6c5a0b9f456, 22504, /workspace/race90-27edfe8858d7/.venv/bin/python, 416\nGPU-91de5c85-9c1a-3e34-1dd0-c6c5a0b9f456, 22570, /workspace/race90-27edfe8858d7/.venv/bin/python, 416\nGPU-158dc92c-7331-a464-43f9-c74cd59f2672, 21150, /workspace/race90-27edfe8858d7/.venv/bin/python, 4378\nGPU-158dc92c-7331-a464-43f9-c74cd59f2672, 22570, /workspace/race90-27edfe8858d7/.venv/bin/python, 2912\nGPU-29d5f38c-a373-b907-0bfd-f19333254aab, 21216, /workspace/race90-27edfe8858d7/.venv/bin/python, 30614\nGPU-29d5f38c-a373-b907-0bfd-f19333254aab, 22504, /workspace/race90-27edfe8858d7/.venv/bin/python, 7312",
+  "processes": [
+    "  21150       07:32  101  0.1 /workspace/race90-27edfe8858d7/.venv/bin/python radar_finetune.py --features robust --device cuda:1 --lr 3e-5 --epochs 80 --patience 10 --tag e80",
+    "  21216       07:32  100  0.1 /workspace/race90-27edfe8858d7/.venv/bin/python radar_finetune.py --features physics --device cuda:2 --lr 3e-5 --epochs 80 --patience 10 --tag e80",
+    "  22504       01:41  110  0.1 /workspace/race90-27edfe8858d7/.venv/bin/python radar_reinfer.py --model finetune_all_lr3e-05_s42_cv2026_e100 --device cuda:2 --estimators 512",
+    "  22570       01:41  109  0.1 /workspace/race90-27edfe8858d7/.venv/bin/python radar_reinfer.py --model finetune_original_lr3e-05_s42_cv2026_e120 --device cuda:1 --estimators 512"
+  ],
+  "logs": {
+    "finetune_robust.log": {
+      "modified": 1791614580.3565252,
+      "last": "Fine-tune:  20%|██        | 16/80 [01:20<05:22,  5.04s/it, train_loss=0.3181, val_log_loss=-0.3010, best=-0.2944, s/epoch=2.2]"
+    },
+    "finetune_physics.log": {
+      "modified": 1791614575.243454,
+      "last": "Fine-tune:  16%|█▋        | 13/80 [01:38<08:25,  7.55s/it, train_loss=0.2796, val_log_loss=-0.3182, best=-0.3180, s/epoch=3.5]"
+    },
+    "reinfer_original512_cv2026.log": {
+      "modified": 1791614570.2713847,
+      "last": "FOLD 1 0.87 seconds 87.8"
+    },
+    "reinfer_all512_cv2026.log": {
+      "modified": 1791614556.3611908,
+      "last": "FOLD 0 0.87 seconds 74.0"
+    },
+    "targeted_audit.log": {
+      "modified": 1791613908.2660975,
+      "last": " a complete or even partially assembled drone.\\n\\nTherefore, there is only one distinct drone airframe in the image.\\n\\nThe visible structure of the foreground drone includes:\\n- A black central frame with mounting points.\\n- Four arms extending outward, each holding a motor (black with red accents).\\n- Red and black wires connecting the motors to the central electronics.\\n- A gold-colored XT60-style battery connector hanging down.\\n- A small black circuit board (likely a flight controller or ESC) mounted on one of the arms.\\n- The drone is held by a hand, indicating it is not in flight.\\n\\nThe object in the bottom-left is not a separate drone airframe; it is a detached component or parts.\"}"
+    },
+    "grounding.log": {
+      "modified": 1791613343.640055,
+      "last": "DONE 100 seconds 57.1"
+    },
+    "rtdetr.log": {
+      "modified": 1791612431.5060077,
+      "last": "DONE 1280 200 seconds 11.1"
+    },
+    "vision_sliced.log": {
+      "modified": 1791611350.4585044,
+      "last": "test298.jpg 42 75.7"
+    },
+    "paraphrase_augmentation.log": {
+      "modified": 1791614504.6534703,
+      "last": "/roberta-large', 'accuracy': 0.9796296296296296, 'macro_f1': 0.979417951095184, 'folds': [{'fold': 0, 'accuracy': 1.0}, {'fold': 1, 'accuracy': 1.0}, {'fold': 2, 'accuracy': 0.9722222222222222}, {'fold': 3, 'accuracy': 0.9444444444444444}, {'fold': 4, 'accuracy': 0.9814814814814815}], 'seconds': 68.92399311065674, 'args': {'device': 'cuda:0', 'epochs': 8, 'seed': 42, 'model': 'klue/roberta-large', 'tag': 'klue_large_aug', 'save_models': False, 'augment_json': '/workspace/competition-text/train_paraphrases.json'}, 'validation': '5-fold grouped by unique primary symptom. Fixed 8-epoch training declared before evaluating; full/core text augmentation; no handwritten fault-classification rules.'}"
+    },
+    "korean_transformer_variants.log": {
+      "modified": 1791614270.6572094,
+      "last": "g/koelectra-base-v3-discriminator', 'accuracy': 0.3925925925925926, 'macro_f1': 0.3941044998818959, 'folds': [{'fold': 0, 'accuracy': 0.5925925925925926}, {'fold': 1, 'accuracy': 0.4351851851851852}, {'fold': 2, 'accuracy': 0.19444444444444445}, {'fold': 3, 'accuracy': 0.4166666666666667}, {'fold': 4, 'accuracy': 0.32407407407407407}], 'seconds': 59.646005153656006, 'args': {'device': 'cuda:1', 'epochs': 8, 'seed': 42, 'model': 'monologg/koelectra-base-v3-discriminator', 'tag': 'koelectra', 'save_models': False}, 'validation': '5-fold grouped by unique primary symptom. Fixed 8-epoch training declared before evaluating; full/core text augmentation; no handwritten fault-classification rules.'}"
+    },
+    "klue.log": {
+      "modified": 1791612680.7465792,
+      "last": "TOTAL {'model': 'klue/roberta-base', 'accuracy': 0.9592592592592593, 'macro_f1': 0.9585555113242689, 'folds': [{'fold': 0, 'accuracy': 0.9907407407407407}, {'fold': 1, 'accuracy': 0.9259259259259259}, {'fold': 2, 'accuracy': 1.0}, {'fold': 3, 'accuracy': 0.9907407407407407}, {'fold': 4, 'accuracy': 0.8888888888888888}], 'seconds': 30.36723256111145, 'args': {'device': 'cuda:2', 'epochs': 8, 'seed': 42}, 'validation': '5-fold grouped by unique primary symptom. Fixed 8-epoch training declared before evaluating; full/core text augmentation; no handwritten fault-classification rules.'}"
+    },
+    "reranker.log": {
+      "modified": 1791612500.3349938,
+      "last": "DONE 0.5444444444444444 0.5412237422041343"
+    }
+  },
+  "disk_used_bytes": 58327613440,
+  "disk_total_bytes": 64424509440,
+  "pod_id": "vvpxznt3e1lvyn",
+  "warnings": [
+    "GPU 0: low utilization for 4 samples; inspect active task/queue.",
+    "Workspace disk usage above 90%."
+  ],
+  "gpus": [
+    {
+      "index": 0,
+      "uuid": "GPU-91de5c85-9c1a-3e34-1dd0-c6c5a0b9f456",
+      "name": "NVIDIA A100-SXM4-80GB",
+      "utilization_percent": 0,
+      "memory_used_mib": 1690,
+      "memory_total_mib": 81920,
+      "power_w": 68.9
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-158dc92c-7331-a464-43f9-c74cd59f2672",
+      "name": "NVIDIA A100-SXM4-80GB",
+      "utilization_percent": 100,
+      "memory_used_mib": 6003,
+      "memory_total_mib": 81920,
+      "power_w": 158.92
+    },
+    {
+      "index": 2,
+      "uuid": "GPU-29d5f38c-a373-b907-0bfd-f19333254aab",
+      "name": "NVIDIA A100-SXM4-80GB",
+      "utilization_percent": 100,
+      "memory_used_mib": 37213,
+      "memory_total_mib": 81920,
+      "power_w": 196.37
+    }
+  ],
+  "observed_utc": "2026-10-10T06:43:01.423309+00:00"
+}

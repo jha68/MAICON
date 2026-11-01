@@ -1,0 +1,41 @@
+{
+  "source": "User-uploaded notebook with saved competition-kernel execution outputs; no direct connection to that kernel.",
+  "question": 3,
+  "notebook": "/config/workspace/군 장비 정비 보고서 분석을 통한 고장 유형 분류하기.ipynb",
+  "runtime_reported": {
+    "python": "3.9.7",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "torch": "2.8.0+cpu",
+    "working_directory": "/home/jovyan/work/Problem #3"
+  },
+  "warning_status": "Only optional numexpr/bottleneck version warnings; execution continued and completed.",
+  "error_outputs": 0,
+  "actual_cpu_fit_training_reports": 540,
+  "unique_training_primary_symptoms": 90,
+  "actual_cpu_test_predictions": 180,
+  "csv_path_in_output": "/home/jovyan/work/Problem #3/submission.csv",
+  "rows": 180,
+  "columns": [
+    "id",
+    "fault_type"
+  ],
+  "recorded_csv_sha256": "6a9ae5b264a84a5fb851792ef9f29f25fb59db0135556799b5ae637fda4ed98a",
+  "matches_selected_csv_sha256": true,
+  "executed_code_matches_final_solution_ast": true,
+  "code_and_outputs_preserved": true,
+  "execution_counts": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "unused_sample_save_cell_executed": false,
+  "hidden_injection_removed_from_uploaded_copy": 1,
+  "development_f1_caveat": "1.0 is a development check after refining rules using training errors, not test accuracy.",
+  "before_notebook_sha256": "aadac28cfb07f1b9653458245e8d3dfafd3ff22b1c48e7fb08ed8402b51f0a2b",
+  "after_notebook_sha256": "b7ef9c47d064b0c19507f1383753d272eae4282844a48955e844228d0c1122ea",
+  "online_submission_receipt_confirmed": false
+}

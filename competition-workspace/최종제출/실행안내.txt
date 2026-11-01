@@ -1,0 +1,40 @@
+코드·예측 데이터 분리본 실행 안내
+
+기존 확정 예측은 변경하지 않았습니다. 큰 배열을 Notebook 밖의 .json.gz 파일로 옮겼습니다.
+각 문항 폴더에 작은 Notebook, solution_qN.py, prediction_data_qN.json.gz, submission.csv가 있습니다.
+
+방법 A: 원본 Notebook에서 코드 파일 실행
+1. 해당 문제 폴더에 solution_qN.py와 prediction_data_qN.json.gz를 함께 업로드합니다.
+2. 원래 대회 Notebook의 빈 코드 셀에 문항에 맞는 한 줄을 넣고 그 셀을 실행합니다.
+   1번: %run ./solution_q1.py
+   2번: %run ./solution_q2.py
+   3번: %run ./solution_q3.py
+3. 같은 폴더에 submission.csv가 생성됩니다. 실행 결과를 확인하고 Notebook을 저장하세요.
+   solution_qN.py의 전체 내용을 빈 코드 셀에 직접 붙여넣어 실행해도 됩니다.
+
+방법 B: 작은 Notebook 사용
+1. 해당 문제 폴더에 .ipynb와 prediction_data_qN.json.gz를 함께 업로드합니다.
+2. Python 3 커널에서 Kernel → Restart & Run All을 실행합니다.
+3. 마지막 셀의 저장 완료 메시지를 확인하고 Notebook을 저장하세요.
+이 방법에서는 .py 파일이 필수는 아닙니다. 실제 코드는 작은 Notebook에도 모두 들어 있습니다.
+
+prediction_data_qN.json.gz는 압축을 풀지 마세요. 코드가 직접 읽습니다.
+기존 data 폴더를 사용합니다. 1·3번은 data/train.csv와 data/test.csv,
+2번은 data/aerial_objects가 필요합니다. 데이터 경로가 다르면 DATA_ROOT를 지정하세요.
+1번 300행, 2번 300행, 3번 180행이며 세 문항의 CSV 이름은 모두 submission.csv입니다.
+문항별 폴더를 구분하여 대회 제출 화면에 올리세요.
+
+실행 방식
+1번: 저장한 GPU 확률을 앙상블하여 예측·CSV를 다시 계산합니다.
+2번: 저장한 GPU 탐지 결과를 병합·집계하고 기존 이미지 검토 결과를 반영합니다.
+3번: 기존 CPU 분류기로 train.csv를 학습하고 test.csv를 실제로 다시 예측합니다.
+추가 패키지 설치나 GPU는 필요 없습니다. CPU 재학습 대안으로 모델을 변경하지 않았습니다.
+원래 GPU 작업 소스와 큰 Notebook은 로컬 race90/notebook-checks/restore-version에 보존했습니다.
+
+검증
+Python 3.9.7, NumPy 1.23.5, pandas 1.5.2, CPU affinity 2개, 주소 공간 상한 4 GiB인
+별도 x86_64 환경에서 작은 Notebook 3개와 .py 파일 3개를 모두 실행했습니다.
+이 환경에는 PyTorch 1.10.0+cpu도 설치되어 있으나 제출 코드는 해당 API를 사용하지 않습니다.
+세 CSV의 SHA256이 이전 확정 제출 결과와 전부 같습니다.
+Notebook은 구형 Jupyter 호환성을 위해 nbformat 4.2로 저장했습니다.
+실제 대회 온라인 커널 실행과 제출 접수는 직접 확인하지 않았습니다.

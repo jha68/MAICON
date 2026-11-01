@@ -1,0 +1,12 @@
+{
+  "q1": {
+    "candidate": "baseline-054e094f4b",
+    "score": 0.849,
+    "stage": "baseline"
+  },
+  "q2": {
+    "candidate": "baseline-b8113375d8",
+    "score": 1.0,
+    "stage": "baseline"
+  }
+}

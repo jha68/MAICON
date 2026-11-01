@@ -1,0 +1,6 @@
+extra_trees fold 0 0.86
+extra_trees fold 1 0.845
+extra_trees fold 2 0.8
+extra_trees fold 3 0.855
+extra_trees fold 4 0.885
+{"event": "candidate", "task": "q1", "stage": "baseline", "score": 0.849, "candidate": "baseline-054e094f4b"}

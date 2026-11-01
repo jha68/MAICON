@@ -1,0 +1,62 @@
+{
+  "completed_at_utc": "2026-10-10 06:52:41 UTC",
+  "submission_ready": true,
+  "packaged": true,
+  "online_submission_completed": false,
+  "archive": "/config/workspace/제출파일_최종.zip",
+  "archive_bytes": 515385,
+  "archive_sha256": "cf9aa1e16b67f30325d4bed690eff7ea542d25957ab89fbc7e689627e44e9c8c",
+  "notebooks": [
+    {
+      "question": 1,
+      "notebook": "레이더 시계열 데이터 기반 이동 표적 식별하기.ipynb",
+      "executed_code_cells": 5,
+      "seconds": 1.762,
+      "rows": 300,
+      "columns": [
+        "sample_id",
+        "label"
+      ],
+      "csv_sha256": "8c2ff40a1ce4999272989b0955c85057522732ecee13e0521a579e2a6e0543b2",
+      "max_child_rss_kib": 137332,
+      "relative_notebook_path": "1번/레이더 시계열 데이터 기반 이동 표적 식별하기.ipynb",
+      "notebook_sha256": "572c8407d2a2e63cc9012aebbd08b909317f2229d3514c58fc8db54190bbee46",
+      "execution_mode": "GPU 저장 확률을 읽어 앙상블·검증·CSV 저장 (모델 재추론 아님)"
+    },
+    {
+      "question": 2,
+      "notebook": "비행 물체 인식하기.ipynb",
+      "executed_code_cells": 7,
+      "seconds": 1.561,
+      "rows": 300,
+      "columns": [
+        "filename",
+        "airplane",
+        "bird",
+        "drone"
+      ],
+      "csv_sha256": "2607be38743ebe4852db3c2741f95c475eb505b81e57b66a41ae72abee8bcbf3",
+      "max_child_rss_kib": 137332,
+      "relative_notebook_path": "2번/비행 물체 인식하기.ipynb",
+      "notebook_sha256": "ba50930afe3310a4047adf27ce4aab8b0391826e66a40d38487ac3bc4fa60f60",
+      "execution_mode": "GPU 저장 탐지 결과의 병합·수량 집계·검토 반영 (이미지 모델 재추론 아님)"
+    },
+    {
+      "question": 3,
+      "notebook": "군 장비 정비 보고서 분석을 통한 고장 유형 분류하기.ipynb",
+      "executed_code_cells": 6,
+      "seconds": 1.433,
+      "rows": 180,
+      "columns": [
+        "id",
+        "fault_type"
+      ],
+      "csv_sha256": "6a9ae5b264a84a5fb851792ef9f29f25fb59db0135556799b5ae637fda4ed98a",
+      "max_child_rss_kib": 137332,
+      "relative_notebook_path": "3번/군 장비 정비 보고서 분석을 통한 고장 유형 분류하기.ipynb",
+      "notebook_sha256": "66851283a10ed4bc416d4050cc85b9aceb420afa94e2ef143c678d4b290b7e90",
+      "execution_mode": "현재 CPU 분류기를 train.csv로 학습한 뒤 test.csv 전체를 실제 재예측"
+    }
+  ],
+  "handoff_on_time": true
+}

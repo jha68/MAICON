@@ -1,0 +1,91 @@
+{
+  "cfg": {
+    "total_minutes": 12,
+    "finalize_minutes": 3,
+    "time_management": {
+      "upload_minutes": 0.5,
+      "retrieval_seconds": 45,
+      "pack_seconds": 15,
+      "minimum_upgrade_seconds": 10
+    },
+    "data_root": "/workspace/race90-081532156f20/data",
+    "output_root": "/config/workspace/race90/practice-runs",
+    "cpu_workers": 1,
+    "cpu_threads": 2,
+    "gpu_cpu_threads": 4,
+    "seed": 42,
+    "runpod": {
+      "enabled": false
+    },
+    "notebooks": {
+      "execute": true,
+      "embed_models": false,
+      "mode": "restore"
+    },
+    "tasks": [
+      {
+        "name": "finedust",
+        "kind": "custom",
+        "adapter": "solve_finedust:run_harness",
+        "resource": "gpu",
+        "objective": "regression",
+        "metric": "rule_checks",
+        "test_csv": "finedust_count(sample).csv",
+        "sample_submission": "finedust_count(sample).csv",
+        "id_column": "예보 등급",
+        "prediction_columns": [
+          "count"
+        ],
+        "notebook": "finedust_solution.ipynb",
+        "baseline_seconds": 30,
+        "upgrade_seconds": 120,
+        "depends_on": [],
+        "prediction_type": "label",
+        "split": {
+          "strategy": "stratified",
+          "fraction": 0.2
+        }
+      }
+    ],
+    "project_root": "/workspace/race90-081532156f20",
+    "dependency_outputs": {},
+    "_timeline": {
+      "exam_deadline": 1791608049.1955318,
+      "compute_deadline": 1791607869.1955318,
+      "retrieval_deadline": 1791607914.1955318,
+      "notebook_deadline": 1791608004.1955318,
+      "deliverable_deadline": 1791608019.1955318,
+      "upload_seconds": 30.0,
+      "retrieval_seconds": 45.0,
+      "pack_seconds": 15.0
+    }
+  },
+  "task": {
+    "name": "finedust",
+    "kind": "custom",
+    "adapter": "solve_finedust:run_harness",
+    "resource": "gpu",
+    "objective": "regression",
+    "metric": "rule_checks",
+    "test_csv": "finedust_count(sample).csv",
+    "sample_submission": "finedust_count(sample).csv",
+    "id_column": "예보 등급",
+    "prediction_columns": [
+      "count"
+    ],
+    "notebook": "finedust_solution.ipynb",
+    "baseline_seconds": 30,
+    "upgrade_seconds": 120,
+    "depends_on": [],
+    "prediction_type": "label",
+    "split": {
+      "strategy": "stratified",
+      "fraction": 0.2
+    }
+  },
+  "output": "/workspace/race90-081532156f20/results/finedust",
+  "stage": "upgrade",
+  "deadline": 1791607499.47617,
+  "threads": 4,
+  "device": "cuda:0"
+}

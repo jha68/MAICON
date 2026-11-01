@@ -1,0 +1,17 @@
+{
+  "phase": "ready_for_upload",
+  "updated_at": 1791607399.731835,
+  "exam_deadline": 1791608049.1955318,
+  "compute_deadline": 1791607869.1955318,
+  "retrieval_deadline": 1791607914.1955318,
+  "notebook_deadline": 1791608004.1955318,
+  "deliverable_deadline": 1791608019.1955318,
+  "upload_seconds": 30.0,
+  "retrieval_seconds": 45.0,
+  "pack_seconds": 15.0,
+  "exam_seconds_left": 649.4636969566345,
+  "compute_seconds_left": 469.4636969566345,
+  "handoff_seconds_left": 619.4636969566345,
+  "submission_ready": true,
+  "fallback_tasks": []
+}

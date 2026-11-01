@@ -1,0 +1,380 @@
+{
+  "score_type": "Development out-of-fold accuracy, model-specific validation protocols; hyperparameter-selection bias applies.",
+  "candidates": [
+    {
+      "artifact": "finetune_ensemble.npz",
+      "accuracy": 0.888,
+      "errors": 112
+    },
+    {
+      "artifact": "finetune_original_lr3e-05_s42_cv42_e120_infer128.npz",
+      "accuracy": 0.885,
+      "errors": 115
+    },
+    {
+      "artifact": "finetune_original_lr3e-05_s42_cv42_e120.npz",
+      "accuracy": 0.884,
+      "errors": 116
+    },
+    {
+      "artifact": "finetune_original_lr3e-05_s42_cv2026_e120.npz",
+      "accuracy": 0.881,
+      "errors": 119
+    },
+    {
+      "artifact": "finetune_all_lr3e-05_s42_cv42_e100.npz",
+      "accuracy": 0.878,
+      "errors": 122
+    },
+    {
+      "artifact": "finetune_all_lr1e-05_s42_cv2026.npz",
+      "accuracy": 0.877,
+      "errors": 123
+    },
+    {
+      "artifact": "finetune_original_lr1e-05_s42_cv42.npz",
+      "accuracy": 0.876,
+      "errors": 124
+    },
+    {
+      "artifact": "finetune_all_lr1e-05_s42_cv42.npz",
+      "accuracy": 0.875,
+      "errors": 125
+    },
+    {
+      "artifact": "finetune_original_lr1e-05_s42_cv123.npz",
+      "accuracy": 0.875,
+      "errors": 125
+    },
+    {
+      "artifact": "finetune_original_lr1e-05_s42_cv2026.npz",
+      "accuracy": 0.875,
+      "errors": 125
+    },
+    {
+      "artifact": "base_sensor_small_s42_cv42.npz",
+      "accuracy": 0.872,
+      "errors": 128
+    },
+    {
+      "artifact": "validate_original_s42_cv2026_n32.npz",
+      "accuracy": 0.872,
+      "errors": 128
+    },
+    {
+      "artifact": "validate_original_s42_cv123_n32.npz",
+      "accuracy": 0.871,
+      "errors": 129
+    },
+    {
+      "artifact": "validate_physics_s42_cv123_n32.npz",
+      "accuracy": 0.871,
+      "errors": 129
+    },
+    {
+      "artifact": "validate_robust_s42_cv2026_n32.npz",
+      "accuracy": 0.87,
+      "errors": 130
+    },
+    {
+      "artifact": "robust_all.npz",
+      "accuracy": 0.869,
+      "errors": 131
+    },
+    {
+      "artifact": "tabicl_original.npz",
+      "accuracy": 0.869,
+      "errors": 131
+    },
+    {
+      "artifact": "base_outlier2_s57_cv42.npz",
+      "accuracy": 0.867,
+      "errors": 133
+    },
+    {
+      "artifact": "validate_all_s42_cv123_n32.npz",
+      "accuracy": 0.867,
+      "errors": 133
+    },
+    {
+      "artifact": "all_ego_s57_cv42.npz",
+      "accuracy": 0.866,
+      "errors": 134
+    },
+    {
+      "artifact": "all_seed_s57_cv42.npz",
+      "accuracy": 0.866,
+      "errors": 134
+    },
+    {
+      "artifact": "base_ego_s57_cv42.npz",
+      "accuracy": 0.866,
+      "errors": 134
+    },
+    {
+      "artifact": "robust_base.npz",
+      "accuracy": 0.866,
+      "errors": 134
+    },
+    {
+      "artifact": "validate_all_s42_cv2026_n32.npz",
+      "accuracy": 0.866,
+      "errors": 134
+    },
+    {
+      "artifact": "base_ego_speed_s57_cv42.npz",
+      "accuracy": 0.865,
+      "errors": 135
+    },
+    {
+      "artifact": "base_sensor_shape_s42_cv42.npz",
+      "accuracy": 0.865,
+      "errors": 135
+    },
+    {
+      "artifact": "validate_physics_s42_cv2026_n32.npz",
+      "accuracy": 0.865,
+      "errors": 135
+    },
+    {
+      "artifact": "all_sensor_s42_cv42.npz",
+      "accuracy": 0.864,
+      "errors": 136
+    },
+    {
+      "artifact": "base_outlier8_s57_cv42.npz",
+      "accuracy": 0.864,
+      "errors": 136
+    },
+    {
+      "artifact": "tabicl_all.npz",
+      "accuracy": 0.864,
+      "errors": 136
+    },
+    {
+      "artifact": "base_ego_motion_s57_cv42.npz",
+      "accuracy": 0.863,
+      "errors": 137
+    },
+    {
+      "artifact": "base_seed_s57_cv42.npz",
+      "accuracy": 0.863,
+      "errors": 137
+    },
+    {
+      "artifact": "tabicl_base_cluster_rcsv_cv42.npz",
+      "accuracy": 0.862,
+      "errors": 138
+    },
+    {
+      "artifact": "validate_robust_s42_cv123_n32.npz",
+      "accuracy": 0.862,
+      "errors": 138
+    },
+    {
+      "artifact": "sensor_physics_s42_cv42.npz",
+      "accuracy": 0.861,
+      "errors": 139
+    },
+    {
+      "artifact": "base_sensor_s42_cv42.npz",
+      "accuracy": 0.86,
+      "errors": 140
+    },
+    {
+      "artifact": "tabicl_base_cluster_sensor_cv42.npz",
+      "accuracy": 0.86,
+      "errors": 140
+    },
+    {
+      "artifact": "tabpfn_v2_original_s42.npz",
+      "accuracy": 0.86,
+      "errors": 140
+    },
+    {
+      "artifact": "base_robust_ego_s57_cv42.npz",
+      "accuracy": 0.858,
+      "errors": 142
+    },
+    {
+      "artifact": "compact.npz",
+      "accuracy": 0.858,
+      "errors": 142
+    },
+    {
+      "artifact": "physics_all_s42_cv42.npz",
+      "accuracy": 0.857,
+      "errors": 143
+    },
+    {
+      "artifact": "physics_base_s42_cv42.npz",
+      "accuracy": 0.857,
+      "errors": 143
+    },
+    {
+      "artifact": "tabicl_all_cluster_cv42.npz",
+      "accuracy": 0.856,
+      "errors": 144
+    },
+    {
+      "artifact": "tabpfn_v2_all_s42.npz",
+      "accuracy": 0.856,
+      "errors": 144
+    },
+    {
+      "artifact": "select_160_s57_cv42.npz",
+      "accuracy": 0.853,
+      "errors": 147
+    },
+    {
+      "artifact": "less_ego_s57_cv42.npz",
+      "accuracy": 0.852,
+      "errors": 148
+    },
+    {
+      "artifact": "lightgbm_base_cluster_sensor_cv42.npz",
+      "accuracy": 0.852,
+      "errors": 148
+    },
+    {
+      "artifact": "compact_no_direction.npz",
+      "accuracy": 0.85,
+      "errors": 150
+    },
+    {
+      "artifact": "tabpfn_v2_robust_s42.npz",
+      "accuracy": 0.85,
+      "errors": 150
+    },
+    {
+      "artifact": "compact_robust.npz",
+      "accuracy": 0.849,
+      "errors": 151
+    },
+    {
+      "artifact": "select_96_s57_cv42.npz",
+      "accuracy": 0.847,
+      "errors": 153
+    },
+    {
+      "artifact": "tabdpt_original_quantile-normal_cv42_n32.npz",
+      "accuracy": 0.847,
+      "errors": 153
+    },
+    {
+      "artifact": "tabdpt_original_robust_cv42_n32.npz",
+      "accuracy": 0.847,
+      "errors": 153
+    },
+    {
+      "artifact": "tabdpt_original_standard_cv42_n16.npz",
+      "accuracy": 0.847,
+      "errors": 153
+    },
+    {
+      "artifact": "tabicl_base_cluster_cv42.npz",
+      "accuracy": 0.847,
+      "errors": 153
+    },
+    {
+      "artifact": "physics_compact_s42_cv42.npz",
+      "accuracy": 0.846,
+      "errors": 154
+    },
+    {
+      "artifact": "extra_base.npz",
+      "accuracy": 0.841,
+      "errors": 159
+    },
+    {
+      "artifact": "lightgbm_base_cluster_cv42.npz",
+      "accuracy": 0.837,
+      "errors": 163
+    },
+    {
+      "artifact": "lightgbm_base_cluster_rcsv_cv42.npz",
+      "accuracy": 0.837,
+      "errors": 163
+    },
+    {
+      "artifact": "extra_trees.npz",
+      "accuracy": 0.836,
+      "errors": 164
+    },
+    {
+      "artifact": "select_64_s57_cv42.npz",
+      "accuracy": 0.833,
+      "errors": 167
+    },
+    {
+      "artifact": "select_48_s57_cv42.npz",
+      "accuracy": 0.829,
+      "errors": 171
+    },
+    {
+      "artifact": "tabm_original_ple_s42_cv42.npz",
+      "accuracy": 0.827,
+      "errors": 173
+    },
+    {
+      "artifact": "select_32_s57_cv42.npz",
+      "accuracy": 0.821,
+      "errors": 179
+    },
+    {
+      "artifact": "tabdpt_all_quantile-normal_cv42_n32.npz",
+      "accuracy": 0.821,
+      "errors": 179
+    },
+    {
+      "artifact": "select_20_s57_cv42.npz",
+      "accuracy": 0.815,
+      "errors": 185
+    },
+    {
+      "artifact": "tabm_all_ple_s42_cv42.npz",
+      "accuracy": 0.809,
+      "errors": 191
+    },
+    {
+      "artifact": "pointnet_s42.npz",
+      "accuracy": 0.807,
+      "errors": 193
+    },
+    {
+      "artifact": "select_12_s57_cv42.npz",
+      "accuracy": 0.804,
+      "errors": 196
+    },
+    {
+      "artifact": "tabm_physics_ple_s42_cv42.npz",
+      "accuracy": 0.804,
+      "errors": 196
+    },
+    {
+      "artifact": "pointnet_s123.npz",
+      "accuracy": 0.8,
+      "errors": 200
+    },
+    {
+      "artifact": "tabdpt_all_standard_cv42_n16.npz",
+      "accuracy": 0.799,
+      "errors": 201
+    },
+    {
+      "artifact": "tabdpt_physics_standard_cv42_n16.npz",
+      "accuracy": 0.795,
+      "errors": 205
+    },
+    {
+      "artifact": "set_transformer_s42.npz",
+      "accuracy": 0.791,
+      "errors": 209
+    },
+    {
+      "artifact": "pointnet_s2026.npz",
+      "accuracy": 0.788,
+      "errors": 212
+    }
+  ]
+}

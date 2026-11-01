@@ -1,0 +1,3 @@
+{"event": "candidate", "task": "q1", "stage": "fallback", "score": null, "candidate": "fallback-801abb0a68"}
+{"event": "candidate", "task": "q1", "stage": "baseline", "score": 1.0, "candidate": "baseline-45bc08a92f"}
+{"event": "candidate", "task": "q1", "stage": "baseline", "score": 1.0, "candidate": "baseline-cfa1e9bff9"}

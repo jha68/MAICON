@@ -14,3 +14,7 @@
 용량이 큰 ZIP 두 개는 GitHub Releases에서 내려받을 수 있습니다. [원본 자료 릴리스](https://github.com/jha68/MAICON/releases/tag/source-files)에도 네 파일을 모두 첨부했습니다.
 
 PDF와 ZIP의 내용은 원본 그대로 보관했습니다.
+
+## 대회 작업공간 보관본
+
+대회 문제 ZIP, 풀이 소스, 데이터, 실험 결과, 최종 제출본과 1번 풀이 해설은 [competition-workspace](./competition-workspace/ARCHIVE_README.md)에 보관했습니다. 3.06GB 모델 가중치는 분할 파일로 포함했으며, 복원 명령과 전체 SHA256 목록을 함께 제공합니다.

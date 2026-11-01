@@ -1,0 +1,83 @@
+{
+  "run_dir": "/config/workspace/race90/practice-runs/20261010-044209-34cb49",
+  "deadline": 1791608049.1955318,
+  "finished_at": 1791607399.7318003,
+  "elapsed_seconds": 70.01893877983093,
+  "tasks": {
+    "finedust": {
+      "task": "finedust",
+      "stage": "upgrade",
+      "score": 1.0,
+      "candidate_id": "upgrade-1e1cb02f2d",
+      "dependencies": {},
+      "metric": "rule_checks",
+      "details": {
+        "algorithm": "specified_threshold_count",
+        "feature_mode": "custom",
+        "score_meaning": "independent rule and CSV checks passed",
+        "passed": true,
+        "device": "cuda:0",
+        "gpu_name": "NVIDIA A100-SXM4-80GB",
+        "input_rows": 320876,
+        "valid_rows": 7304,
+        "dropped_missing_rows": 313572,
+        "counts": {
+          "매우 나쁨": 766,
+          "나쁨": 2282,
+          "보통": 3533,
+          "좋음": 723
+        },
+        "boundary_tests": 9,
+        "independent_reference_matched": true,
+        "compute_seconds_including_device_initialization": 2.007915996015072,
+        "elapsed_seconds": 2.350515205413103,
+        "input_sha256": "d1615e99b26793e06a3ca9550643dd32428e095bcada86f1212b87287370d05b",
+        "csv_sha256": "5e28c71c5c8f544ba9599a5ae734a8b4ef77fbdf1bcfbae7cbc486c2b096fa62"
+      },
+      "created_at": 1791607388.8815417,
+      "sha256": "5e28c71c5c8f544ba9599a5ae734a8b4ef77fbdf1bcfbae7cbc486c2b096fa62",
+      "rows": 4,
+      "submission_dtypes": {
+        "예보 등급": "str",
+        "count": "int64"
+      },
+      "artifacts": [
+        "validation.json"
+      ],
+      "candidate": "upgrade-1e1cb02f2d"
+    }
+  },
+  "notebooks": {
+    "finedust": {
+      "status": "done",
+      "path": "/config/workspace/race90/practice-runs/20261010-044209-34cb49/deliverables/finedust.solution.ipynb",
+      "variant": "compact",
+      "mode": "restore",
+      "models_embedded": false,
+      "executed": true,
+      "csv_sha256": "5e28c71c5c8f544ba9599a5ae734a8b4ef77fbdf1bcfbae7cbc486c2b096fa62"
+    }
+  },
+  "errors": [],
+  "packaged": true,
+  "timeline": {
+    "exam_deadline": 1791608049.1955318,
+    "compute_deadline": 1791607869.1955318,
+    "retrieval_deadline": 1791607914.1955318,
+    "notebook_deadline": 1791608004.1955318,
+    "deliverable_deadline": 1791608019.1955318,
+    "upload_seconds": 30.0,
+    "retrieval_seconds": 45.0,
+    "pack_seconds": 15.0
+  },
+  "complete": true,
+  "fallback_tasks": [],
+  "within_deadline": true,
+  "handoff_on_time": true,
+  "compact_notebooks": [
+    "finedust"
+  ],
+  "provided_notebooks_used": true,
+  "submission_ready": true,
+  "online_upload_completed": false
+}

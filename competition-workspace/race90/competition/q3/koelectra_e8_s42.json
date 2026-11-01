@@ -1,0 +1,37 @@
+{
+  "model": "monologg/koelectra-base-v3-discriminator",
+  "accuracy": 0.3925925925925926,
+  "macro_f1": 0.3941044998818959,
+  "folds": [
+    {
+      "fold": 0,
+      "accuracy": 0.5925925925925926
+    },
+    {
+      "fold": 1,
+      "accuracy": 0.4351851851851852
+    },
+    {
+      "fold": 2,
+      "accuracy": 0.19444444444444445
+    },
+    {
+      "fold": 3,
+      "accuracy": 0.4166666666666667
+    },
+    {
+      "fold": 4,
+      "accuracy": 0.32407407407407407
+    }
+  ],
+  "seconds": 59.646005153656006,
+  "args": {
+    "device": "cuda:1",
+    "epochs": 8,
+    "seed": 42,
+    "model": "monologg/koelectra-base-v3-discriminator",
+    "tag": "koelectra",
+    "save_models": false
+  },
+  "validation": "5-fold grouped by unique primary symptom. Fixed 8-epoch training declared before evaluating; full/core text augmentation; no handwritten fault-classification rules."
+}

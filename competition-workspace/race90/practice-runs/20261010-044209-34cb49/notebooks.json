@@ -1,0 +1,11 @@
+{
+  "finedust": {
+    "status": "done",
+    "path": "/config/workspace/race90/practice-runs/20261010-044209-34cb49/deliverables/finedust.solution.ipynb",
+    "variant": "compact",
+    "mode": "restore",
+    "models_embedded": false,
+    "executed": true,
+    "csv_sha256": "5e28c71c5c8f544ba9599a5ae734a8b4ef77fbdf1bcfbae7cbc486c2b096fa62"
+  }
+}

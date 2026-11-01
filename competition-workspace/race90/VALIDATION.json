@@ -1,0 +1,127 @@
+{
+  "tested_at_utc": "2026-10-10T04:47:29.074706+00:00",
+  "python": "3.12.3",
+  "platform": "Linux aarch64",
+  "core_versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pillow": "12.3.0",
+    "PyYAML": "6.0.3",
+    "joblib": "1.6.0",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0"
+  },
+  "optional_cpu_versions": {
+    "torch": "2.14.1+cpu",
+    "torchvision": "0.29.1+cpu",
+    "transformers": "5.19.0",
+    "safetensors": "0.8.0",
+    "catboost": "1.2.10"
+  },
+  "runpodctl_verified_version": "2.14.0-dd55bcf",
+  "pytest": "50 passed in 56.89s",
+  "live_gpu_rental_tested": true,
+  "gpu_scheduler_test": "mocked 3 concurrent slots, GPU starts before local baseline finishes, dependency readiness and downstream budgets",
+  "checkpoint_test": "real CPU sensor CNN, ResNet18, tiny offline transformer, frozen image embeddings, CatBoost classification/regression native checkpoint inference",
+  "cuda_training_tested": false,
+  "review_checks": [
+    "checkpoint retained when full refit fails",
+    "string labels and leading-zero IDs preserved",
+    "parent checkpoint lineage enforced",
+    "shared-table target columns excluded",
+    "remote retrieval continues after training cancellation",
+    "only best committed remote checkpoint packed",
+    "actual CPU/quota concurrency cap",
+    "source/image metadata included in resume checks",
+    "Runpod externally managed system Python supported using per-run venv",
+    "nbformat 4.0/4.2/4.4/4.5 export compatibility",
+    "Actual GPU custom task retrieval and notebook/ZIP finalization"
+  ],
+  "demo": {
+    "complete": true,
+    "submission_ready": true,
+    "handoff_on_time": true,
+    "packaged": true,
+    "fallback_tasks": [],
+    "compact_notebooks": [],
+    "online_upload_completed": false,
+    "elapsed_seconds": 21.18445372581482,
+    "csv_files": 3,
+    "executed_notebooks": 3,
+    "mode": "infer",
+    "source": "test_three_questions_end_to_end_and_real_notebook_outputs"
+  },
+  "time_management": {
+    "workflow": "local CLI modeling; provided notebooks completed during finalization",
+    "training_stop_minute": 70,
+    "retrieval_stop_minute": 72,
+    "notebook_stop_minute": 84,
+    "deliverable_stop_minute": 85,
+    "manual_upload_until_minute": 90,
+    "tests": [
+      "exam clock does not reset",
+      "reading/download time included",
+      "invalid reserves rejected",
+      "all compact notebooks before enhancements",
+      "failed enhancement preserves verified notebook",
+      "slow first question leaves time for other questions and retry",
+      "unexecuted notebook rejected",
+      "manual finalization stops new training",
+      "short upgrades skipped",
+      "ZIP timeout preserves previous verified archive"
+    ]
+  },
+  "live_practice": {
+    "verified_at_utc": "2026-10-10T04:47:29.074706+00:00",
+    "passed": true,
+    "pod_id": "vvpxznt3e1lvyn",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "gpu_device": "cuda:0",
+    "harness_run": "/config/workspace/race90/practice-runs/20261010-044209-34cb49",
+    "harness_seconds": 70.01893877983093,
+    "submission_ready": true,
+    "gpu_cpu_csv_byte_equal": true,
+    "csv_sha256": "5e28c71c5c8f544ba9599a5ae734a8b4ef77fbdf1bcfbae7cbc486c2b096fa62",
+    "original_notebook_unchanged": true,
+    "standalone_notebook_all_python_cells_executed": true,
+    "pytest": "50 passed in 56.89s",
+    "fixes": [
+      "Use Runpod per-run venv sharing CUDA/PyTorch packages",
+      "Preserve older notebook formats when appending and executing cells"
+    ],
+    "scope": "Actual practice threshold counting on GPU, file transfer, notebook execution and packaging; not image/text/YOLO training validation",
+    "counts": {
+      "매우 나쁨": 766,
+      "나쁨": 2282,
+      "보통": 3533,
+      "좋음": 723
+    },
+    "input_files_status": "Practice input, solution and configuration directory removed at user request after successful verification; retained run reports are historical evidence, not a resumable competition run."
+  },
+  "cuda_smoke_test": {
+    "tested": true,
+    "gpu_count": 3,
+    "training_steps_per_gpu": 30,
+    "scope": "Small synthetic MLP and matrix multiplication only; built-in neural model training on CUDA remains unverified",
+    "evidence": "live/20261010-043142/gpu-test-result.json"
+  },
+  "expected_submission_environment": {
+    "profile": "submission-environment.json",
+    "python": "3.9.7",
+    "pytorch": "1.10.0+cpu",
+    "logical_cpu_count": 2,
+    "status": "user_reported_expected",
+    "python39_syntax_parse": {
+      "passed": true,
+      "modules": 21,
+      "method": "Python 3.12 ast.parse(feature_version=(3, 9)); syntax only",
+      "required_for_development": false
+    },
+    "exact_environment_execution_verified": false,
+    "note": "Syntax parsing does not check imports, installed packages, runtime APIs or checkpoint compatibility.",
+    "applicability": "Final online submission execution only; not a development/training requirement."
+  }
+}

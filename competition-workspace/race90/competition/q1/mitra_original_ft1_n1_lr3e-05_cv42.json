@@ -1,0 +1,36 @@
+{
+  "accuracy": 0.85,
+  "log_loss": 0.4086205380441339,
+  "folds": [
+    {
+      "fold": 0,
+      "accuracy": 0.845
+    },
+    {
+      "fold": 1,
+      "accuracy": 0.835
+    },
+    {
+      "fold": 2,
+      "accuracy": 0.82
+    },
+    {
+      "fold": 3,
+      "accuracy": 0.86
+    },
+    {
+      "fold": 4,
+      "accuracy": 0.89
+    }
+  ],
+  "seconds": 72.94117784500122,
+  "args": {
+    "device": "cuda:1",
+    "features": "original,all",
+    "finetune": true,
+    "steps": 50,
+    "estimators": 1,
+    "lr": 3e-05
+  },
+  "validation": "Outer-fold labels excluded from model fitting and internal validation."
+}

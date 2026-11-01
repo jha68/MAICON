@@ -1,0 +1,37 @@
+{
+  "python": "3.12.3",
+  "executable": "/config/workspace/.venv/bin/python",
+  "exact_online_environment": false,
+  "checks": [
+    {
+      "question": 1,
+      "path": "/config/workspace/1번_레이더_실행본.ipynb",
+      "python39_syntax": "passed",
+      "all_code_cells": "passed",
+      "csv_sha256": "7f7261489bdaf9a457d5b08db3b01bd381340c1b44e2a7ce0923fe5ec9c63e2e",
+      "csv_matches_snapshot_byte_for_byte": true,
+      "seconds": 1.599,
+      "execution_directory": "/config/workspace/race90/notebook-checks/current/Problem #1"
+    },
+    {
+      "question": 2,
+      "path": "/config/workspace/2번_비행물체_실행본.ipynb",
+      "python39_syntax": "passed",
+      "all_code_cells": "passed",
+      "csv_sha256": "2607be38743ebe4852db3c2741f95c475eb505b81e57b66a41ae72abee8bcbf3",
+      "csv_matches_snapshot_byte_for_byte": true,
+      "seconds": 1.413,
+      "execution_directory": "/config/workspace/race90/notebook-checks/current/Problem #2"
+    },
+    {
+      "question": 3,
+      "path": "/config/workspace/3번_정비보고서_실행본.ipynb",
+      "python39_syntax": "passed",
+      "all_code_cells": "passed",
+      "csv_sha256": "6a9ae5b264a84a5fb851792ef9f29f25fb59db0135556799b5ae637fda4ed98a",
+      "csv_matches_snapshot_byte_for_byte": true,
+      "seconds": 1.16,
+      "execution_directory": "/config/workspace/race90/notebook-checks/current/Problem #3"
+    }
+  ]
+}

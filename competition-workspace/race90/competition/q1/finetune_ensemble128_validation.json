@@ -1,0 +1,27 @@
+{
+  "accuracy": 0.89,
+  "feature_sets": [
+    "original79",
+    "all165"
+  ],
+  "model_names": [
+    "finetune_original_lr3e-05_s42_cv42_e120",
+    "finetune_all_lr3e-05_s42_cv42_e100"
+  ],
+  "inference_estimators": 128,
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "test_context": "All 1000 labeled training rows for each saved fold model; outer validation only 800 corresponding training rows.",
+  "checkpoint_replay_max_absolute_difference": 0.0,
+  "test_predictions": 300,
+  "caveat": "Development OOF accuracy after candidate comparison; hidden test accuracy unknown.",
+  "repeat_validation": {
+    "cv_seed": 2026,
+    "same_recipe_accuracy": 0.886,
+    "primary_cv_seed": 42,
+    "primary_accuracy": 0.89,
+    "note": "Additional development split, with fine-tuning early stopping restricted to inner training data. Still not hidden-test accuracy."
+  }
+}

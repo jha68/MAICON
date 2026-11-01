@@ -1,0 +1,21 @@
+{
+  "online_upload_completed": false,
+  "exam_deadline": 1791608049.1955318,
+  "deliverable_deadline": 1791608019.1955318,
+  "next_action": "제공 Notebook에 풀이 셀과 실행 출력을 반영하고 CSV를 제출한 뒤 접수 여부를 확인하세요.",
+  "tasks": {
+    "finedust": {
+      "provided_notebook": "finedust_solution.ipynb",
+      "csv": "finedust_submission.csv",
+      "notebook": {
+        "status": "done",
+        "path": "/config/workspace/race90/practice-runs/20261010-044209-34cb49/deliverables/finedust.solution.ipynb",
+        "variant": "compact",
+        "mode": "restore",
+        "models_embedded": false,
+        "executed": true,
+        "csv_sha256": "5e28c71c5c8f544ba9599a5ae734a8b4ef77fbdf1bcfbae7cbc486c2b096fa62"
+      }
+    }
+  }
+}

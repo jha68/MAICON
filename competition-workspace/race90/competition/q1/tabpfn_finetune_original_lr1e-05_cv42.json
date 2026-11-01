@@ -1,0 +1,35 @@
+{
+  "accuracy": 0.87,
+  "log_loss": 0.3541227983387676,
+  "folds": [
+    {
+      "fold": 0,
+      "accuracy": 0.865
+    },
+    {
+      "fold": 1,
+      "accuracy": 0.845
+    },
+    {
+      "fold": 2,
+      "accuracy": 0.835
+    },
+    {
+      "fold": 3,
+      "accuracy": 0.89
+    },
+    {
+      "fold": 4,
+      "accuracy": 0.915
+    }
+  ],
+  "seconds": 270.0629086494446,
+  "args": {
+    "device": "cuda:0",
+    "features": "original",
+    "lr": 1e-05,
+    "epochs": 50,
+    "seconds_per_fold": 180
+  },
+  "validation": "Outer validation labels never used for tuning or early stopping."
+}

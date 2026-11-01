@@ -1,0 +1,23 @@
+{
+  "pod_id": "vvpxznt3e1lvyn",
+  "owned": true,
+  "remote_root": "/workspace/race90-726b8370bc18",
+  "updated_at": 1791606997.5683694,
+  "status": "tested_ready",
+  "pod_name": "race90-live-a100x3-20261010",
+  "error": null,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_count": 3,
+  "gpu_hourly_usd": 5.37,
+  "cloud": "SECURE",
+  "lease_end": 1791617400.0,
+  "lease_method": "local_watchdog",
+  "image": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+  "watchdog_pid": 2679878,
+  "host": "154.54.102.25",
+  "port": 14949,
+  "creation_method": "Runpod v2 API",
+  "transfer_roundtrip_verified": true,
+  "lease_end_utc": "2026-10-10T07:30:00Z",
+  "lease_end_kst": "2026-10-10T16:30:00+09:00"
+}

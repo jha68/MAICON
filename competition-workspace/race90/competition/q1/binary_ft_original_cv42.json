@@ -1,0 +1,11 @@
+{
+  "binary_accuracy": 0.8475,
+  "log_loss": 0.3530675023678809,
+  "seconds": 301.7841396331787,
+  "args": {
+    "device": "cuda:0",
+    "features": "original",
+    "cv_seed": 42
+  },
+  "validation": "Outer-held-out labels excluded from training and inner early stopping; score limited to PERSONNEL/PERSONNEL_GROUP."
+}

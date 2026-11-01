@@ -1,0 +1,113 @@
+# 실제 대회도 이 설정의 기존 Runpod Pod를 재사용한다 (AGENTS.md 참고).
+# tasks/data_root는 실제 지문에 맞춰 변경한다. 아래 세 tasks는 예시다.
+# 자동 삭제: 2026-10-10 16:30 KST, 로컬 watchdog. 실행 전에 남은 임대 시간을 확인한다.
+# 예상 온라인 제출 환경: Python 3.9.7 / CPU 2개 / torch 1.10.0+cpu / CUDA 없음.
+# submission-environment.json 참고. 이 설정의 학습은 기존 Runpod A100 GPU를 사용한다.
+total_minutes: 90
+finalize_minutes: 20
+time_management:
+  upload_minutes: 5
+  retrieval_seconds: 120
+  pack_seconds: 60
+  minimum_upgrade_seconds: 120
+data_root: data
+output_root: runs
+cpu_workers: 1
+cpu_threads: 2
+gpu_cpu_threads: 4
+seed: 42
+runpod:
+  enabled: true
+  gpu_count: 3
+  gpu_priorities:
+  - NVIDIA A100-SXM4-80GB
+  - NVIDIA A100 80GB PCIe
+  cloud_type: SECURE
+  max_gpu_hourly_usd: 8.0
+  image: runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404
+  ssh_key_path: /config/.ssh/runpod_codex_ed25519
+  container_disk_gb: 60
+  setup_timeout_seconds: 420
+  lease_minutes: 100
+  extra_packages: []
+  existing_pod_id: vvpxznt3e1lvyn
+notebooks:
+  execute: true
+  embed_models: true
+  mode: restore
+  max_embedded_mb: 200
+tasks:
+- name: q1
+  kind: timeseries
+  resource: gpu
+  train_csv: q1/train.csv
+  test_csv: q1/test.csv
+  sample_submission: q1/sample_submission.csv
+  notebook: q1/problem.ipynb
+  id_column: sample_id
+  target: label
+  prediction_columns:
+  - label
+  sensor_columns:
+  - acc_x
+  - acc_y
+  - acc_z
+  time_column: timestamp
+  metric: macro_f1
+  split:
+    strategy: group
+    group_column: subject_id
+    fraction: 0.2
+  baseline_seconds: 120
+  upgrade_seconds: 2400
+  epochs: 30
+  batch_size: 128
+  sequence_length: 256
+  depends_on: []
+- name: q2
+  kind: image
+  train_csv: q2/train.csv
+  test_csv: q2/test.csv
+  sample_submission: q2/sample_submission.csv
+  notebook: q2/problem.ipynb
+  image_root: q2/images
+  image_column: filename
+  id_column: id
+  target: label
+  prediction_columns:
+  - label
+  metric: accuracy
+  split:
+    strategy: stratified
+    fraction: 0.2
+  baseline_seconds: 120
+  upgrade_seconds: 3600
+  batch_size: 64
+  epochs: 12
+  pretrained: true
+  freeze_backbone: true
+  depends_on: []
+- name: q3
+  kind: text
+  resource: gpu
+  train_csv: q3/train.csv
+  test_csv: q3/test.csv
+  sample_submission: q3/sample_submission.csv
+  notebook: q3/problem.ipynb
+  text_columns:
+  - text
+  id_column: id
+  target: label
+  prediction_columns:
+  - label
+  metric: macro_f1
+  split:
+    strategy: stratified
+    fraction: 0.2
+  baseline_seconds: 120
+  upgrade_seconds: 2400
+  model_name: klue/roberta-small
+  max_length: 128
+  batch_size: 32
+  epochs: 3
+  depends_on: []

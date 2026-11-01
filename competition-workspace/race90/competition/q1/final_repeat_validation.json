@@ -1,0 +1,8 @@
+{
+  "cv_seed": 2026,
+  "accuracy": 0.885,
+  "log_loss": 0.3263812353544182,
+  "recipe": "same equal-weight original/all features \u00d7 128/512 estimators",
+  "candidate_changed": false,
+  "meaning": "A repeated development split on the same training data; not an untouched validation set or test accuracy."
+}

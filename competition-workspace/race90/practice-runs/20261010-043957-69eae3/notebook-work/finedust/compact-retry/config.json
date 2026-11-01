@@ -1,0 +1,78 @@
+{
+  "total_minutes": 12,
+  "finalize_minutes": 3,
+  "time_management": {
+    "upload_minutes": 0.5,
+    "retrieval_seconds": 45,
+    "pack_seconds": 15,
+    "minimum_upgrade_seconds": 10
+  },
+  "data_root": "/config/workspace/practice",
+  "output_root": "/config/workspace/race90/practice-runs",
+  "cpu_workers": 1,
+  "cpu_threads": 2,
+  "gpu_cpu_threads": 4,
+  "seed": 42,
+  "runpod": {
+    "enabled": true,
+    "gpu_count": 3,
+    "gpu_priorities": [
+      "NVIDIA A100-SXM4-80GB",
+      "NVIDIA A100 80GB PCIe"
+    ],
+    "cloud_type": "SECURE",
+    "max_gpu_hourly_usd": 8.0,
+    "image": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+    "ssh_key_path": "/config/.ssh/runpod_codex_ed25519",
+    "container_disk_gb": 60,
+    "setup_timeout_seconds": 420,
+    "lease_minutes": 100,
+    "extra_packages": [],
+    "existing_pod_id": "vvpxznt3e1lvyn"
+  },
+  "notebooks": {
+    "execute": true,
+    "embed_models": false,
+    "mode": "restore",
+    "compact_export": true
+  },
+  "tasks": [
+    {
+      "name": "finedust",
+      "kind": "custom",
+      "adapter": "solve_finedust:run_harness",
+      "resource": "gpu",
+      "objective": "regression",
+      "metric": "rule_checks",
+      "test_csv": "finedust_count(sample).csv",
+      "sample_submission": "finedust_count(sample).csv",
+      "id_column": "예보 등급",
+      "prediction_columns": [
+        "count"
+      ],
+      "notebook": "finedust_solution.ipynb",
+      "baseline_seconds": 30,
+      "upgrade_seconds": 120,
+      "depends_on": [],
+      "prediction_type": "label",
+      "split": {
+        "strategy": "stratified",
+        "fraction": 0.2
+      }
+    }
+  ],
+  "project_root": "/config/workspace/practice",
+  "dependency_outputs": {
+    "finedust": "/config/workspace/race90/practice-runs/20261010-043957-69eae3/finedust/candidates/upgrade-fb1a63cb3e"
+  },
+  "_timeline": {
+    "exam_deadline": 1791607916.9316473,
+    "compute_deadline": 1791607736.9316473,
+    "retrieval_deadline": 1791607781.9316473,
+    "notebook_deadline": 1791607871.9316473,
+    "deliverable_deadline": 1791607886.9316473,
+    "upload_seconds": 30.0,
+    "retrieval_seconds": 45.0,
+    "pack_seconds": 15.0
+  }
+}

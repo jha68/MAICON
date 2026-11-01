@@ -1,0 +1,7 @@
+# data/q2/dataset.yaml로 복사. train/val 이미지와 labels는 YOLO 폴더 규칙을 따릅니다.
+path: .
+train: images/train
+val: images/val
+names:
+  0: class_a
+  1: class_b

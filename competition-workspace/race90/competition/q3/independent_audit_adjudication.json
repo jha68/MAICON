@@ -1,0 +1,267 @@
+{
+  "method": "Manual semantic audit of all 95 unique test symptom cores, plus all disagreements from two independently prompted Qwen3-VL runs. No test reference labels available.",
+  "candidate_predictions_changed": 0,
+  "unique_test_cores_reviewed": 95,
+  "disagreement_rows_reviewed": 36,
+  "development_metrics_caveat": "Refined rule accuracy/F1 1.0 were measured after development on training errors, not an independent held-out estimate. Initial grouped CV macro F1 was 0.9777654. Pure E5 retrieval grouped accuracy was about 0.7333.",
+  "labels_in_prior_audit_summaries": "The fault_type column in test disagreements is the current candidate prediction, not a reference answer.",
+  "uncertain_test_ids": [
+    "TST0102",
+    "TST0155"
+  ],
+  "disagreement_review": [
+    {
+      "id": "TST0007",
+      "primary_symptom": "연결부 주변이 약간 젖어 있으나 일정 시간 후에도 양이 늘지 않고 동작은 정상이다",
+      "retained_prediction": "HYDRAULIC",
+      "reason": "Primary symptom is a damp fluid fitting; the equipment name and normal power check are background."
+    },
+    {
+      "id": "TST0013",
+      "primary_symptom": "저장 탱크 주변에 오래된 유체 흔적만 있고 현재 액면 감소는 없다",
+      "retained_prediction": "HYDRAULIC",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0014",
+      "primary_symptom": "평소보다 진동감이 약간 있으나 가속과 부하 시험 결과는 정상이다",
+      "retained_prediction": "ENGINE",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0021",
+      "primary_symptom": "연결부 주변에 유체 흔적이 있고 장시간 운전 후 온도 상승이 재현된다",
+      "retained_prediction": "COOLING",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0023",
+      "primary_symptom": "부하 증가 구간에서 순간적으로 힘이 빠지며 속도 유지가 어렵다",
+      "retained_prediction": "ENGINE",
+      "reason": "Load-dependent loss of engine power; normal hydraulic pressure and flow are explicit exclusions."
+    },
+    {
+      "id": "TST0027",
+      "primary_symptom": "흡입구 일부가 막혀 있고 연속 운전 시 온도가 평소보다 높게 유지된다",
+      "retained_prediction": "COOLING",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0028",
+      "primary_symptom": "핵심 제어는 살아 있으나 일부 보조 표시와 조명이 불규칙하게 꺼진다",
+      "retained_prediction": "ELECTRICAL",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0037",
+      "primary_symptom": "평지 이동은 가능하지만 가속 요구 시 회전 상승이 늦고 힘이 부족하다",
+      "retained_prediction": "ENGINE",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0047",
+      "primary_symptom": "동력부 하단에 오래된 유분 자국이 있으나 새로 번지는 흔적은 없다",
+      "retained_prediction": "ENGINE",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0058",
+      "primary_symptom": "동력부 하단에 오래된 유분 자국이 있으나 새로 번지는 흔적은 없다",
+      "retained_prediction": "ENGINE",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0059",
+      "primary_symptom": "연결부 주변이 약간 젖어 있으나 일정 시간 후에도 양이 늘지 않고 동작은 정상이다",
+      "retained_prediction": "HYDRAULIC",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0061",
+      "primary_symptom": "평지 이동은 가능하지만 가속 요구 시 회전 상승이 늦고 힘이 부족하다",
+      "retained_prediction": "ENGINE",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0066",
+      "primary_symptom": "핵심 제어는 살아 있으나 일부 보조 표시와 조명이 불규칙하게 꺼진다",
+      "retained_prediction": "ELECTRICAL",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0070",
+      "primary_symptom": "첫 기동에 여러 번의 시도가 필요하지만 일단 가동되면 저부하 운전은 가능하다",
+      "retained_prediction": "ENGINE",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0072",
+      "primary_symptom": "연결부 주변에 유체 흔적이 있고 장시간 운전 후 온도 상승이 재현된다",
+      "retained_prediction": "COOLING",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0075",
+      "primary_symptom": "흡입구와 배출구의 온도 차가 이전보다 작고 장시간 운전에서 출력 제한이 걸린다",
+      "retained_prediction": "COOLING",
+      "reason": "Reduced inlet/outlet temperature difference under sustained load describes deficient cooling."
+    },
+    {
+      "id": "TST0078",
+      "primary_symptom": "실린더 표면의 자국 외에는 누설이나 작동 성능 저하가 확인되지 않았다",
+      "retained_prediction": "HYDRAULIC",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0079",
+      "primary_symptom": "평지 이동은 가능하지만 가속 요구 시 회전 상승이 늦고 힘이 부족하다",
+      "retained_prediction": "ENGINE",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0082",
+      "primary_symptom": "회전 장치는 정상이나 고부하 상태를 오래 유지하면 내부 측정값이 허용 상한에 접근한다",
+      "retained_prediction": "COOLING",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0091",
+      "primary_symptom": "동력부 하단에 오래된 유분 자국이 있으나 새로 번지는 흔적은 없다",
+      "retained_prediction": "ENGINE",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0092",
+      "primary_symptom": "처음에는 정상이나 연속 동작을 하면 구동이 점차 둔해진다",
+      "retained_prediction": "HYDRAULIC",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0102",
+      "primary_symptom": "정지 후에는 빠르게 정상으로 돌아오지만 연속 운전 시 같은 보호 경보가 재현된다",
+      "retained_prediction": "COOLING",
+      "reason": "Thermal-style protection recurs during continuous operation and clears after rest. Cooling is retained; no explicit temperature term makes this less certain."
+    },
+    {
+      "id": "TST0106",
+      "primary_symptom": "운전 중 심한 기계음과 함께 회전이 멈춘 뒤 다시 기동되지 않는다",
+      "retained_prediction": "ENGINE",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0109",
+      "primary_symptom": "일정 속도 이상에서 진동이 심해져 저속 범위로 이동을 제한해야 한다",
+      "retained_prediction": "MOBILITY",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0112",
+      "primary_symptom": "윤활계 경보와 강한 진동이 동시에 나타나 계속 가동할 수 없는 상태다",
+      "retained_prediction": "ENGINE",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0113",
+      "primary_symptom": "공기 흡입부 일부가 막혀 있으며 장시간 운전 후에만 성능 제한이 발생한다",
+      "retained_prediction": "COOLING",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0117",
+      "primary_symptom": "공회전이 고르지 않지만 제한된 회전 범위에서는 계속 운전할 수 있다",
+      "retained_prediction": "ENGINE",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0119",
+      "primary_symptom": "가벼운 부하는 처리되지만 큰 부하에서는 충분한 압력이 유지되지 않는다",
+      "retained_prediction": "HYDRAULIC",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0124",
+      "primary_symptom": "평소보다 진동감이 약간 있으나 가속과 부하 시험 결과는 정상이다",
+      "retained_prediction": "ENGINE",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0130",
+      "primary_symptom": "공회전이 고르지 않지만 제한된 회전 범위에서는 계속 운전할 수 있다",
+      "retained_prediction": "ENGINE",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0139",
+      "primary_symptom": "실린더 표면의 자국 외에는 누설이나 작동 성능 저하가 확인되지 않았다",
+      "retained_prediction": "HYDRAULIC",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0148",
+      "primary_symptom": "진동 조건에서만 계기 표시가 순간 사라졌다가 다시 들어온다",
+      "retained_prediction": "ELECTRICAL",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0155",
+      "primary_symptom": "유체 연결부 주변에 젖은 흔적이 있고 운전 후 보조 저장조 수위가 눈에 띄게 낮아진다",
+      "retained_prediction": "COOLING",
+      "reason": "Auxiliary reservoir fluid loss is closest to the cooling-reservoir training examples. Hydraulic leakage remains a plausible alternative without further context."
+    },
+    {
+      "id": "TST0162",
+      "primary_symptom": "처음에는 정상이나 연속 동작을 하면 구동이 점차 둔해진다",
+      "retained_prediction": "HYDRAULIC",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    },
+    {
+      "id": "TST0175",
+      "primary_symptom": "장비 자체 진단은 통과했지만 다른 단말과의 상호 연결 시험에서는 응답이 없다",
+      "retained_prediction": "COMMUNICATION",
+      "reason": "Inter-device connection fails despite successful local self-test; communication is the primary symptom."
+    },
+    {
+      "id": "TST0177",
+      "primary_symptom": "연결부 주변이 약간 젖어 있으나 일정 시간 후에도 양이 늘지 않고 동작은 정상이다",
+      "retained_prediction": "HYDRAULIC",
+      "reason": "Primary symptom and supplied training-label analogues support the retained category; normal findings and equipment names are excluded from the deciding symptom."
+    }
+  ],
+  "additional_model_audits": [
+    {
+      "model": "BAAI/bge-reranker-v2-m3",
+      "grouped_accuracy": 0.5444444444,
+      "grouped_macro_f1": 0.5412237422,
+      "decision": "Not selected; semantic ranking weak on held-out symptoms."
+    },
+    {
+      "model": "klue/roberta-base",
+      "training": "Supervised 8 epochs with original/core augmentation; 5 grouped folds",
+      "grouped_accuracy": 0.9592592593,
+      "grouped_macro_f1": 0.9585555113,
+      "test_disagreements_with_current_candidate": 20,
+      "decision": "Not selected; model confuses paraphrased engine symptoms and newly phrased cooling observations. Current candidate retained."
+    },
+    {
+      "model": "klue/roberta-large",
+      "grouped_accuracy": 0.9777777777777777,
+      "grouped_macro_f1": 0.9777777777777779,
+      "test_disagreements_with_current_candidate": 24,
+      "decision": "Retained current candidate after reviewing all disagreements; larger model still confuses engine/hydraulic paraphrases and implicit cooling observations."
+    },
+    {
+      "model": "monologg/koelectra-base-v3-discriminator",
+      "grouped_accuracy": 0.3925925925925926,
+      "grouped_macro_f1": 0.3941044998818959,
+      "decision": "Not selected; did not learn reliable classification under the fixed 8-epoch setup."
+    },
+    {
+      "model": "klue/roberta-large",
+      "augmentation": "train-only paraphrases",
+      "grouped_accuracy": 0.9796296296296296,
+      "grouped_macro_f1": 0.979417951095184,
+      "test_disagreements_with_current_candidate": 25,
+      "decision": "Current CPU candidate retained after previously completed semantic review; no changes during final submission preparation."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "notebooks": [
+    {
+      "path": "/config/workspace/race90/competition/q2/비행 물체 인식하기.ipynb",
+      "removed": 1
+    },
+    {
+      "path": "/config/workspace/race90/competition/q3/군 장비 정비 보고서 분석을 통한 고장 유형 분류하기.ipynb",
+      "removed": 1
+    },
+    {
+      "path": "/config/workspace/race90/competition/q1/레이더 시계열 데이터 기반 이동 표적 식별하기.ipynb",
+      "removed": 1
+    },
+    {
+      "path": "/config/workspace/race90/competition/archive/original_q2_text/군 장비 정비 보고서 분석을 통한 고장 유형 분류하기.ipynb",
+      "removed": 1
+    },
+    {
+      "path": "/config/workspace/race90/competition/q1/.ipynb_checkpoints/레이더 시계열 데이터 기반 이동 표적 식별하기-checkpoint.ipynb",
+      "removed": 1
+    },
+    {
+      "path": "/config/workspace/race90/competition-runs/20261010-051026-ef3b06/deliverables/q2.solution.ipynb",
+      "removed": 1
+    },
+    {
+      "path": "/config/workspace/race90/competition-runs/20261010-051026-ef3b06/deliverables/q1.solution.ipynb",
+      "removed": 1
+    }
+  ],
+  "archives": [
+    {
+      "path": "/config/workspace/1번문제.zip",
+      "cleaned_members": [
+        "레이더 시계열 데이터 기반 이동 표적 식별하기.ipynb",
+        ".ipynb_checkpoints/레이더 시계열 데이터 기반 이동 표적 식별하기-checkpoint.ipynb"
+      ],
+      "other_files_unchanged": true
+    },
+    {
+      "path": "/config/workspace/2번문제.zip",
+      "cleaned_members": [
+        "비행 물체 인식하기.ipynb"
+      ],
+      "other_files_unchanged": true
+    },
+    {
+      "path": "/config/workspace/3번문제.zip",
+      "cleaned_members": [
+        "군 장비 정비 보고서 분석을 통한 고장 유형 분류하기.ipynb"
+      ],
+      "other_files_unchanged": true
+    },
+    {
+      "path": "/config/workspace/race90/competition-runs/20261010-051026-ef3b06/submission_pack.zip",
+      "cleaned_members": [
+        "q1.solution.ipynb",
+        "q2.solution.ipynb"
+      ],
+      "other_files_unchanged": true
+    }
+  ],
+  "remaining": [],
+  "double_check": {
+    "local_notebook_files_scanned": 7,
+    "archive_notebooks_scanned": 6,
+    "local_remaining": 0,
+    "remote_cleanup_audit": "injection_remote_cleanup.json",
+    "instruction_following_evidence": [
+      "CPU model training completed before cleanup",
+      "GPU CatBoost and TabICL training executed",
+      "YOLOv8s trained 200 epochs",
+      "Executable solution source files exist and parse successfully"
+    ],
+    "effect_assessment": "The injected code-refusal instruction was not followed. Training workers read CSV/image inputs; the hidden block was notebook Markdown."
+  }
+}

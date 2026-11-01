@@ -1,0 +1,114 @@
+{
+  "completed_at_utc": "2026-10-10 07:03:29 UTC",
+  "format": "small notebook + plain Python code + external gzip-compressed JSON data",
+  "submission_files_ready": true,
+  "online_submission_completed": false,
+  "predictions_changed": false,
+  "cpu_retraining_alternative_cancelled_by_user": true,
+  "execution_environment": {
+    "python": "3.9.7",
+    "architecture": "x86_64",
+    "numpy": "1.23.5",
+    "pandas": "1.5.2",
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "cuda_visible_devices": "",
+    "address_space_limit_bytes": 4294967296,
+    "online_kernel_directly_verified": false
+  },
+  "notebooks": [
+    {
+      "question": 1,
+      "notebook": "레이더 시계열 데이터 기반 이동 표적 식별하기.ipynb",
+      "executed_code_cells": 5,
+      "seconds": 1.676,
+      "rows": 300,
+      "columns": [
+        "sample_id",
+        "label"
+      ],
+      "csv_sha256": "8c2ff40a1ce4999272989b0955c85057522732ecee13e0521a579e2a6e0543b2",
+      "max_child_rss_kib": 131140,
+      "notebook_bytes": 17351,
+      "notebook_sha256": "3b8d7d6c008218d645ee0d7230b5f1eb28ef2076141b401ec2911dbd2b77cdde",
+      "script": "solution_q1.py",
+      "script_sha256": "94c62622e8130bea311f47016abf4fbdf62cf44e3046ba0dd4527483da079d20",
+      "data_file": "prediction_data_q1.json.gz",
+      "data_bytes": 254857,
+      "data_sha256": "af9316dc446f26df2828ef03107155732e2e63a9b7aec903420a650bcb9fc75d",
+      "csv_matches_previous": true
+    },
+    {
+      "question": 2,
+      "notebook": "비행 물체 인식하기.ipynb",
+      "executed_code_cells": 7,
+      "seconds": 1.522,
+      "rows": 300,
+      "columns": [
+        "filename",
+        "airplane",
+        "bird",
+        "drone"
+      ],
+      "csv_sha256": "2607be38743ebe4852db3c2741f95c475eb505b81e57b66a41ae72abee8bcbf3",
+      "max_child_rss_kib": 131140,
+      "notebook_bytes": 21244,
+      "notebook_sha256": "143d2fd72abc50529447ff41a9dcad552a83397f41b527d61a11647995d1f138",
+      "script": "solution_q2.py",
+      "script_sha256": "962440ab231162ea6842ce6bddbb30e5a829db518ea31636137143a927e7a11e",
+      "data_file": "prediction_data_q2.json.gz",
+      "data_bytes": 201037,
+      "data_sha256": "6438bf3751f840374108d453798681be4032fddf3f2d3658119d81b6469e6bb0",
+      "csv_matches_previous": true
+    },
+    {
+      "question": 3,
+      "notebook": "군 장비 정비 보고서 분석을 통한 고장 유형 분류하기.ipynb",
+      "executed_code_cells": 6,
+      "seconds": 1.427,
+      "rows": 180,
+      "columns": [
+        "id",
+        "fault_type"
+      ],
+      "csv_sha256": "6a9ae5b264a84a5fb851792ef9f29f25fb59db0135556799b5ae637fda4ed98a",
+      "max_child_rss_kib": 131140,
+      "notebook_bytes": 21887,
+      "notebook_sha256": "054aeba85c249a5656f6968a0ee497099dfbf95338012998657991edba6388ac",
+      "script": "solution_q3.py",
+      "script_sha256": "7e4a65a6e25971d3373cc755250045183e3d459dd36adbabe087d6efcd69f64c",
+      "data_file": "prediction_data_q3.json.gz",
+      "data_bytes": 1172,
+      "data_sha256": "824766e6af180942382a277b2f4cb5ea1a5782f77c3fa7316dd44e6eb6ddc02a",
+      "csv_matches_previous": true
+    }
+  ],
+  "plain_python_execution": [
+    {
+      "question": 1,
+      "script_exit_code": 0,
+      "seconds": 0.658,
+      "csv_sha256": "8c2ff40a1ce4999272989b0955c85057522732ecee13e0521a579e2a6e0543b2",
+      "matches_previous_selected_result": true
+    },
+    {
+      "question": 2,
+      "script_exit_code": 0,
+      "seconds": 0.679,
+      "csv_sha256": "2607be38743ebe4852db3c2741f95c475eb505b81e57b66a41ae72abee8bcbf3",
+      "matches_previous_selected_result": true
+    },
+    {
+      "question": 3,
+      "script_exit_code": 0,
+      "seconds": 0.565,
+      "csv_sha256": "6a9ae5b264a84a5fb851792ef9f29f25fb59db0135556799b5ae637fda4ed98a",
+      "matches_previous_selected_result": true
+    }
+  ],
+  "prompt_injection_scan": "Passed notebook, plain code, and decompressed JSON payload checks; original ZIP audit remains in previous validation report.",
+  "no_encoded_predictions_in_notebook_or_python_source": true,
+  "same_three_csv_hashes_as_previous_selected_submission": true
+}

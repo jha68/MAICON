@@ -1,0 +1,10 @@
+{
+  "accuracy": 0.885,
+  "teacher_accuracy": 0.886,
+  "log_loss": 0.32638684571785564,
+  "cv_seed": 2026,
+  "threshold": 0.99,
+  "test_pseudo_labels": 75,
+  "seconds": 147.85722136497498,
+  "validation": "Unlabeled outer-validation features and model pseudo-labels used as transductive context; no outer-validation ground-truth labels used for inference."
+}

@@ -1,0 +1,125 @@
+{
+  "cfg": {
+    "total_minutes": 90,
+    "finalize_minutes": 20,
+    "time_management": {
+      "upload_minutes": 5,
+      "retrieval_seconds": 120,
+      "pack_seconds": 60,
+      "minimum_upgrade_seconds": 120
+    },
+    "data_root": "/workspace/race90-27edfe8858d7/data",
+    "output_root": "/config/workspace/race90/competition-runs",
+    "cpu_workers": 1,
+    "cpu_threads": 2,
+    "gpu_cpu_threads": 4,
+    "seed": 42,
+    "runpod": {
+      "enabled": false
+    },
+    "notebooks": {
+      "execute": true,
+      "embed_models": true,
+      "mode": "restore",
+      "max_embedded_mb": 200,
+      "compact_export": true
+    },
+    "tasks": [
+      {
+        "name": "q1",
+        "kind": "custom",
+        "adapter": "custom_adapters.competition:solve",
+        "resource": "gpu",
+        "train_csv": "q1/data/train.csv",
+        "test_csv": "q1/data/test.csv",
+        "sample_submission": "q1/sample_submission.csv",
+        "notebook": "q1/레이더 시계열 데이터 기반 이동 표적 식별하기.ipynb",
+        "id_column": "sample_id",
+        "target": "label",
+        "prediction_columns": [
+          "label"
+        ],
+        "metric": "accuracy",
+        "baseline_seconds": 600,
+        "upgrade_seconds": 1500,
+        "improve": true,
+        "depends_on": [],
+        "objective": "classification",
+        "prediction_type": "label",
+        "split": {
+          "strategy": "stratified",
+          "fraction": 0.2
+        }
+      },
+      {
+        "name": "q2",
+        "kind": "custom",
+        "adapter": "custom_adapters.competition:solve",
+        "resource": "cpu",
+        "train_csv": "q2/data/train.csv",
+        "test_csv": "q2/data/test.csv",
+        "sample_submission": "q2/sample_submission.csv",
+        "notebook": "q2/군 장비 정비 보고서 분석을 통한 고장 유형 분류하기.ipynb",
+        "id_column": "id",
+        "target": "fault_type",
+        "prediction_columns": [
+          "fault_type"
+        ],
+        "metric": "macro_f1",
+        "baseline_seconds": 600,
+        "upgrade_seconds": 1500,
+        "improve": false,
+        "depends_on": [],
+        "objective": "classification",
+        "prediction_type": "label",
+        "split": {
+          "strategy": "stratified",
+          "fraction": 0.2
+        }
+      }
+    ],
+    "project_root": "/workspace/race90-27edfe8858d7",
+    "dependency_outputs": {},
+    "_timeline": {
+      "exam_deadline": 1791614322.6964066,
+      "compute_deadline": 1791613122.6964066,
+      "retrieval_deadline": 1791613242.6964066,
+      "notebook_deadline": 1791613962.6964066,
+      "deliverable_deadline": 1791614022.6964066,
+      "upload_seconds": 300.0,
+      "retrieval_seconds": 120.0,
+      "pack_seconds": 60.0
+    }
+  },
+  "task": {
+    "name": "q1",
+    "kind": "custom",
+    "adapter": "custom_adapters.competition:solve",
+    "resource": "gpu",
+    "train_csv": "q1/data/train.csv",
+    "test_csv": "q1/data/test.csv",
+    "sample_submission": "q1/sample_submission.csv",
+    "notebook": "q1/레이더 시계열 데이터 기반 이동 표적 식별하기.ipynb",
+    "id_column": "sample_id",
+    "target": "label",
+    "prediction_columns": [
+      "label"
+    ],
+    "metric": "accuracy",
+    "baseline_seconds": 600,
+    "upgrade_seconds": 1500,
+    "improve": true,
+    "depends_on": [],
+    "objective": "classification",
+    "prediction_type": "label",
+    "split": {
+      "strategy": "stratified",
+      "fraction": 0.2
+    }
+  },
+  "output": "/workspace/race90-27edfe8858d7/results/q1",
+  "stage": "upgrade",
+  "deadline": 1791610582.7924085,
+  "threads": 4,
+  "device": "cuda:0"
+}

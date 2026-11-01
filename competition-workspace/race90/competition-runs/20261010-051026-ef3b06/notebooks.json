@@ -1,0 +1,20 @@
+{
+  "q1": {
+    "status": "done",
+    "path": "/config/workspace/race90/competition-runs/20261010-051026-ef3b06/deliverables/q1.solution.ipynb",
+    "variant": "full",
+    "mode": "restore",
+    "models_embedded": true,
+    "executed": true,
+    "csv_sha256": "69ac9dbc658006cb7e0e29f5a19689be7faccc381444e6de2b0799643173f8b3"
+  },
+  "q2": {
+    "status": "done",
+    "path": "/config/workspace/race90/competition-runs/20261010-051026-ef3b06/deliverables/q2.solution.ipynb",
+    "variant": "full",
+    "mode": "restore",
+    "models_embedded": true,
+    "executed": true,
+    "csv_sha256": "224353c43d2dc1adf730b8ea5fc6827c942de089644ea96c16a4f4096bd78859"
+  }
+}

@@ -1,0 +1,1485 @@
+{
+  "model": "BAAI/bge-reranker-v2-m3",
+  "method": "Cross-encoder ranks supplied labeled symptom prototypes; no handwritten fault classification rules. Five-fold grouped validation excludes all copies of held-out cores.",
+  "grouped_accuracy": 0.5444444444444444,
+  "grouped_macro_f1": 0.5412237422041343,
+  "train_errors": [
+    {
+      "id": "TRN0002",
+      "core": "근거리에서는 통신되나 거리가 늘어나면 신호가 급격히 약해짐",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0004",
+      "core": "연결 피팅에 습윤 흔적이 있으나 시간 경과 후에도 양이 증가하지 않음",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0005",
+      "core": "속도가 높아지면 차체 진동이 커져 저속으로만 운행 가능한 상태임",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0006",
+      "core": "시동 직후 평소보다 거친 소음이 잠시 발생하나 이후 출력과 회전수는 정상임",
+      "actual": "ENGINE",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0007",
+      "core": "연결 피팅에 습윤 흔적이 있으나 시간 경과 후에도 양이 증가하지 않음",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0011",
+      "core": "라디에이터 계통에서 큰 누수가 발생해 냉각수 잔량이 유지되지 않음",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0014",
+      "core": "타이어 공기압이 서서히 감소하지만 단거리 이동은 가능함",
+      "actual": "MOBILITY",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0018",
+      "core": "라디에이터 계통에서 큰 누수가 발생해 냉각수 잔량이 유지되지 않음",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0020",
+      "core": "조향 유격이 증가해 급격한 방향 전환을 피해야 하나 기본 조향은 가능함",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0022",
+      "core": "부팅 로그에 일시적 경고가 기록됐으나 이후 통신 기능에는 이상이 없음",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0025",
+      "core": "배기 색이 일시적으로 짙어졌으나 재점검 시 회전과 출력은 기준 범위임",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0026",
+      "core": "실린더 외벽에 오래된 작동유 자국이 있으나 새 누유는 확인되지 않음",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0031",
+      "core": "표시창에 작은 흠집이 있으나 채널 설정과 통신 시험은 모두 정상임",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0032",
+      "core": "펌프 소음이 약간 커졌지만 압력 시험과 반복 동작 결과는 기준 범위임",
+      "actual": "HYDRAULIC",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0035",
+      "core": "데이터 전송 중 패킷 손실이 반복되지만 낮은 속도에서는 연결이 유지됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0036",
+      "core": "타이어 공기압이 서서히 감소하지만 단거리 이동은 가능함",
+      "actual": "MOBILITY",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0038",
+      "core": "일정 시간 사용하면 수신 감도가 떨어지고 재부팅 후 일시적으로 회복됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0041",
+      "core": "실린더가 끝 위치까지 도달하는 시간이 길어졌으나 기본 동작은 가능함",
+      "actual": "HYDRAULIC",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0042",
+      "core": "안테나 고정부에 약간의 유격이 있으나 측정된 통신 성능은 기준 범위임",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0044",
+      "core": "배터리 전압이 크게 저하되어 시동 계통이 전혀 반응하지 않음",
+      "actual": "ELECTRICAL",
+      "prediction": "COMMUNICATION"
+    },
+    {
+      "id": "TRN0047",
+      "core": "부하가 커질 때 엔진 응답이 둔해지고 순간적인 출력 저하가 반복됨",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0048",
+      "core": "라디에이터 계통에서 큰 누수가 발생해 냉각수 잔량이 유지되지 않음",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0052",
+      "core": "냉간 시동이 지연되며 정상 회전수에 도달하기까지 시간이 오래 걸림",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0054",
+      "core": "조향 유격이 증가해 급격한 방향 전환을 피해야 하나 기본 조향은 가능함",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0057",
+      "core": "근거리에서는 통신되나 거리가 늘어나면 신호가 급격히 약해짐",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0062",
+      "core": "통화 중 잡음이 증가하고 간헐적으로 연결이 끊기지만 재접속은 가능함",
+      "actual": "COMMUNICATION",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0066",
+      "core": "전원은 들어오지만 통신 링크가 전혀 형성되지 않고 호출 응답이 없음",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0067",
+      "core": "커넥터 단자에 경미한 산화 흔적이 있으나 전압과 기능 시험은 정상임",
+      "actual": "ELECTRICAL",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0070",
+      "core": "배선 피복에 가벼운 마모가 발견됐으나 도체 노출과 기능 이상은 없음",
+      "actual": "ELECTRICAL",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0074",
+      "core": "표시창에 작은 흠집이 있으나 채널 설정과 통신 시험은 모두 정상임",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0075",
+      "core": "시동 직후 평소보다 거친 소음이 잠시 발생하나 이후 출력과 회전수는 정상임",
+      "actual": "ENGINE",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0076",
+      "core": "일정 시간 사용하면 수신 감도가 떨어지고 재부팅 후 일시적으로 회복됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0077",
+      "core": "제동거리가 평소보다 길어졌지만 저속 시험에서는 정지가 가능함",
+      "actual": "MOBILITY",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0078",
+      "core": "조향 유격이 증가해 급격한 방향 전환을 피해야 하나 기본 조향은 가능함",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0081",
+      "core": "엔진 외부에 소량의 오일 흔적이 있으나 누유 진행과 성능 저하는 확인되지 않음",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0086",
+      "core": "전원은 들어오지만 통신 링크가 전혀 형성되지 않고 호출 응답이 없음",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0089",
+      "core": "펌프 소음이 약간 커졌지만 압력 시험과 반복 동작 결과는 기준 범위임",
+      "actual": "HYDRAULIC",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0091",
+      "core": "냉각 팬 소음이 약간 증가했으나 회전과 온도 제어는 정상임",
+      "actual": "COOLING",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0092",
+      "core": "제동거리가 평소보다 길어졌지만 저속 시험에서는 정지가 가능함",
+      "actual": "MOBILITY",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0096",
+      "core": "보조 탱크 수위가 약간 낮았으나 보충 후 온도 시험은 정상임",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0098",
+      "core": "부팅 로그에 일시적 경고가 기록됐으나 이후 통신 기능에는 이상이 없음",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0101",
+      "core": "커넥터 단자에 경미한 산화 흔적이 있으나 전압과 기능 시험은 정상임",
+      "actual": "ELECTRICAL",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0102",
+      "core": "부팅 후 네트워크 모듈 오류가 반복되어 음성 및 데이터 통신이 불가능함",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0103",
+      "core": "냉각 팬 소음이 약간 증가했으나 회전과 온도 제어는 정상임",
+      "actual": "COOLING",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0105",
+      "core": "배터리 전압이 크게 저하되어 시동 계통이 전혀 반응하지 않음",
+      "actual": "ELECTRICAL",
+      "prediction": "COMMUNICATION"
+    },
+    {
+      "id": "TRN0106",
+      "core": "데이터 전송 중 패킷 손실이 반복되지만 낮은 속도에서는 연결이 유지됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0112",
+      "core": "근거리에서는 통신되나 거리가 늘어나면 신호가 급격히 약해짐",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0117",
+      "core": "제동 페달을 밟아도 감속 반응이 거의 없어 안전한 정지가 어려움",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0118",
+      "core": "타이어 공기압이 서서히 감소하지만 단거리 이동은 가능함",
+      "actual": "MOBILITY",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0119",
+      "core": "회전수가 급락한 뒤 재시동을 여러 차례 시도했으나 작동하지 않음",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0121",
+      "core": "제동거리가 평소보다 길어졌지만 저속 시험에서는 정지가 가능함",
+      "actual": "MOBILITY",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0123",
+      "core": "냉간 시동이 지연되며 정상 회전수에 도달하기까지 시간이 오래 걸림",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0124",
+      "core": "헤드셋 커넥터 외관이 마모됐지만 음성 송수신은 정상적으로 확인됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0129",
+      "core": "데이터 전송 중 패킷 손실이 반복되지만 낮은 속도에서는 연결이 유지됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0130",
+      "core": "헤드셋 커넥터 외관이 마모됐지만 음성 송수신은 정상적으로 확인됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0132",
+      "core": "배터리 전압이 크게 저하되어 시동 계통이 전혀 반응하지 않음",
+      "actual": "ELECTRICAL",
+      "prediction": "COMMUNICATION"
+    },
+    {
+      "id": "TRN0133",
+      "core": "호스 연결부에 마른 냉각수 자국이 있으나 현재 누수와 온도 상승은 없음",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0134",
+      "core": "제동 페달을 밟아도 감속 반응이 거의 없어 안전한 정지가 어려움",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0137",
+      "core": "조향 시 미세한 소음이 발생하지만 유격과 반응 속도는 정상임",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0141",
+      "core": "부팅 후 네트워크 모듈 오류가 반복되어 음성 및 데이터 통신이 불가능함",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0142",
+      "core": "헤드셋 커넥터 외관이 마모됐지만 음성 송수신은 정상적으로 확인됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0145",
+      "core": "시동 모터는 회전하지만 점화가 이어지지 않아 동력이 발생하지 않음",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0147",
+      "core": "부하가 커질 때 엔진 응답이 둔해지고 순간적인 출력 저하가 반복됨",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0148",
+      "core": "부하가 커질 때 엔진 응답이 둔해지고 순간적인 출력 저하가 반복됨",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0149",
+      "core": "냉각 팬 소음이 약간 증가했으나 회전과 온도 제어는 정상임",
+      "actual": "COOLING",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0151",
+      "core": "제동거리가 평소보다 길어졌지만 저속 시험에서는 정지가 가능함",
+      "actual": "MOBILITY",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0152",
+      "core": "표시창에 작은 흠집이 있으나 채널 설정과 통신 시험은 모두 정상임",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0153",
+      "core": "일정 시간 사용하면 수신 감도가 떨어지고 재부팅 후 일시적으로 회복됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0155",
+      "core": "안테나 고정부에 약간의 유격이 있으나 측정된 통신 성능은 기준 범위임",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0157",
+      "core": "부팅 로그에 일시적 경고가 기록됐으나 이후 통신 기능에는 이상이 없음",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0159",
+      "core": "소량의 냉각수 감소가 반복되지만 보충 후 단시간 운전은 가능함",
+      "actual": "COOLING",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0162",
+      "core": "실린더가 끝 위치까지 도달하는 시간이 길어졌으나 기본 동작은 가능함",
+      "actual": "HYDRAULIC",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0163",
+      "core": "배기 색이 일시적으로 짙어졌으나 재점검 시 회전과 출력은 기준 범위임",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0165",
+      "core": "일정 시간 사용하면 수신 감도가 떨어지고 재부팅 후 일시적으로 회복됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0166",
+      "core": "통화 중 잡음이 증가하고 간헐적으로 연결이 끊기지만 재접속은 가능함",
+      "actual": "COMMUNICATION",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0168",
+      "core": "조향 시 미세한 소음이 발생하지만 유격과 반응 속도는 정상임",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0170",
+      "core": "배기 색이 일시적으로 짙어졌으나 재점검 시 회전과 출력은 기준 범위임",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0172",
+      "core": "회전수가 급락한 뒤 재시동을 여러 차례 시도했으나 작동하지 않음",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0173",
+      "core": "조향 시 미세한 소음이 발생하지만 유격과 반응 속도는 정상임",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0181",
+      "core": "부팅 후 네트워크 모듈 오류가 반복되어 음성 및 데이터 통신이 불가능함",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0182",
+      "core": "배터리 전압이 크게 저하되어 시동 계통이 전혀 반응하지 않음",
+      "actual": "ELECTRICAL",
+      "prediction": "COMMUNICATION"
+    },
+    {
+      "id": "TRN0183",
+      "core": "온도 센서 표시가 순간 흔들렸으나 별도 측정 온도와 운전 상태는 정상임",
+      "actual": "COOLING",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0185",
+      "core": "데이터 전송 중 패킷 손실이 반복되지만 낮은 속도에서는 연결이 유지됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0188",
+      "core": "냉각 팬 소음이 약간 증가했으나 회전과 온도 제어는 정상임",
+      "actual": "COOLING",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0190",
+      "core": "충전 전압이 기준보다 낮아 장시간 운용 시 전압 저하 경고가 발생함",
+      "actual": "ELECTRICAL",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0195",
+      "core": "펌프 소음이 약간 커졌지만 압력 시험과 반복 동작 결과는 기준 범위임",
+      "actual": "HYDRAULIC",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0196",
+      "core": "실린더 연결부에서 대량 누유가 발생해 구동 장치가 정지함",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0199",
+      "core": "호스 연결부에 마른 냉각수 자국이 있으나 현재 누수와 온도 상승은 없음",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0201",
+      "core": "부하가 커질 때 엔진 응답이 둔해지고 순간적인 출력 저하가 반복됨",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0205",
+      "core": "호스 연결부에 마른 냉각수 자국이 있으나 현재 누수와 온도 상승은 없음",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0209",
+      "core": "회전수가 급락한 뒤 재시동을 여러 차례 시도했으나 작동하지 않음",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0210",
+      "core": "실린더 연결부에서 대량 누유가 발생해 구동 장치가 정지함",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0211",
+      "core": "온도 센서 표시가 순간 흔들렸으나 별도 측정 온도와 운전 상태는 정상임",
+      "actual": "COOLING",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0213",
+      "core": "헤드셋 커넥터 외관이 마모됐지만 음성 송수신은 정상적으로 확인됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0214",
+      "core": "실린더가 끝 위치까지 도달하는 시간이 길어졌으나 기본 동작은 가능함",
+      "actual": "HYDRAULIC",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0215",
+      "core": "배선 피복에 가벼운 마모가 발견됐으나 도체 노출과 기능 이상은 없음",
+      "actual": "ELECTRICAL",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0216",
+      "core": "보조 탱크 수위가 약간 낮았으나 보충 후 온도 시험은 정상임",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0217",
+      "core": "보조 탱크 수위가 약간 낮았으나 보충 후 온도 시험은 정상임",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0218",
+      "core": "엔진 외부에 소량의 오일 흔적이 있으나 누유 진행과 성능 저하는 확인되지 않음",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0219",
+      "core": "냉각 팬 소음이 약간 증가했으나 회전과 온도 제어는 정상임",
+      "actual": "COOLING",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0220",
+      "core": "표시창에 작은 흠집이 있으나 채널 설정과 통신 시험은 모두 정상임",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0222",
+      "core": "연결 피팅에 습윤 흔적이 있으나 시간 경과 후에도 양이 증가하지 않음",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0229",
+      "core": "충전 전압이 기준보다 낮아 장시간 운용 시 전압 저하 경고가 발생함",
+      "actual": "ELECTRICAL",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0232",
+      "core": "시동 직후 평소보다 거친 소음이 잠시 발생하나 이후 출력과 회전수는 정상임",
+      "actual": "ENGINE",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0234",
+      "core": "전원 투입 즉시 차단기가 반복적으로 떨어져 장비가 기동되지 않음",
+      "actual": "ELECTRICAL",
+      "prediction": "COMMUNICATION"
+    },
+    {
+      "id": "TRN0236",
+      "core": "안테나 고정부에 약간의 유격이 있으나 측정된 통신 성능은 기준 범위임",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0237",
+      "core": "부팅 로그에 일시적 경고가 기록됐으나 이후 통신 기능에는 이상이 없음",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0238",
+      "core": "실린더 연결부에서 대량 누유가 발생해 구동 장치가 정지함",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0241",
+      "core": "조향 유격이 증가해 급격한 방향 전환을 피해야 하나 기본 조향은 가능함",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0243",
+      "core": "실린더 외벽에 오래된 작동유 자국이 있으나 새 누유는 확인되지 않음",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0244",
+      "core": "호스 연결부에 마른 냉각수 자국이 있으나 현재 누수와 온도 상승은 없음",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0245",
+      "core": "실린더 외벽에 오래된 작동유 자국이 있으나 새 누유는 확인되지 않음",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0246",
+      "core": "배터리 전압이 크게 저하되어 시동 계통이 전혀 반응하지 않음",
+      "actual": "ELECTRICAL",
+      "prediction": "COMMUNICATION"
+    },
+    {
+      "id": "TRN0247",
+      "core": "실린더가 끝 위치까지 도달하는 시간이 길어졌으나 기본 동작은 가능함",
+      "actual": "HYDRAULIC",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0250",
+      "core": "소량의 냉각수 감소가 반복되지만 보충 후 단시간 운전은 가능함",
+      "actual": "COOLING",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0251",
+      "core": "냉간 시동이 지연되며 정상 회전수에 도달하기까지 시간이 오래 걸림",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0254",
+      "core": "조향 유격이 증가해 급격한 방향 전환을 피해야 하나 기본 조향은 가능함",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0256",
+      "core": "충전 전압이 기준보다 낮아 장시간 운용 시 전압 저하 경고가 발생함",
+      "actual": "ELECTRICAL",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0259",
+      "core": "온도 센서 표시가 순간 흔들렸으나 별도 측정 온도와 운전 상태는 정상임",
+      "actual": "COOLING",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0262",
+      "core": "호스 연결부에 마른 냉각수 자국이 있으나 현재 누수와 온도 상승은 없음",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0264",
+      "core": "안테나 고정부에 약간의 유격이 있으나 측정된 통신 성능은 기준 범위임",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0265",
+      "core": "전원 투입 즉시 차단기가 반복적으로 떨어져 장비가 기동되지 않음",
+      "actual": "ELECTRICAL",
+      "prediction": "COMMUNICATION"
+    },
+    {
+      "id": "TRN0268",
+      "core": "라디에이터 외부 핀이 일부 휘었지만 냉각 성능 저하는 확인되지 않음",
+      "actual": "COOLING",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0271",
+      "core": "타이어 공기압이 서서히 감소하지만 단거리 이동은 가능함",
+      "actual": "MOBILITY",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0275",
+      "core": "배선 피복에 가벼운 마모가 발견됐으나 도체 노출과 기능 이상은 없음",
+      "actual": "ELECTRICAL",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0278",
+      "core": "근거리에서는 통신되나 거리가 늘어나면 신호가 급격히 약해짐",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0279",
+      "core": "제동거리가 평소보다 길어졌지만 저속 시험에서는 정지가 가능함",
+      "actual": "MOBILITY",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0280",
+      "core": "부팅 후 네트워크 모듈 오류가 반복되어 음성 및 데이터 통신이 불가능함",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0284",
+      "core": "전원은 들어오지만 통신 링크가 전혀 형성되지 않고 호출 응답이 없음",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0285",
+      "core": "회전수가 급락한 뒤 재시동을 여러 차례 시도했으나 작동하지 않음",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0289",
+      "core": "속도가 높아지면 차체 진동이 커져 저속으로만 운행 가능한 상태임",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0291",
+      "core": "일정 시간 사용하면 수신 감도가 떨어지고 재부팅 후 일시적으로 회복됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0293",
+      "core": "조향 시 미세한 소음이 발생하지만 유격과 반응 속도는 정상임",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0294",
+      "core": "커넥터 단자에 경미한 산화 흔적이 있으나 전압과 기능 시험은 정상임",
+      "actual": "ELECTRICAL",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0295",
+      "core": "시동 직후 평소보다 거친 소음이 잠시 발생하나 이후 출력과 회전수는 정상임",
+      "actual": "ENGINE",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0299",
+      "core": "시동 모터는 회전하지만 점화가 이어지지 않아 동력이 발생하지 않음",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0302",
+      "core": "속도가 높아지면 차체 진동이 커져 저속으로만 운행 가능한 상태임",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0304",
+      "core": "조향 시 미세한 소음이 발생하지만 유격과 반응 속도는 정상임",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0307",
+      "core": "전원 투입 즉시 차단기가 반복적으로 떨어져 장비가 기동되지 않음",
+      "actual": "ELECTRICAL",
+      "prediction": "COMMUNICATION"
+    },
+    {
+      "id": "TRN0310",
+      "core": "통화 중 잡음이 증가하고 간헐적으로 연결이 끊기지만 재접속은 가능함",
+      "actual": "COMMUNICATION",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0314",
+      "core": "타이어 공기압이 서서히 감소하지만 단거리 이동은 가능함",
+      "actual": "MOBILITY",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0316",
+      "core": "속도가 높아지면 차체 진동이 커져 저속으로만 운행 가능한 상태임",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0319",
+      "core": "충전 전압이 기준보다 낮아 장시간 운용 시 전압 저하 경고가 발생함",
+      "actual": "ELECTRICAL",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0320",
+      "core": "라디에이터 계통에서 큰 누수가 발생해 냉각수 잔량이 유지되지 않음",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0324",
+      "core": "냉간 시동이 지연되며 정상 회전수에 도달하기까지 시간이 오래 걸림",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0325",
+      "core": "표시창에 작은 흠집이 있으나 채널 설정과 통신 시험은 모두 정상임",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0328",
+      "core": "온도 센서 표시가 순간 흔들렸으나 별도 측정 온도와 운전 상태는 정상임",
+      "actual": "COOLING",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0330",
+      "core": "커넥터 단자에 경미한 산화 흔적이 있으나 전압과 기능 시험은 정상임",
+      "actual": "ELECTRICAL",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0332",
+      "core": "주행 중 구동축에서 큰 충격음이 난 뒤 동력이 바퀴로 전달되지 않음",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0334",
+      "core": "데이터 전송 중 패킷 손실이 반복되지만 낮은 속도에서는 연결이 유지됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0337",
+      "core": "제동 페달을 밟아도 감속 반응이 거의 없어 안전한 정지가 어려움",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0338",
+      "core": "부팅 후 네트워크 모듈 오류가 반복되어 음성 및 데이터 통신이 불가능함",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0339",
+      "core": "시동 모터는 회전하지만 점화가 이어지지 않아 동력이 발생하지 않음",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0341",
+      "core": "시동 모터는 회전하지만 점화가 이어지지 않아 동력이 발생하지 않음",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0347",
+      "core": "냉간 시동이 지연되며 정상 회전수에 도달하기까지 시간이 오래 걸림",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0348",
+      "core": "주행 중 구동축에서 큰 충격음이 난 뒤 동력이 바퀴로 전달되지 않음",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0349",
+      "core": "부팅 로그에 일시적 경고가 기록됐으나 이후 통신 기능에는 이상이 없음",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0352",
+      "core": "배선 피복에 가벼운 마모가 발견됐으나 도체 노출과 기능 이상은 없음",
+      "actual": "ELECTRICAL",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0354",
+      "core": "냉간 시동이 지연되며 정상 회전수에 도달하기까지 시간이 오래 걸림",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0355",
+      "core": "라디에이터 외부 핀이 일부 휘었지만 냉각 성능 저하는 확인되지 않음",
+      "actual": "COOLING",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0357",
+      "core": "라디에이터 외부 핀이 일부 휘었지만 냉각 성능 저하는 확인되지 않음",
+      "actual": "COOLING",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0358",
+      "core": "소량의 냉각수 감소가 반복되지만 보충 후 단시간 운전은 가능함",
+      "actual": "COOLING",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0361",
+      "core": "소량의 냉각수 감소가 반복되지만 보충 후 단시간 운전은 가능함",
+      "actual": "COOLING",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0363",
+      "core": "통화 중 잡음이 증가하고 간헐적으로 연결이 끊기지만 재접속은 가능함",
+      "actual": "COMMUNICATION",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0366",
+      "core": "충전 전압이 기준보다 낮아 장시간 운용 시 전압 저하 경고가 발생함",
+      "actual": "ELECTRICAL",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0369",
+      "core": "배기 색이 일시적으로 짙어졌으나 재점검 시 회전과 출력은 기준 범위임",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0370",
+      "core": "회전수가 급락한 뒤 재시동을 여러 차례 시도했으나 작동하지 않음",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0372",
+      "core": "실린더 연결부에서 대량 누유가 발생해 구동 장치가 정지함",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0373",
+      "core": "주행 중 구동축에서 큰 충격음이 난 뒤 동력이 바퀴로 전달되지 않음",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0375",
+      "core": "부하가 커질 때 엔진 응답이 둔해지고 순간적인 출력 저하가 반복됨",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0376",
+      "core": "부팅 로그에 일시적 경고가 기록됐으나 이후 통신 기능에는 이상이 없음",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0379",
+      "core": "배선 피복에 가벼운 마모가 발견됐으나 도체 노출과 기능 이상은 없음",
+      "actual": "ELECTRICAL",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0380",
+      "core": "실린더가 끝 위치까지 도달하는 시간이 길어졌으나 기본 동작은 가능함",
+      "actual": "HYDRAULIC",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0383",
+      "core": "전원 투입 즉시 차단기가 반복적으로 떨어져 장비가 기동되지 않음",
+      "actual": "ELECTRICAL",
+      "prediction": "COMMUNICATION"
+    },
+    {
+      "id": "TRN0385",
+      "core": "안테나 고정부에 약간의 유격이 있으나 측정된 통신 성능은 기준 범위임",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0388",
+      "core": "전원은 들어오지만 통신 링크가 전혀 형성되지 않고 호출 응답이 없음",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0390",
+      "core": "전원은 들어오지만 통신 링크가 전혀 형성되지 않고 호출 응답이 없음",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0393",
+      "core": "시동 직후 평소보다 거친 소음이 잠시 발생하나 이후 출력과 회전수는 정상임",
+      "actual": "ENGINE",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0398",
+      "core": "실린더 외벽에 오래된 작동유 자국이 있으나 새 누유는 확인되지 않음",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0400",
+      "core": "조향 유격이 증가해 급격한 방향 전환을 피해야 하나 기본 조향은 가능함",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0408",
+      "core": "표시창에 작은 흠집이 있으나 채널 설정과 통신 시험은 모두 정상임",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0409",
+      "core": "데이터 전송 중 패킷 손실이 반복되지만 낮은 속도에서는 연결이 유지됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0416",
+      "core": "실린더가 끝 위치까지 도달하는 시간이 길어졌으나 기본 동작은 가능함",
+      "actual": "HYDRAULIC",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0418",
+      "core": "제동 페달을 밟아도 감속 반응이 거의 없어 안전한 정지가 어려움",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0419",
+      "core": "배기 색이 일시적으로 짙어졌으나 재점검 시 회전과 출력은 기준 범위임",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0422",
+      "core": "커넥터 단자에 경미한 산화 흔적이 있으나 전압과 기능 시험은 정상임",
+      "actual": "ELECTRICAL",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0423",
+      "core": "통화 중 잡음이 증가하고 간헐적으로 연결이 끊기지만 재접속은 가능함",
+      "actual": "COMMUNICATION",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0427",
+      "core": "부팅 후 네트워크 모듈 오류가 반복되어 음성 및 데이터 통신이 불가능함",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0428",
+      "core": "보조 탱크 수위가 약간 낮았으나 보충 후 온도 시험은 정상임",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0429",
+      "core": "실린더 외벽에 오래된 작동유 자국이 있으나 새 누유는 확인되지 않음",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0431",
+      "core": "펌프 소음이 약간 커졌지만 압력 시험과 반복 동작 결과는 기준 범위임",
+      "actual": "HYDRAULIC",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0432",
+      "core": "라디에이터 외부 핀이 일부 휘었지만 냉각 성능 저하는 확인되지 않음",
+      "actual": "COOLING",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0437",
+      "core": "조향 시 미세한 소음이 발생하지만 유격과 반응 속도는 정상임",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0439",
+      "core": "보조 탱크 수위가 약간 낮았으나 보충 후 온도 시험은 정상임",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0441",
+      "core": "제동 페달을 밟아도 감속 반응이 거의 없어 안전한 정지가 어려움",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0444",
+      "core": "온도 센서 표시가 순간 흔들렸으나 별도 측정 온도와 운전 상태는 정상임",
+      "actual": "COOLING",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0447",
+      "core": "소량의 냉각수 감소가 반복되지만 보충 후 단시간 운전은 가능함",
+      "actual": "COOLING",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0449",
+      "core": "근거리에서는 통신되나 거리가 늘어나면 신호가 급격히 약해짐",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0454",
+      "core": "충전 전압이 기준보다 낮아 장시간 운용 시 전압 저하 경고가 발생함",
+      "actual": "ELECTRICAL",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0456",
+      "core": "주행 중 구동축에서 큰 충격음이 난 뒤 동력이 바퀴로 전달되지 않음",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0457",
+      "core": "실린더 연결부에서 대량 누유가 발생해 구동 장치가 정지함",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0459",
+      "core": "연결 피팅에 습윤 흔적이 있으나 시간 경과 후에도 양이 증가하지 않음",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0460",
+      "core": "배터리 전압이 크게 저하되어 시동 계통이 전혀 반응하지 않음",
+      "actual": "ELECTRICAL",
+      "prediction": "COMMUNICATION"
+    },
+    {
+      "id": "TRN0465",
+      "core": "통화 중 잡음이 증가하고 간헐적으로 연결이 끊기지만 재접속은 가능함",
+      "actual": "COMMUNICATION",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0466",
+      "core": "부하가 커질 때 엔진 응답이 둔해지고 순간적인 출력 저하가 반복됨",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0467",
+      "core": "연결 피팅에 습윤 흔적이 있으나 시간 경과 후에도 양이 증가하지 않음",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0470",
+      "core": "제동 페달을 밟아도 감속 반응이 거의 없어 안전한 정지가 어려움",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0471",
+      "core": "엔진 외부에 소량의 오일 흔적이 있으나 누유 진행과 성능 저하는 확인되지 않음",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0472",
+      "core": "연결 피팅에 습윤 흔적이 있으나 시간 경과 후에도 양이 증가하지 않음",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0473",
+      "core": "주행 중 구동축에서 큰 충격음이 난 뒤 동력이 바퀴로 전달되지 않음",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0474",
+      "core": "배기 색이 일시적으로 짙어졌으나 재점검 시 회전과 출력은 기준 범위임",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0475",
+      "core": "엔진 외부에 소량의 오일 흔적이 있으나 누유 진행과 성능 저하는 확인되지 않음",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0476",
+      "core": "보조 탱크 수위가 약간 낮았으나 보충 후 온도 시험은 정상임",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0479",
+      "core": "시동 모터는 회전하지만 점화가 이어지지 않아 동력이 발생하지 않음",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0480",
+      "core": "근거리에서는 통신되나 거리가 늘어나면 신호가 급격히 약해짐",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0487",
+      "core": "라디에이터 외부 핀이 일부 휘었지만 냉각 성능 저하는 확인되지 않음",
+      "actual": "COOLING",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0488",
+      "core": "회전수가 급락한 뒤 재시동을 여러 차례 시도했으나 작동하지 않음",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0489",
+      "core": "엔진 외부에 소량의 오일 흔적이 있으나 누유 진행과 성능 저하는 확인되지 않음",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0490",
+      "core": "헤드셋 커넥터 외관이 마모됐지만 음성 송수신은 정상적으로 확인됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0491",
+      "core": "라디에이터 계통에서 큰 누수가 발생해 냉각수 잔량이 유지되지 않음",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0493",
+      "core": "전원 투입 즉시 차단기가 반복적으로 떨어져 장비가 기동되지 않음",
+      "actual": "ELECTRICAL",
+      "prediction": "COMMUNICATION"
+    },
+    {
+      "id": "TRN0494",
+      "core": "라디에이터 외부 핀이 일부 휘었지만 냉각 성능 저하는 확인되지 않음",
+      "actual": "COOLING",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0495",
+      "core": "펌프 소음이 약간 커졌지만 압력 시험과 반복 동작 결과는 기준 범위임",
+      "actual": "HYDRAULIC",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0496",
+      "core": "타이어 공기압이 서서히 감소하지만 단거리 이동은 가능함",
+      "actual": "MOBILITY",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0497",
+      "core": "일정 시간 사용하면 수신 감도가 떨어지고 재부팅 후 일시적으로 회복됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0498",
+      "core": "제동거리가 평소보다 길어졌지만 저속 시험에서는 정지가 가능함",
+      "actual": "MOBILITY",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0499",
+      "core": "전원 투입 즉시 차단기가 반복적으로 떨어져 장비가 기동되지 않음",
+      "actual": "ELECTRICAL",
+      "prediction": "COMMUNICATION"
+    },
+    {
+      "id": "TRN0501",
+      "core": "온도 센서 표시가 순간 흔들렸으나 별도 측정 온도와 운전 상태는 정상임",
+      "actual": "COOLING",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0504",
+      "core": "전원은 들어오지만 통신 링크가 전혀 형성되지 않고 호출 응답이 없음",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0508",
+      "core": "실린더 연결부에서 대량 누유가 발생해 구동 장치가 정지함",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0509",
+      "core": "엔진 외부에 소량의 오일 흔적이 있으나 누유 진행과 성능 저하는 확인되지 않음",
+      "actual": "ENGINE",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0510",
+      "core": "라디에이터 계통에서 큰 누수가 발생해 냉각수 잔량이 유지되지 않음",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0511",
+      "core": "시동 모터는 회전하지만 점화가 이어지지 않아 동력이 발생하지 않음",
+      "actual": "ENGINE",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0513",
+      "core": "커넥터 단자에 경미한 산화 흔적이 있으나 전압과 기능 시험은 정상임",
+      "actual": "ELECTRICAL",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0515",
+      "core": "속도가 높아지면 차체 진동이 커져 저속으로만 운행 가능한 상태임",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0517",
+      "core": "안테나 고정부에 약간의 유격이 있으나 측정된 통신 성능은 기준 범위임",
+      "actual": "COMMUNICATION",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0521",
+      "core": "냉각 팬 소음이 약간 증가했으나 회전과 온도 제어는 정상임",
+      "actual": "COOLING",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0522",
+      "core": "실린더 외벽에 오래된 작동유 자국이 있으나 새 누유는 확인되지 않음",
+      "actual": "HYDRAULIC",
+      "prediction": "COOLING"
+    },
+    {
+      "id": "TRN0523",
+      "core": "주행 중 구동축에서 큰 충격음이 난 뒤 동력이 바퀴로 전달되지 않음",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0524",
+      "core": "헤드셋 커넥터 외관이 마모됐지만 음성 송수신은 정상적으로 확인됨",
+      "actual": "COMMUNICATION",
+      "prediction": "ELECTRICAL"
+    },
+    {
+      "id": "TRN0525",
+      "core": "호스 연결부에 마른 냉각수 자국이 있으나 현재 누수와 온도 상승은 없음",
+      "actual": "COOLING",
+      "prediction": "HYDRAULIC"
+    },
+    {
+      "id": "TRN0526",
+      "core": "소량의 냉각수 감소가 반복되지만 보충 후 단시간 운전은 가능함",
+      "actual": "COOLING",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0528",
+      "core": "배선 피복에 가벼운 마모가 발견됐으나 도체 노출과 기능 이상은 없음",
+      "actual": "ELECTRICAL",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0531",
+      "core": "시동 직후 평소보다 거친 소음이 잠시 발생하나 이후 출력과 회전수는 정상임",
+      "actual": "ENGINE",
+      "prediction": "MOBILITY"
+    },
+    {
+      "id": "TRN0535",
+      "core": "속도가 높아지면 차체 진동이 커져 저속으로만 운행 가능한 상태임",
+      "actual": "MOBILITY",
+      "prediction": "ENGINE"
+    },
+    {
+      "id": "TRN0540",
+      "core": "펌프 소음이 약간 커졌지만 압력 시험과 반복 동작 결과는 기준 범위임",
+      "actual": "HYDRAULIC",
+      "prediction": "ENGINE"
+    }
+  ],
+  "seconds": 5.229190349578857
+}

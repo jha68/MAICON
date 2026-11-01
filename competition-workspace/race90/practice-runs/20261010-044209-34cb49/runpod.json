@@ -1,0 +1,12 @@
+{
+  "pod_id": "vvpxznt3e1lvyn",
+  "owned": false,
+  "remote_root": "/workspace/race90-081532156f20",
+  "updated_at": 1791607397.2181377,
+  "status": "attached_pod_retained",
+  "cli_version": "runpodctl 2.14.0-dd55bcf",
+  "health": {
+    "cuda": true,
+    "gpus": 3
+  }
+}
