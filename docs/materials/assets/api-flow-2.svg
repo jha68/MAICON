@@ -1,0 +1,430 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 98 1200 1792" width="1200" height="1792" role="img" aria-label="경기 흐름도: 대기·준비·진행·보고·종료 순서로 단계 1~11마다 참가팀 프로그램·경기운영 서버·주최측 장치(UGV)·경기장 장치가 무엇을 주고받는지 보여 주는 순서도"><style><![CDATA[
+  /* 단독 실행 — 파일 하나만 열어도 된다. 인터넷이 없으면 맑은 고딕·Consolas로 보인다 */
+  html { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+
+
+  /* 스틸 테마 — 운영 화면(shared/themes.css `steel`)과 같은 값: 중성 다크 그레이 + 브랜드 옐로 (2026-10-27) */
+  :root {
+    --bg:        #0e0f11;
+    --surface:   #191b1f;
+    --surface-2: #23262b;
+    --surface-3: #121316;
+    --border:    #32363d;
+    --border-2:  #474d57;
+    --accent:    #ffd400;
+    --accent-fg: #1a1400;
+    --text:      #f0f2f5;
+    --text-2:    #bcc1c9;
+    --text-3:    #8b919b;
+    --team:      #4a8ae8;
+    --auto:      #4ac97a;
+    --impl:      #ff8fa3;
+    --red:       #ec4f62;
+    --ui:   "Noto Sans KR", "Malgun Gothic", "Segoe UI", sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+    --inset: inset 0 1px 2px rgba(0,0,0,.45);
+  }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: var(--ui); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---- 배너 ---- */
+  .banner { background: var(--accent); color: var(--accent-fg); border-bottom: 4px solid var(--accent-fg); padding: 16px 0 14px; }
+  .banner-in { max-width: 1240px; margin: 0 auto; padding: 0 16px; display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+  .banner .name { font-size: 26px; font-weight: 900; line-height: 1.15; }
+  .banner .role { font-size: 16px; font-weight: 700; padding-left: 16px; border-left: 2px solid rgba(26,20,0,.35); }
+  .banner .stamp { margin-left: auto; font-family: var(--mono); font-size: 16px; font-weight: 600; opacity: .85; }
+
+  /* ---- 단계 막대 (위) ---- */
+  .rail { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--border); }
+  .rail-in { max-width: 1240px; margin: 0 auto; padding: 10px 16px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: thin; }
+  .rail button {
+    flex: none; min-width: 44px; height: 40px; padding: 0 12px; border-radius: 999px; cursor: pointer;
+    font-family: var(--ui); font-size: 16px; font-weight: 700; color: var(--text-2);
+    background: var(--surface-3); border: 1px solid var(--border-2);
+  }
+  .rail button:hover { color: var(--text); border-color: var(--text-3); }
+  .rail button.impl { border-color: #8a4757; }
+  .rail button[aria-current="step"] { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+  .rail button:focus-visible, .nav button:focus-visible, .toc a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ---- 페이지 ---- */
+  main { max-width: 1240px; margin: 0 auto; padding: 22px 16px 120px; }
+  .page { animation: page-in .18s ease-out; }
+  @keyframes page-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .ph { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 6px; }
+  .no {
+    flex: none; width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: 30px; font-weight: 900; background: var(--team); color: #fff; box-shadow: 0 3px 0 rgba(0,0,0,.5);
+  }
+  .no.auto { background: var(--auto); color: #0b2a1f; }
+  .no.misc { background: var(--surface-2); color: var(--accent); border: 2px solid var(--accent); font-size: 24px; }
+  .ph h2 { margin: 0; font-size: 28px; font-weight: 900; line-height: 1.2; }
+  .ph .when { font-family: var(--mono); font-size: 16px; font-weight: 600; color: var(--accent); background: var(--surface-3);
+              border: 1px solid #8a7400; border-radius: 999px; padding: 2px 12px; }
+  .ph .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .lead { font-size: 19px; color: var(--text-2); margin: 10px 0 18px; max-width: 80ch; }
+  .lead b { color: var(--text); }
+
+  .tag { font-size: 16px; font-weight: 700; padding: 1px 10px; border-radius: 999px; border: 1px solid var(--border-2); color: var(--text-2); background: var(--surface-3); }
+  .tag.ok   { color: var(--auto); border-color: #2c7a52; }
+  .tag.soon { color: #7fb0ff; border-color: #2a4a7a; }
+  .tag.open { color: var(--accent); border-color: #8a7400; }
+  .tag.impl { color: #2a0b14; background: var(--impl); border-color: var(--impl); }
+  .tag.impl.opt { color: var(--impl); background: var(--surface-3); }
+  /* 확정·잠정·임시·예정 뱃지와 「선택」 설명은 숨긴다 (2026-10-21 사용자 지정) — 지우지 않고 class="st-hide"만 붙였다 */
+  .st-hide { display: none !important; }
+
+  .grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 18px; align-items: start; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; min-width: 0; }
+  .card + .card { margin-top: 14px; }
+  .card h3 { margin: 0 0 10px; font-size: 18px; font-weight: 800; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .card h3 .t { font-family: var(--mono); font-size: 16px; font-weight: 600; color: var(--accent); }
+  .card p { margin: 0 0 10px; color: var(--text-2); }
+  .card p:last-child { margin-bottom: 0; }
+  ul.dots, ol.steps { margin: 0; padding-left: 22px; color: var(--text-2); }
+  ul.dots li, ol.steps li { margin: 5px 0; }
+  li b, p b, td b { color: var(--text); }
+  code { font-family: var(--mono); font-size: .92em; color: var(--accent); background: var(--surface-3); border: 1px solid var(--border); border-radius: 3px; padding: 1px 5px; overflow-wrap: anywhere; }
+
+  pre.code {
+    margin: 0; padding: 12px 14px; border-radius: 4px; overflow-x: auto;
+    background: var(--surface-3); border: 1px solid var(--border); box-shadow: var(--inset);
+    font-family: var(--mono); font-size: 16px; line-height: 1.5; color: var(--text); white-space: pre;
+  }
+  pre.code + pre.code, .label + pre.code { margin-top: 8px; }
+  pre.code .k { color: #9fb4ff; }      /* 키 */
+  pre.code .s { color: var(--accent); } /* 문자열 */
+  pre.code .n { color: var(--auto); }  /* 숫자·true·null */
+  pre.code .c { color: var(--text-3); } /* 주석 */
+  pre.code .m { color: var(--impl); font-weight: 700; }  /* 메서드 */
+  .label { margin-top: 12px; font-size: 16px; font-weight: 700; color: var(--text-3); }
+  .label:first-child { margin-top: 0; }
+
+  .tbl-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 4px; }
+  table { border-collapse: collapse; width: 100%; font-size: 16px; }
+  th, td { padding: 8px 10px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--border); }
+  th { background: var(--surface-2); color: var(--text); font-weight: 700; white-space: nowrap; }
+  td { color: var(--text-2); background: var(--surface); }
+  tr:last-child td { border-bottom: none; }
+  td.k { white-space: nowrap; color: var(--text); font-weight: 700; }
+
+  .note { margin-top: 14px; padding: 10px 14px; border-radius: 4px; background: var(--surface-3); border: 1px solid var(--border);
+          border-left: 4px solid var(--accent); color: var(--text-2); }
+  .note.red { border-left-color: var(--red); }
+  .note b { color: var(--text); }
+
+  /* ---- 표지 ---- */
+  .toc { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; margin: 14px 0 18px; }
+  .toc a {
+    display: flex; gap: 12px; align-items: center; padding: 12px 14px; border-radius: 8px; text-decoration: none;
+    background: var(--surface); border: 1px solid var(--border); color: var(--text);
+  }
+  .toc a:hover { border-color: var(--accent); }
+  .toc a.impl { border-left: 4px solid var(--impl); }
+  .toc .n { flex: none; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-weight: 900; background: var(--team); color: #fff; }
+  .toc .n.auto { background: var(--auto); color: #0b2a1f; }
+  .toc .n.misc { background: var(--surface-2); color: var(--accent); border: 1px solid var(--accent); }
+  .toc b { display: block; font-size: 17px; }
+  .toc small { display: block; font-size: 16px; color: var(--text-3); font-family: var(--mono); overflow-wrap: anywhere; }
+
+  /* ---- 섹터 그림 ---- */
+  .field { display: grid; grid-template-columns: .5fr 1fr .75fr 1fr .5fr; grid-template-rows: repeat(3, 46px); gap: 4px;
+           max-width: 560px; font-family: var(--mono); font-size: 16px; font-weight: 700; }
+  .field > div { display: flex; align-items: center; justify-content: center; border-radius: 4px; border: 1px solid var(--border-2); }
+  .field .edge { grid-row: 1 / 4; color: var(--text-3); font-family: var(--ui); font-weight: 500;
+                 background: repeating-linear-gradient(135deg, var(--surface-3) 0 8px, var(--surface) 8px 16px); }
+  .field .b { background: #16233a; border-color: var(--team); color: #b9c6ff; }
+  .field .r { background: #4a1f2e; border-color: var(--red); color: #ffc2cc; }
+  .field .cm { grid-row: 1 / 4; grid-column: 3; background: var(--surface-2); color: var(--accent); }
+
+  /* ---- 한눈에 보기 그림 (2026-10-21) — 단계별 주고받기 순서도(SVG). 글자는 16px 아래로 줄지 않게 좁은 화면에서는 가로로 밀어 본다 ---- */
+  .sec-h { margin: 22px 0 8px; font-size: 20px; font-weight: 800; }
+  figure.dg { margin: 0 0 6px; }
+  .dg-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 6px; background: var(--surface-3); }
+  .dg-wrap svg { display: block; width: 100%; min-width: 1200px; height: auto; }
+  .dg-wrap text { fill: var(--text); font-family: var(--ui); font-size: 16px; }
+  .dg-wrap .dg-t { font-size: 18px; font-weight: 800; }
+  .dg-wrap .dg-s { fill: var(--text-2); }
+  .dg-wrap .dg-m { fill: var(--accent); font-family: var(--mono); }
+  .dg-wrap .dg-l { fill: var(--text-2); font-weight: 700; }
+  .dg-wrap .dg-l.impl { fill: var(--impl); }
+  .dg-wrap .dg-l.auto { fill: var(--auto); }
+  .dg-box { fill: var(--surface); stroke: var(--border-2); stroke-width: 1.5; }
+  .dg-box.srv { stroke: var(--accent); stroke-width: 2; }
+  .dg-box.impl { stroke: var(--impl); stroke-width: 2; }
+  .dg-box.auto { stroke: var(--auto); stroke-width: 2; }
+  .dg-group { fill: none; stroke: var(--text-3); stroke-width: 1.5; stroke-dasharray: 6 5; }
+  .dg-line { fill: none; stroke: var(--text-2); stroke-width: 2; }
+  .dg-line.impl { stroke: var(--impl); }
+  .dg-line.auto { stroke: var(--auto); }
+  .dg-head { fill: var(--text-2); }
+  .dg-head.impl { fill: var(--impl); }
+  .dg-head.auto { fill: var(--auto); }
+  figure.dg figcaption { margin-top: 8px; color: var(--text-2); }
+  figure.dg figcaption b { color: var(--text); }
+
+  .sq-band { fill: var(--surface); }
+  .sq-band.alt { fill: #16181c; }
+  .sq-life { stroke: var(--border-2); stroke-width: 1.5; stroke-dasharray: 4 6; }
+  .dg-line.sq-resp { stroke-dasharray: 7 5; }
+  .dg-wrap .dg-m.sq-impl { fill: var(--impl); }
+  .dg-wrap .dg-m.sq-auto { fill: var(--auto); }
+  .sq-no { fill: var(--team); }
+  .sq-no.auto { fill: var(--auto); }
+  .dg-wrap .sq-no-t { fill: #fff; font-weight: 900; }
+  .dg-wrap .sq-no-t.auto { fill: #0b2a1f; }
+  .sq-step { cursor: pointer; }
+  /* 칸 이름 줄은 스크롤해도 단계 막대 밑에 붙어 있다 (2026-10-21 사용자 지정). 그림 상자가 가로 스크롤이면 sticky가 그 상자에 갇히므로
+     그림이 다 들어가는 넓은 화면에서는 상자의 가로 스크롤을 끈다 — 좁은 화면은 머리가 붙지 않고 상자 안에서 밀어 본다 */
+  .sq-head { position: sticky; top: var(--rail-h, 61px); z-index: 2; border-bottom: 1px solid var(--border); }
+  .sq-head-bg { fill: var(--surface-3); }
+  @media (min-width: 1240px) { .dg-wrap { overflow: visible; } }
+  .dg-line.laser { stroke: var(--red); stroke-width: 2.5; }
+  .dg-head.laser { fill: var(--red); }
+  .dg-wrap .dg-l.laser { fill: #ff8a9b; }
+  .sq-note { fill: var(--surface-2); stroke: var(--border-2); stroke-width: 1.5; }
+  .dg-wrap .sq-note-t { fill: var(--text); }
+  .sq-phase { fill: var(--surface-2); }
+  .dg-wrap .sq-ph-t { fill: var(--accent); font-size: 18px; font-weight: 900; }
+  .dg-wrap .sq-when { fill: var(--accent); font-weight: 600; }
+  .sq-hit { fill: transparent; }
+  .sq-step:hover .sq-hit, .sq-step:focus-visible .sq-hit { fill: var(--surface-2); stroke: var(--accent); }
+
+  /* ---- 아래 넘김 막대 ---- */
+  .nav { position: fixed; left: 0; right: 0; bottom: 0; z-index: 6; background: rgba(14,15,17,.96); border-top: 1px solid var(--border); }
+  .nav-in { max-width: 1240px; margin: 0 auto; padding: 10px 16px; display: flex; align-items: center; gap: 12px; }
+  .nav button {
+    height: 46px; padding: 0 20px; border-radius: 6px; cursor: pointer; font-family: var(--ui); font-size: 17px; font-weight: 800;
+    background: var(--surface-2); color: var(--text); border: 1px solid var(--border-2);
+  }
+  .nav button.next { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+  .nav button:disabled { opacity: .4; cursor: default; }
+  .nav .where { flex: 1; text-align: center; color: var(--text-2); font-size: 16px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .nav .where b { color: var(--text); }
+  .nav .keys { color: var(--text-3); }
+  .foot { margin-top: 30px; font-size: 16px; color: var(--text-3); border-top: 1px solid var(--border); padding-top: 12px; }
+
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: minmax(0, 1fr); }
+    .ph h2 { font-size: 24px; }
+    .no { width: 52px; height: 52px; font-size: 24px; }
+    .nav .keys { display: none; }
+  }
+  @media (max-width: 520px) {
+    .banner .stamp { margin-left: 0; }
+    .nav button { padding: 0 14px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .page { animation: none; } }
+  /* 인쇄하면 모든 페이지를 차례로 */
+  @media print {
+    .rail, .nav { display: none !important; }
+    .page { display: block !important; break-after: page; animation: none; }
+    main { padding-bottom: 0; }
+  }
+]]></style>
+            <defs>
+              <marker id="sqA" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="dg-head"></path></marker>
+              <marker id="sqAi" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="dg-head impl"></path></marker>
+              <marker id="sqAa" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="dg-head auto"></path></marker>
+              <marker id="sqAl" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="dg-head laser"></path></marker>
+            </defs>
+            <rect class="sq-band" x="0" y="176" width="1200" height="214"></rect>
+            <rect class="sq-band alt" x="0" y="426" width="1200" height="102"></rect>
+            <rect class="sq-band" x="0" y="528" width="1200" height="155"></rect>
+            <rect class="sq-band alt" x="0" y="683" width="1200" height="135"></rect>
+            <rect class="sq-band" x="0" y="818" width="1200" height="102"></rect>
+            <rect class="sq-band alt" x="0" y="920" width="1200" height="175"></rect>
+            <rect class="sq-band" x="0" y="1095" width="1200" height="102"></rect>
+            <rect class="sq-band alt" x="0" y="1197" width="1200" height="186"></rect>
+            <rect class="sq-band" x="0" y="1383" width="1200" height="155"></rect>
+            <rect class="sq-band alt" x="0" y="1574" width="1200" height="168"></rect>
+            <rect class="sq-band" x="0" y="1742" width="1200" height="102"></rect>
+            <line class="sq-life" x1="300" y1="98" x2="300" y2="1886"></line>
+            <line class="sq-life" x1="520" y1="98" x2="520" y2="1886"></line>
+            <line class="sq-life" x1="860" y1="98" x2="860" y2="1886"></line>
+            <line class="sq-life" x1="1100" y1="98" x2="1100" y2="1886"></line>
+            <rect class="sq-phase" x="0" y="104" width="1200" height="36"></rect>
+            <text class="sq-ph-t" x="16" y="128">대기</text>
+            <text class="dg-m" x="62" y="128">waiting</text>
+            <text class="dg-s" x="146" y="128">운영진이 UGV를 점검하고 자리에 놓습니다 — 팀 프로그램은 아직 실행 전</text>
+            <rect class="sq-phase" x="0" y="140" width="1200" height="36"></rect>
+            <text class="sq-ph-t" x="16" y="164">준비</text>
+            <text class="dg-m" x="62" y="164">ready</text>
+            <text class="dg-s" x="126" y="164">UGV가 잠기고 팀 프로그램이 실행됩니다</text>
+            <a href="../PARTICIPANT_API_GUIDE.md#p1" data-go="1" class="sq-step">
+              <rect class="sq-hit" x="4" y="180" width="206" height="206" rx="6"></rect>
+              <circle class="sq-no" cx="30" cy="203" r="16"></circle>
+              <text class="sq-no-t" x="30" y="209" text-anchor="middle">1</text>
+              <text class="dg-t" x="56" y="209">준비완료</text>
+              <text class="sq-when" x="56" y="233">준비 단계</text>
+            </a>
+            <line class="dg-line auto" x1="523" y1="210" x2="1096" y2="210" marker-end="url(#sqAa)"></line>
+            <text class="dg-l auto" x="690" y="201" text-anchor="middle">경기 설정 → 잠금</text>
+            <line class="dg-line auto" x1="1097" y1="243" x2="864" y2="243" marker-end="url(#sqAa)"></line>
+            <text class="dg-l auto" x="980" y="234" text-anchor="middle">팀 프로그램 실행</text>
+            <line class="dg-line impl" x1="857" y1="276" x2="524" y2="276" marker-end="url(#sqAi)"></line>
+            <text class="dg-m sq-impl" x="690" y="267" text-anchor="middle">GET /me</text>
+            <line class="dg-line sq-resp" x1="523" y1="309" x2="856" y2="309" marker-end="url(#sqA)"></line>
+            <text class="dg-m" x="690" y="300" text-anchor="middle">{phase, ready}</text>
+            <line class="dg-line impl" x1="857" y1="342" x2="524" y2="342" marker-end="url(#sqAi)"></line>
+            <text class="dg-m sq-impl" x="690" y="333" text-anchor="middle">POST /ready {mission_code}</text>
+            <line class="dg-line sq-resp" x1="523" y1="375" x2="856" y2="375" marker-end="url(#sqA)"></line>
+            <text class="dg-m" x="690" y="366" text-anchor="middle">{accepted}</text>
+            <rect class="sq-phase" x="0" y="390" width="1200" height="36"></rect>
+            <text class="sq-ph-t" x="16" y="414">진행</text>
+            <text class="dg-m" x="62" y="414">running</text>
+            <text class="dg-s" x="146" y="414">0:00 ~ 5:00 — 경기 시계가 흐릅니다</text>
+            <a href="../PARTICIPANT_API_GUIDE.md#p2" data-go="2" class="sq-step">
+              <rect class="sq-hit" x="4" y="430" width="206" height="94" rx="6"></rect>
+              <circle class="sq-no" cx="30" cy="453" r="16"></circle>
+              <text class="sq-no-t" x="30" y="459" text-anchor="middle">2</text>
+              <text class="dg-t" x="56" y="459">임무 받기</text>
+              <text class="sq-when" x="56" y="483">0:00</text>
+            </a>
+            <line class="dg-line impl" x1="857" y1="460" x2="524" y2="460" marker-end="url(#sqAi)"></line>
+            <text class="dg-m sq-impl" x="690" y="451" text-anchor="middle">GET /order?wait=120</text>
+            <line class="dg-line sq-resp" x1="523" y1="513" x2="856" y2="513" marker-end="url(#sqA)"></line>
+            <text class="dg-m" x="690" y="484" text-anchor="middle">{accepted, order}</text>
+            <text class="dg-s" x="690" y="504" text-anchor="middle">order.tactical_command = 명령문</text>
+            <a href="../PARTICIPANT_API_GUIDE.md#p3" data-go="3" class="sq-step">
+              <rect class="sq-hit" x="4" y="532" width="206" height="147" rx="6"></rect>
+              <circle class="sq-no auto" cx="30" cy="555" r="16"></circle>
+              <text class="sq-no-t auto" x="30" y="561" text-anchor="middle">3</text>
+              <text class="dg-t" x="56" y="561">출발 · 주행</text>
+              <text class="sq-when" x="56" y="585">0:00 → 경기 끝</text>
+            </a>
+            <line class="dg-line auto" x1="523" y1="562" x2="1096" y2="562" marker-end="url(#sqAa)"></line>
+            <text class="dg-l auto" x="690" y="553" text-anchor="middle">출발 — 잠금 풀림</text>
+            <line class="dg-line auto" x1="1097" y1="615" x2="864" y2="615" marker-end="url(#sqAa)"></line>
+            <text class="dg-l auto" x="980" y="586" text-anchor="middle">시작 신호</text>
+            <text class="dg-s" x="980" y="606" text-anchor="middle">여기서 팀 시계 0:00</text>
+            <line class="dg-line impl" x1="863" y1="668" x2="1096" y2="668" marker-end="url(#sqAi)"></line>
+            <text class="dg-l impl" x="980" y="639" text-anchor="middle">주행</text>
+            <text class="dg-s" x="980" y="659" text-anchor="middle">젯슨 API 규격서</text>
+            <a href="../PARTICIPANT_API_GUIDE.md#p4" data-go="4" class="sq-step">
+              <rect class="sq-hit" x="4" y="687" width="206" height="127" rx="6"></rect>
+              <circle class="sq-no" cx="30" cy="710" r="16"></circle>
+              <text class="sq-no-t" x="30" y="716" text-anchor="middle">4</text>
+              <text class="dg-t" x="56" y="716">드론 화면 (선택)</text>
+              <text class="sq-when" x="56" y="740">진행 중</text>
+            </a>
+            <line class="dg-line" x1="303" y1="737" x2="516" y2="737" marker-end="url(#sqA)"></line>
+            <text class="dg-l" x="410" y="708" text-anchor="middle">상공 카메라</text>
+            <text class="dg-s" x="410" y="728" text-anchor="middle">1초마다 캡처</text>
+            <line class="dg-line impl" x1="857" y1="770" x2="524" y2="770" marker-end="url(#sqAi)"></line>
+            <text class="dg-m sq-impl" x="690" y="761" text-anchor="middle">GET /drone</text>
+            <line class="dg-line sq-resp" x1="523" y1="803" x2="856" y2="803" marker-end="url(#sqA)"></line>
+            <text class="dg-l" x="690" y="794" text-anchor="middle">JPEG 한 장 (가장 최신)</text>
+            <a href="../PARTICIPANT_API_GUIDE.md#p5" data-go="5" class="sq-step">
+              <rect class="sq-hit" x="4" y="822" width="206" height="94" rx="6"></rect>
+              <circle class="sq-no" cx="30" cy="845" r="16"></circle>
+              <text class="sq-no-t" x="30" y="851" text-anchor="middle">5</text>
+              <text class="dg-t" x="56" y="851">M1 명령 해석</text>
+              <text class="sq-when" x="56" y="875">진행 중</text>
+            </a>
+            <line class="dg-line impl" x1="857" y1="872" x2="524" y2="872" marker-end="url(#sqAi)"></line>
+            <text class="dg-m sq-impl" x="690" y="843" text-anchor="middle">POST /interpretation</text>
+            <text class="dg-s" x="690" y="863" text-anchor="middle">target · search_sectors · base</text>
+            <line class="dg-line sq-resp" x1="523" y1="905" x2="856" y2="905" marker-end="url(#sqA)"></line>
+            <text class="dg-m" x="690" y="896" text-anchor="middle">{accepted, received}</text>
+            <a href="../PARTICIPANT_API_GUIDE.md#p6" data-go="6" class="sq-step">
+              <rect class="sq-hit" x="4" y="924" width="206" height="167" rx="6"></rect>
+              <circle class="sq-no" cx="30" cy="947" r="16"></circle>
+              <text class="sq-no-t" x="30" y="953" text-anchor="middle">6</text>
+              <text class="dg-t" x="56" y="953">M2 지정표적 타격</text>
+              <text class="sq-when" x="56" y="977">진행 중 · API 없음</text>
+            </a>
+            <line class="dg-line impl" x1="863" y1="974" x2="1096" y2="974" marker-end="url(#sqAi)"></line>
+            <text class="dg-l impl" x="980" y="945" text-anchor="middle">발사 명령</text>
+            <text class="dg-s" x="980" y="965" text-anchor="middle">젯슨 API 규격서</text>
+            <line class="dg-line laser" x1="1097" y1="1027" x2="304" y2="1027" marker-end="url(#sqAl)"></line>
+            <text class="dg-l laser" x="410" y="998" text-anchor="middle">레이저 2초 연속 조사</text>
+            <text class="dg-s" x="410" y="1018" text-anchor="middle">쏜 UGV의 코드가 실림</text>
+            <line class="dg-line" x1="303" y1="1080" x2="516" y2="1080" marker-end="url(#sqA)"></line>
+            <text class="dg-l" x="410" y="1051" text-anchor="middle">표적 장치</text>
+            <text class="dg-s" x="410" y="1071" text-anchor="middle">피격 · 맞힌 코드</text>
+            <a href="../PARTICIPANT_API_GUIDE.md#p7" data-go="7" class="sq-step">
+              <rect class="sq-hit" x="4" y="1099" width="206" height="94" rx="6"></rect>
+              <circle class="sq-no" cx="30" cy="1122" r="16"></circle>
+              <text class="sq-no-t" x="30" y="1128" text-anchor="middle">7</text>
+              <text class="dg-t" x="56" y="1128">M3 객체 인식</text>
+              <text class="sq-when" x="56" y="1152">진행 중</text>
+            </a>
+            <line class="dg-line impl" x1="857" y1="1149" x2="524" y2="1149" marker-end="url(#sqAi)"></line>
+            <text class="dg-m sq-impl" x="690" y="1120" text-anchor="middle">POST /detection</text>
+            <text class="dg-s" x="690" y="1140" text-anchor="middle">sectors — 섹터별 type · count</text>
+            <line class="dg-line sq-resp" x1="523" y1="1182" x2="856" y2="1182" marker-end="url(#sqA)"></line>
+            <text class="dg-m" x="690" y="1173" text-anchor="middle">{accepted, received}</text>
+            <a href="../PARTICIPANT_API_GUIDE.md#p8" data-go="8" class="sq-step">
+              <rect class="sq-hit" x="4" y="1201" width="206" height="178" rx="6"></rect>
+              <circle class="sq-no" cx="30" cy="1224" r="16"></circle>
+              <text class="sq-no-t" x="30" y="1230" text-anchor="middle">8</text>
+              <text class="dg-t" x="56" y="1230">M4 상대 UGV 타격</text>
+              <text class="sq-when" x="56" y="1254">진행 중 · API 없음</text>
+            </a>
+            <line class="dg-line impl" x1="863" y1="1251" x2="1096" y2="1251" marker-end="url(#sqAi)"></line>
+            <text class="dg-l impl" x="980" y="1222" text-anchor="middle">발사 명령</text>
+            <text class="dg-s" x="980" y="1242" text-anchor="middle">젯슨 API 규격서</text>
+            <rect class="sq-note" x="1009" y="1264" width="183" height="72" rx="6"></rect>
+            <text class="sq-note-t" x="1100" y="1285" text-anchor="middle">상대 UGV에 2초 연속</text>
+            <text class="sq-note-t" x="1100" y="1305" text-anchor="middle">맞은 쪽 ESP가 판정</text>
+            <text class="sq-note-t" x="1100" y="1325" text-anchor="middle">목숨 −1</text>
+            <line class="dg-line" x1="1097" y1="1368" x2="524" y2="1368" marker-end="url(#sqA)"></line>
+            <text class="dg-l" x="690" y="1359" text-anchor="middle">남은 목숨 → M4 점수</text>
+            <a href="../PARTICIPANT_API_GUIDE.md#p9" data-go="9" class="sq-step">
+              <rect class="sq-hit" x="4" y="1387" width="206" height="147" rx="6"></rect>
+              <circle class="sq-no" cx="30" cy="1410" r="16"></circle>
+              <text class="sq-no-t" x="30" y="1416" text-anchor="middle">9</text>
+              <text class="dg-t" x="56" y="1416">M5 목표거점 받기</text>
+              <text class="sq-when" x="56" y="1440">4:00 · 종료 60초 전</text>
+            </a>
+            <line class="dg-line impl" x1="857" y1="1417" x2="524" y2="1417" marker-end="url(#sqAi)"></line>
+            <text class="dg-m sq-impl" x="690" y="1408" text-anchor="middle">GET /target?wait=120</text>
+            <line class="dg-line sq-resp" x1="523" y1="1470" x2="856" y2="1470" marker-end="url(#sqA)"></line>
+            <text class="dg-m" x="690" y="1441" text-anchor="middle">{accepted, order}</text>
+            <text class="dg-s" x="690" y="1461" text-anchor="middle">order.objective = 목표거점</text>
+            <line class="dg-line" x1="303" y1="1523" x2="516" y2="1523" marker-end="url(#sqA)"></line>
+            <text class="dg-l" x="410" y="1494" text-anchor="middle">거점 센서</text>
+            <text class="dg-s" x="410" y="1514" text-anchor="middle">첫 진입 = 점령</text>
+            <rect class="sq-phase" x="0" y="1538" width="1200" height="36"></rect>
+            <text class="sq-ph-t" x="16" y="1562">보고</text>
+            <text class="dg-m" x="62" y="1562">reporting</text>
+            <text class="dg-s" x="166" y="1562">진행이 끝나는 순간(5:00 또는 M5 점령)부터 30초 — UGV는 잠기고 팀 프로그램은 계속</text>
+            <a href="../PARTICIPANT_API_GUIDE.md#p10" data-go="10" class="sq-step">
+              <rect class="sq-hit" x="4" y="1578" width="206" height="160" rx="6"></rect>
+              <circle class="sq-no auto" cx="30" cy="1601" r="16"></circle>
+              <text class="sq-no-t auto" x="30" y="1607" text-anchor="middle">10</text>
+              <text class="dg-t" x="56" y="1607">경기 종료</text>
+              <text class="sq-when" x="56" y="1631">5:00 · 또는 M5 점령</text>
+            </a>
+            <line class="dg-line auto" x1="523" y1="1608" x2="1096" y2="1608" marker-end="url(#sqAa)"></line>
+            <text class="dg-l auto" x="690" y="1599" text-anchor="middle">멈춤 · 잠금</text>
+            <line class="dg-line auto" x1="1097" y1="1661" x2="864" y2="1661" marker-end="url(#sqAa)"></line>
+            <text class="dg-l auto" x="980" y="1632" text-anchor="middle">보고(report) 신호</text>
+            <text class="dg-s" x="980" y="1652" text-anchor="middle">노드는 계속 → M6</text>
+            <line class="dg-line impl" x1="857" y1="1694" x2="524" y2="1694" marker-end="url(#sqAi)"></line>
+            <text class="dg-m sq-impl" x="690" y="1685" text-anchor="middle">GET /me</text>
+            <line class="dg-line sq-resp" x1="523" y1="1727" x2="856" y2="1727" marker-end="url(#sqA)"></line>
+            <text class="dg-m" x="690" y="1718" text-anchor="middle">{phase: "reporting"}</text>
+            <a href="../PARTICIPANT_API_GUIDE.md#p11" data-go="11" class="sq-step">
+              <rect class="sq-hit" x="4" y="1746" width="206" height="94" rx="6"></rect>
+              <circle class="sq-no" cx="30" cy="1769" r="16"></circle>
+              <text class="sq-no-t" x="30" y="1775" text-anchor="middle">11</text>
+              <text class="dg-t" x="56" y="1775">M6 위험도</text>
+              <text class="sq-when" x="56" y="1799">종료 후 30초</text>
+            </a>
+            <line class="dg-line impl" x1="857" y1="1796" x2="524" y2="1796" marker-end="url(#sqAi)"></line>
+            <text class="dg-m sq-impl" x="690" y="1767" text-anchor="middle">POST /situation</text>
+            <text class="dg-s" x="690" y="1787" text-anchor="middle">ranking — 상대 호출부호 순</text>
+            <line class="dg-line sq-resp" x1="523" y1="1829" x2="856" y2="1829" marker-end="url(#sqA)"></line>
+            <text class="dg-m" x="690" y="1820" text-anchor="middle">{accepted, received}</text>
+            <rect class="sq-phase" x="0" y="1844" width="1200" height="36"></rect>
+            <text class="sq-ph-t" x="16" y="1868">종료</text>
+            <text class="dg-m" x="62" y="1868">finished</text>
+            <text class="dg-s" x="156" y="1868">보고 시간이 끝나면 주최측이 팀 프로그램을 종료합니다 — 그 뒤에는 보고가 나가지 않습니다</text>
+          </svg>
